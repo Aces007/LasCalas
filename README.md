@@ -8,5 +8,5 @@ Our Information:
 - (+63) 917 707 3891
 - (+63) 2 8531 3008
 
-Click the img to redirect to google maps
+Click the image to redirect to google maps
 [![LasCalas](./public/map.png)](https://maps.app.goo.gl/NoogrMBAtE9zNDwN8)
