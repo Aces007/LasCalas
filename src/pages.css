@@ -1,0 +1,21 @@
+/* Composes of the Google Font Links for Antic Didone, Raleway, Montserrat, Nunito, & Libre Baskerville..*/
+@import url('href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*#region Default Settings */
+:root {
+    
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+/*#endregion Default Settings */
+
+
+/*#region Hero */
+.hero_cont {
+    background-image: url("/lascalas_assets/Hero.png");
+    background-size: cover;
+}
+/*#endregion Hero */
+
