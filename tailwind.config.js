@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}", // covers all files inside /src, including pages/components
@@ -10,8 +10,6 @@ module.exports = {
       resMd: { min: "768px", max: "1120px" },     // tablets
       resLg: { min: "1280px", max: "1366px" },    // laptops (your native res)
       resHD: { min: "1920px", max: "2560px" },    // full HD monitors
-
-
     },
     extend: {
       // You can use scale in the keyframes config but use transform 
@@ -26,11 +24,13 @@ module.exports = {
             '100%': { opacity: '0', transform: 'scale(0.98)' },
           },
         },
+        
       animation: 
       {
           fadeIn: 'fadeIn 1200ms ease-in-out forwards',
           fadeOut: 'fadeOut 1200ms ease-in-out forwards',
       },
+
       colors: 
       {
         // Original Color Palette
@@ -48,11 +48,10 @@ module.exports = {
         Raleway: ["'Raleway'", "sans-serif"],
         Montserrat: ["'Montserrat'", "sans-serif"],
         Nunito: ["'Nunito'", "sans-serif"],
-        LibreBaskerville: ["'Libre Baskerville'", "serif"],
+        Libre: ["'Libre Baskerville'", "serif"],
       },
 
-      fontSize: 
-      {
+      fontSize: {
         // HD Desktop
 
         // LG Desktop 
@@ -61,10 +60,18 @@ module.exports = {
 
         // SM Phones
       },
-      fontWeight: 
-      {
-        
-      },
+      fontWeight: {
+        Thin: 100,
+        ExtraLi: 200,
+        Light: 300,
+        Regular: 400,
+        Medium: 500,
+        SemiB: 600,
+        Bold: 700,
+        ExtraBo: 800,
+        Black: 900,
+        ExtraBla: 950,
+      }
     },
   },
   plugins: [],
