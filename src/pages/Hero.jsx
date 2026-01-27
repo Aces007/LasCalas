@@ -1,6 +1,7 @@
 import NavHead from "../reusables/NavHead";
 import { motion } from "framer-motion";
 import { FaAngleDown } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
     // Styling Variables
@@ -38,7 +39,7 @@ const Hero = () => {
                 </div>
 
                 <div>
-                    <button className="flex flex-col items-center gap-[8px] font-Montserrat text-background_lightTxt font-bold text-[24px] tracking-[5%]">About Us <FaAngleDown size={24} className=""/></button>
+                    <Link to="/about" className="flex flex-col items-center gap-[8px] font-Montserrat text-background_lightTxt font-bold text-[24px] tracking-[5%]">About Us <FaAngleDown size={24} className=""/></Link>
                 </div>
             </div>
         </motion.div>
