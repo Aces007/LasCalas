@@ -6,6 +6,7 @@ const NavHead = ({ theme = "light" }) => {
     const variantIsDark = theme === "dark";
 
     // Dynamic Class 
+    const variantPadding = variantIsDark ? "px-[48px] py-[24px]" : "px-[56px] py-[56px]"
     const variantLogoCol = variantIsDark ? "/lascalas_assets/lascalasBlack.png" : "/lascalas_assets/lascalasWhite.png";
     const variantNavlinks = variantIsDark ? "text-main_text hover:text-highlight hover:font-bold" : "text-background_lightTxt hover:text-highlight hover:font-bold";
     const variantText = variantIsDark ? "text-main_text" : "text-background_lightTxt";
@@ -14,7 +15,7 @@ const NavHead = ({ theme = "light" }) => {
 
 
     return (
-        <div className="grid grid-cols-3 items-center px-[56px] py-[56px]">
+        <div className={`grid grid-cols-3 items-center ${variantPadding}`}>
             {/* NavButtons (Left) */}
             <div className="flex items-center gap-[24px]">
                 <RxHamburgerMenu size={26} className={`${variantSVGs}`}/>
@@ -27,7 +28,7 @@ const NavHead = ({ theme = "light" }) => {
 
             {/* Logo (Center) */}
             <div className="flex justify-center">
-                <Link to="/"><img src={variantLogoCol} alt="lasCalas logo" className="w-[104px] " /></Link>
+                <Link to="/"><img src={variantLogoCol} alt="lasCalas logo" className="w-[104px]" /></Link>
             </div>
 
             {/* CTA Btns (Right) */}

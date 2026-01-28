@@ -53,12 +53,25 @@ export default {
 
       fontSize: {
         // HD Desktop
+        
+          // -- FOOTER -- //
+          location_p: "18px",
+          contacts_p: "16px",
+
+          foot_display: "24px",
+          foot_display2: "16px",
+          foot_display3: "12px",
+          foot_h3s: "20px",
+          foot_body_links: "16px",
+
+
 
         // LG Desktop 
-
+          // -- FOOTER -- //
         // MD Tablets
-
+          // -- FOOTER -- //
         // SM Phones
+          // -- FOOTER -- //
       },
       fontWeight: {
         Thin: 100,
