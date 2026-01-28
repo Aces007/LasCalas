@@ -28,7 +28,7 @@ const NavHead = ({ theme = "light" }) => {
 
             {/* Logo (Center) */}
             <div className="flex justify-center">
-                <Link to="/"><img src={variantLogoCol} alt="lasCalas logo" className="w-[104px] " /></Link>
+                <Link to="/"><img src={variantLogoCol} alt="lasCalas logo" className="w-[104px]" /></Link>
             </div>
 
             {/* CTA Btns (Right) */}

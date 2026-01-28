@@ -2,24 +2,14 @@ import { motion } from "framer-motion";
 
 import NavHead from "../reusables/NavHead";
 
-import About1 from "/public/lascalas_assets/Website/About/About1.png";
-import About2 from "/public/lascalas_assets/Website/About/About2.png";
-
-import Moments1 from "/public/lascalas_assets/Website/About/Moments1.png"
-import Moments2 from "/public/lascalas_assets/Website/About/Moments2.png"
-import Moments3 from "/public/lascalas_assets/Website/About/Moments3.png"
-import Moments4 from "/public/lascalas_assets/Website/About/Moments4.png"
-import Moments5 from "/public/lascalas_assets/Website/About/Moments5.png"
-
-
 const About = () => {
 
     const moments_assets = [
-        { id: 1, src: Moments1, label: "Beach Pergola"},
-        { id: 2, src: Moments2, label: "La Cueva"},
-        { id: 1, src: Moments3, label: "La Batanes"},
-        { id: 1, src: Moments4, label: "Event Pavilion"},
-        { id: 1, src: Moments5, label: "Polaris"},
+        { id: 1, src: "/lascalas_assets/Website/About/Moments1.png", label: "Beach Pergola" },
+        { id: 2, src: "/lascalas_assets/Website/About/Moments2.png", label: "La Cueva" },
+        { id: 1, src: "/lascalas_assets/Website/About/Moments3.png", label: "La Batanes" },
+        { id: 1, src: "/lascalas_assets/Website/About/Moments4.png", label: "Event Pavilion" },
+        { id: 1, src: "/lascalas_assets/Website/About/Moments5.png", label: "Polaris" },
     ]
 
     // Styling Variables
@@ -47,7 +37,7 @@ const About = () => {
             
             <div className={About_Cont}>
                 <div>
-                    <img src={About1} alt="About Image 1" />
+                    <img src="/lascalas_assets/Website/About/About1.png" alt="About Image 1" />
                 </div>
 
                 <div className="flex flex-col gap-[24px] p-[16px]">
@@ -84,7 +74,7 @@ const About = () => {
                 </div>
 
                 <div>
-                    <img src={About2} alt="About Image 2" />
+                    <img src="/lascalas_assets/Website/About/About2.png" alt="About Image 2" />
                 </div>
             </div>
 
