@@ -3,7 +3,12 @@
 
 /*#region Default Settings */
 :root {
-    
+
+    --ff-AnticDidone: "Antic Didone", serif; 
+    --ff-Raleway: "Montserrat", sans-serif; 
+    --ff-Montserrat: "Montserrat", sans-serif; 
+    --ff-Nunito: "Nunito", sans-serif; 
+    --ff-Libre: "Libre Baskerville", serif; 
 }
 
 *, *::before, *::after {
@@ -14,10 +19,29 @@
 
 /*#region Hero */
 .hero_cont {
-    background-image: url("../public/lascalas_assets/Hero.png");
+    background-image: url("../lascalas_assets/Hero.png");
     background-size: cover;
 }
 /*#endregion Hero */
 
 
+/*#region Swiper */
+.swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-family: var(--ff-Montserrat);
+  font-size: 8px;
+  font-weight: 700;
+  color: #fff;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.swiper-pagination-bullet-active {
+  color: #fff;
+  background: #007aff;
+}
+/*#endregion Swiper */
 

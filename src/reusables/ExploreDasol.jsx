@@ -1,6 +1,3 @@
-
-import React from "react";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay, EffectCoverflow } from "swiper/modules";
 
@@ -37,7 +34,7 @@ const ExploreDasol = () => {
             }}
             pagination={true}
             modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
-            className="w-[600px] py-[32px]"
+            className="w-[600px] py-[40px]"
             navigation
             autoplay={{
                 delay: 500,
