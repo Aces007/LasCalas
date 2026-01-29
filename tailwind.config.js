@@ -64,6 +64,9 @@ export default {
           foot_h3s: "20px",
           foot_body_links: "16px",
 
+          gal_modal_close: "24px",
+          gal_modal_h1: "56px"
+
 
 
         // LG Desktop 

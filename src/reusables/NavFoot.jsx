@@ -5,35 +5,38 @@ import { FiFacebook } from "react-icons/fi";
 import { href, Link } from "react-router-dom";
 
 import ExploreDasol from "./ExploreDasol";
+import Gallery from "./Gallery";
 
 
 const NavFoot = () => {
     // Styling Variables
     const foot_cont = "flex flex-col items-center px-[16px] py-[24px] w-full";
-    const foot_content = "flex flex-col justify-between gap-[40px] w-full py-[40px] px-[8px]";
+    const foot_content = "flex flex-col justify-between gap-[120px] w-full py-[40px] px-[8px]";
+
+        const locationContact = "flex items-center gap-[24px]";
+        const foot_loc_explore = "flex flex-col items-start gap-[40px]";
+
+        const foot_section_heads = "font-Raleway text-[32px]";
+
+        const foot_location_cont = "flex flex-col items-start gap-[16px]";
+        const foot_location_content = "flex flex-col items-start gap-[16px]"
+        const foot_location_p = "w-[70%] text-main_text/60 text-location_p";
+        const foot_contacts_p = "text-main_text/60 text-contacts_p";
+
+        const foot_explore_cont = "flex flex-col items-start gap-[8px] object-cover overflow-hidden relative";
+
+        const foot_map_cont = "flex flex-col gap-[24px]";
+
+        const foot_display = "font-Libre text-primary";
+        const foot_h3s = "font-Raleway font-medium text-foot_h3s";
 
 
-    const locationContact = "flex items-center gap-[24px]";
-    const foot_loc_explore = "flex flex-col items-start gap-[40px]";
-
-    const foot_location_cont = "flex flex-col items-start gap-[16px]";
-    const foot_location_content = "flex flex-col items-start gap-[16px]"
-    const foot_location_p = "w-[70%] text-main_text/60 text-location_p";
-    const foot_contacts_p = "text-main_text/60 text-contacts_p";
-
-    const foot_explore_cont = "flex flex-col items-start gap-[8px] object-cover overflow-hidden relative";
-
-    const foot_map_cont = "flex flex-col gap-[24px]";
-
-    const foot_display = "font-Libre text-primary";
-    const foot_h3s = "font-Raleway font-medium text-foot_h3s";
-
-
-    const center_element_col = "flex flex-col items-center";
-    const start_element_col = "flex flex-col items-start";
-    const center_element_row = "flex items-center";
-    const start_element_row = "flex items-start";
-    const between_element_row = "flex justify-between";
+        // -- FLEX STYLING -- //
+        const center_element_col = "flex flex-col items-center";
+        const start_element_col = "flex flex-col items-start";
+        const center_element_row = "flex items-center";
+        const start_element_row = "flex items-start";
+        const between_element_row = "flex justify-between";
 
     // Map Iframe Resource
     const foot_map = {
@@ -47,6 +50,7 @@ const NavFoot = () => {
         "(+63) 2 8531 3008",
     ]
 
+    {/* CONTACT INFORMATION ARRAY */}
     const contact_links_map = [
         {
             id: 1,
@@ -92,13 +96,13 @@ const NavFoot = () => {
 
     return (
         <div className={`${foot_cont}`}>
-
             <div className={`${foot_content}`}>
 
+                {/* LOCATION AND MAP CONTAINER */}
                 <div className={`${between_element_row} px-[32px]`}>
                     <div className={foot_loc_explore}>
                         <div className={foot_location_cont}>
-                            <h1 className="font-Raleway text-[32px]">Our Location</h1>
+                            <h1 className={`${foot_section_heads}`}>Our Location</h1>
                             <div className={foot_location_content}>
                                 <p className={foot_location_p}><span className="text-accent">LasCalas Resort and Luxury Estate</span>, Barangay Osmena, Dasol, 2411 Pangasinan</p>
                     
@@ -114,14 +118,14 @@ const NavFoot = () => {
                             </div>
                         </div>
                         <div className={`${foot_explore_cont}`}>
-                            <h1 className="font-Raleway text-[32px]">Explore <span className="hover:text-highlight hover:font-semibold hover:cursor-pointer">Dasol</span></h1>
+                            <h1 className={`${foot_section_heads}`}>Explore <span className="hover:text-highlight hover:font-semibold hover:cursor-pointer">Dasol</span></h1>
                             <ExploreDasol />
                         </div>
                     </div>
 
                     <div className={`${foot_map_cont}`}>
                         <div className="flex items-center justify-between">
-                            <h1 className="font-Raleway text-[32px]">Map</h1>
+                            <h1 className={`${foot_section_heads}`}>Map</h1>
                             <a href="https://maps.app.goo.gl/1gqmxGKsbwLfq4bo9" className="font-Montserrat text-accent hover:text-highlight hover:underline" target="_blank">View On Google Maps</a>
                         </div>
                         <img
@@ -132,8 +136,15 @@ const NavFoot = () => {
                     </div>
                 </div>
 
-                <div className={``}></div>
 
+                {/* GALLERY CONTAINER */}
+                <div className={`px-[24px]`}>
+                    <h1 className={`${foot_section_heads}`}>Gallery</h1>
+                    <Gallery />
+                </div>
+
+
+                {/* FOOTER CONTAINER */}
                 <div className="flex flex-col items-center gap-24">
                     <div className={`${center_element_row} gap-24 px-[48px]`}>
                         <div className={`${center_element_col} gap-[4px] w-[30%]`}>
@@ -168,7 +179,8 @@ const NavFoot = () => {
                                 <div className={`${start_element_col} gap-[8px]`}>
                                     <h3 className={`${foot_h3s}`}>Newsletter</h3>
                     
-                                    <div>
+                                    {/* PLACEHOLDER 1 - Space for Newsletter field */}
+                                    <div> 
                                         <img src="/lascalas_assets/Website/Placeholders/Placeholders1.png" alt="" className="w-[360px]"/>
                                     </div>
                                 </div>
@@ -176,15 +188,16 @@ const NavFoot = () => {
                                 <div className={`${start_element_col} gap-[8px]`}>
                                     <h3 className={`${foot_h3s}`}>Email Us</h3>
                     
+                                    {/* PLACEHOLDER 2 - Space for Email Us Button */}
                                     <div>
-                                        <img src="public/lascalas_assets/Website/Placeholders/Placeholders2.png" alt="" className="w-[360px]"/>
+                                        <img src="/lascalas_assets/Website/Placeholders/Placeholders2.png" alt="" className="w-[360px]"/>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <p>© 2026 LasCalas Resort. Crafted with ♥ in Dasol, Pangasinan.</p>
+                    <p className="text-main_text/80">© 2026 LasCalas Resort & LUXURY ESTATE. Crafted with ♥ in Dasol, Pangasinan.</p>
                 </div>
             </div>
 
