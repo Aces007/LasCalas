@@ -1,6 +1,13 @@
 import MainSlides from "../reusables/MainSlides";
+import { motion } from "framer-motion";
+
 
 const Explore = () => {
+    const pageVariants = {
+        unmounted: { opacity: 0, y: 20},
+        mounted: { opacity: 1, y: 0},
+        beingUnmounted: { opacity: 0, y: -20}
+    };
 
     const explore_slideshow = [
         { id: 1, src: "/lascalas_assets/Website/Slideshows/Explore_Slideshow/Explore1.png" },
@@ -11,10 +18,16 @@ const Explore = () => {
     ]
 
     return (
-        <div>
+        <motion.div
+            variants={pageVariants}
+            initial="unmounted"
+            animate="mounted"
+            exit="beingUnmounted"
+            transition={{ duration: 1.2, ease: "easeInOut" }}
+        >
             <MainSlides pageTitle="Explore" slideContent={explore_slideshow} />
 
-        </div>
+        </motion.div>
     )
 }
 

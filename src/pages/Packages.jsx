@@ -1,6 +1,12 @@
 import MainSlides from "../reusables/MainSlides";
+import { motion } from "framer-motion";
 
 const Packages = () => {
+    const pageVariants = {
+        unmounted: { opacity: 0, y: 20},
+        mounted: { opacity: 1, y: 0},
+        beingUnmounted: { opacity: 0, y: -20}
+    };
 
     const packages_slideshow = [
         { id: 1, src: "/lascalas_assets/Website/Slideshows/Packages_Slideshow/Pack_Slider1.png" },
@@ -13,10 +19,16 @@ const Packages = () => {
     ]
 
     return (
-        <div>
+        <motion.div
+            variants={pageVariants}
+            initial="unmounted"
+            animate="mounted"
+            exit="beingUnmounted"
+            transition={{ duration: 1.2, ease: "easeInOut" }}
+        >
             <MainSlides pageTitle="Packages" slideContent={packages_slideshow} />
 
-        </div>
+        </motion.div>
     )
 }
 

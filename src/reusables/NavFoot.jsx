@@ -118,7 +118,7 @@ const NavFoot = () => {
                             </div>
                         </div>
                         <div className={`${foot_explore_cont}`}>
-                            <h1 className={`${foot_section_heads}`}>Explore <span className="hover:text-highlight hover:font-semibold hover:cursor-pointer">Dasol</span></h1>
+                            <h1 className={`${foot_section_heads}`}>Explore <a href="https://seepangasinan.com/wheretogo/dasol/" target="_blank" className="hover:text-highlight hover:font-semibold hover:cursor-pointer">Dasol</a></h1>
                             <ExploreDasol />
                         </div>
                     </div>
