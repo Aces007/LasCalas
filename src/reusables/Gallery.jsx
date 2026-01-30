@@ -1,10 +1,9 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay, EffectCoverflow } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/scrollbar';
-import 'swiper/css/effect-coverflow';
 import { useState } from "react";
 
 import GalleryModal from "./GalleryModal";
@@ -55,7 +54,7 @@ const Gallery = () => {
                 modifier: 1,
                 slideShadows: false,
                 }}
-                modules={[EffectCoverflow, Navigation, Autoplay]}
+                modules={[Navigation, Autoplay]}
                 className="w-[1400px] py-[56px]"
                 navigation
                 autoplay={{

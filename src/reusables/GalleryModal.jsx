@@ -9,10 +9,11 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import 'swiper/css/effect-coverflow';
 import { img } from "framer-motion/client";
+import { useEffect } from "react";
 
 const GalleryModal = ({ isOpen, onClose, galleryItems, currentImg }) => {
     if (!isOpen) return null;
-
+    
 
     const modalCont = "bg-main_text/90 fixed z-50 inset-0 flex flex-col items-center justify-center gap-16 text-gal_modal_close";
     const modalCloseButton = "flex items-center justify-center text-accent font-Montserrat uppercase hover:text-highlight";
@@ -24,6 +25,15 @@ const GalleryModal = ({ isOpen, onClose, galleryItems, currentImg }) => {
         return '<span class="' + className + '">' + (index + 1) + '</span>';
         },
     };
+
+    useEffect(() => {
+        const handleEscapeKey = (e) => {
+            if (e.key === "Escape") OnClose();
+        };
+
+        window.addEventListener("keydown", handleEscapeKey);
+        return () => window.removeEventListener("keydown", handleEscapeKey)
+    }, [onClose]);
 
     return (
         // inset-0 = "top:0,bottom:0,left:0,right:0"
