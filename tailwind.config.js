@@ -53,7 +53,9 @@ export default {
 
       fontSize: {
         // HD Desktop
-        
+
+          // -- PACKAGES -- //
+          slide_h1: "80px",
           // -- FOOTER -- //
           location_p: "18px",
           contacts_p: "16px",
