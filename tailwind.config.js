@@ -72,11 +72,16 @@ export default {
           gal_modal_h1: "56px",
 
           packages_h2: "20px",
-          packages_name: "16px",
+          packages_name: "18px",
           packages_btn: "20px",
           packages_hover_p: "20px",
           packages_hover_a: "24px",
-
+          
+          explore_h2: "40px",
+          explore_name: "18px",
+          explore_btn: "20px",
+          explore_hover_p: "20px",
+          explore_hover_a: "24px",
 
 
         // LG Desktop 

@@ -1,4 +1,3 @@
-import { div } from "framer-motion/client";
 import MainSlides from "../reusables/MainSlides";
 import { motion } from "framer-motion";
 import { MdOutlineChevronRight } from "react-icons/md";
@@ -40,7 +39,7 @@ const Packages = () => {
         >
             <MainSlides pageTitle="Packages" slideContent={packages_slideshow} />
 
-            <div className="flex flex-col items-center gap-[80px]">
+            <div className="flex flex-col items-center gap-[120px] py-32">
                 <h2 className="font-Nunito font-bold w-[50%] text-center text-packages_h2 text-main_text/80">LasCalas Resort & Luxury Estate blends premium accommodations with immersive nature, offering exclusive adventures in a luxurious setting.</h2>
 
 
@@ -50,7 +49,7 @@ const Packages = () => {
                             <img src={item.src} alt={item.package_name} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"/>
 
                             <div className="absolute bottom-0 left-0 w-full p-6 flex justify-center group-hover:opacity-0">
-                                <h3 className="font-Montserrat uppercase text-background_lightTxt font-medium tracking-[5%] text-packages_name">
+                                <h3 className="font-Montserrat uppercase text-background_lightTxt font-semibold tracking-[5%] text-packages_name">
                                     {item.package_name}
                                 </h3>
                             </div>

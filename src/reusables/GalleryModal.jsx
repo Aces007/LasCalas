@@ -16,7 +16,7 @@ const GalleryModal = ({ isOpen, onClose, galleryItems, currentImg }) => {
     
 
     const modalCont = "bg-main_text/90 fixed z-50 inset-0 flex flex-col items-center justify-center gap-16 text-gal_modal_close";
-    const modalCloseButton = "flex items-center justify-center text-accent font-Montserrat uppercase hover:text-highlight";
+    const modalCloseButton = "flex items-center justify-center text-accent font-Montserrat uppercase hover:text-highlight hover:font-semibold";
     const modalH1 = "font-Libre text-background_lightTxt/90 font-semibold text-gal_modal_h1";
 
     const pagination = {

@@ -155,7 +155,8 @@ const NavFoot = () => {
                             </div>
                             <p className={`${foot_display} text-foot_display3`}><span className="text-main_text">Indulge in</span> Serenity | <span className="text-main_text">Discover Your Sanctuary of</span> Luxury</p>
                         </div>
-                        <div className={`${start_element_row} gap-24`}>
+
+                        <div className={`${start_element_row} justify-evenly gap-[120px]`}>
                             <div className={`${start_element_col} gap-8`}>
                                 <h3 className={`${foot_h3s}`}>Navigation</h3>
                                 <div className={`${start_element_col} gap-[16px]`}>
@@ -164,6 +165,7 @@ const NavFoot = () => {
                                     <Link to="/celeb" className={`font-Montserrat text-foot_body_links hover:text-highlight`}>Celebrations</Link>
                                 </div>
                             </div>
+
                             <div className={`${start_element_col} gap-8`}>
                                 <h3 className={`${foot_h3s}`}>Contact Information</h3>
                                 <div className={`${start_element_col} gap-[16px]`}>
@@ -175,25 +177,27 @@ const NavFoot = () => {
                                     ))}
                                 </div>
                             </div>
-                            <div className={`${start_element_col} gap-[32px]`}>
+
+                            <div className={`${start_element_col} gap-[32px] w-[360px]`}>
                                 <div className={`${start_element_col} gap-[8px]`}>
                                     <h3 className={`${foot_h3s}`}>Newsletter</h3>
                     
                                     {/* PLACEHOLDER 1 - Space for Newsletter field */}
                                     <div> 
-                                        <img src="/lascalas_assets/Website/Placeholders/Placeholders1.png" alt="" className="w-[360px]"/>
+                                        <input type="text" placeholder="Email for newsletter" className="text-main_text border border-main_text/70 w-[310px] py-[20px] px-[24px] rounded-[8px]" />
                                     </div>
                                 </div>
                     
-                                <div className={`${start_element_col} gap-[8px]`}>
+                                <div className={`${start_element_col} gap-[24px]`}>
                                     <h3 className={`${foot_h3s}`}>Email Us</h3>
                     
                                     {/* PLACEHOLDER 2 - Space for Email Us Button */}
                                     <div>
-                                        <img src="/lascalas_assets/Website/Placeholders/Placeholders2.png" alt="" className="w-[360px]"/>
+                                        <a href="mailto:info@lascalasresort.com" className="bg-primary text-background_lightTxt font-Montserrat font-semibold uppercase w-full px-[56px] py-[20px] rounded-[8px] hover:bg-highlight hover:text-background_lightTxt hover:font-bold">Reach Out To Us Here</a>
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
 
