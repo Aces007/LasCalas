@@ -40,6 +40,8 @@ export default {
         highlight: "#14BAE6",
         background_lightTxt: "#F3F4F7",
         accent: "#1373B9",
+
+        cards_overlay: "#6F5229" // 80% Opacity,
       },
 
       fontFamily: 
@@ -67,8 +69,19 @@ export default {
           foot_body_links: "16px",
 
           gal_modal_close: "24px",
-          gal_modal_h1: "56px"
+          gal_modal_h1: "56px",
 
+          packages_h2: "20px",
+          packages_name: "18px",
+          packages_btn: "20px",
+          packages_hover_p: "20px",
+          packages_hover_a: "24px",
+          
+          explore_label: "40px",
+          explore_name: "18px",
+          explore_btn: "20px",
+          explore_hover_p: "20px",
+          explore_hover_a: "24px",
 
 
         // LG Desktop 
