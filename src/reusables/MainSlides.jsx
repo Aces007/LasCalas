@@ -13,7 +13,7 @@ const MainSlides = ({
 }) => {
 
     return (
-        <div className="grid grid-cols-1 grid-rows-1 w-full h-screen overflow-hidden relative group">
+        <div className="grid grid-cols-1 grid-rows-1 w-full overflow-hidden relative group mb-24">
             <div className="col-start-1 row-start-1 w-full h-full z-0">
                 <Swiper
                     centeredSlides={true}
