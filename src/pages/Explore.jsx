@@ -5,6 +5,26 @@ import { MdOutlineChevronRight } from "react-icons/md";
 
 
 const Explore = () => {
+    // Styling Variables (USE THIS FORMAT: Permanent Styling [like font fam] then responsive styles starting from smallest size
+    
+    const main_page_grid_cont = "grid grid-cols-2 items-center justify-center px-24 gap-[200px]";
+    const main_page_content_cont = "relative group w-full h-[400px] overflow-hidden rounded-lg";
+    const main_page_cards_img = "w-full h-full object-cover transition-transform duration-700 group-hover:scale-110";
+    const main_page_content_name_cont = "absolute bottom-0 left-0 w-full p-6 flex justify-center group-hover:opacity-0";
+    const main_page_content_name = "font-Montserrat uppercase text-background_lightTxt font-semibold tracking-[5%] text-packages_name";
+    const main_page_desc_cont = "absolute inset-0 left-0 bg-cards_overlay/80 opacity-0 flex flex-col items-center justify-center gap-[40px] group-hover:opacity-100 transition-opacity duration-800 ease-in-out";
+    const main_page_desc = "text-center w-[90%] font-Nunito font-medium text-background_lightTxt text-packages_hover_p";
+    const know_more_btn = "font-Montserrat font-medium uppercase text-background_lightTxt/60 absolute bottom-8 flex flex-row items-center justify-center hover:gap-[4px] text-packages_btn font-semibold text-packages_hover_a hover:text-highlight hover:scale-105";
+
+
+
+    // -- FLEX STYLING -- //
+        const center_element_col = "flex flex-col items-center";
+        const start_element_col = "flex flex-col items-start";
+        const center_element_row = "flex items-center";
+        const start_element_row = "flex items-start";
+        const between_element_row = "flex justify-between";
+
     const [activeTab, setActiveData] = useState("Experiences")
 
     const pageVariants = {
@@ -63,21 +83,26 @@ const Explore = () => {
         >
             <MainSlides pageTitle="Explore" slideContent={explore_slideshow} />
 
-            <div className="flex flex-col items-center gap-[40px]">
-                <div className="flex flex-row justify-center items-center w-full">
-                    {Object.keys(explore_menu).map((category) => (
-                        <button key={category}
-                            onClick={() => setActiveData(category)}
-                            className={`font-Montserrat text-explore_label transition-all duration-300 w-full ${activeTab === category ? "text-background_lightTxt bg-highlight p-4 font-semibold" : "bg-secondary/60 text-background_lightTxt p-4"}`}
-                        >
-                            {category}
-                        </button>
-                    ))}
+            <div className={`${center_element_col} gap-[40px]`}>
+                <div className={`${center_element_row} justify-center w-full`}>
+                    {Object.keys(explore_menu).map((category) => {
+                        const tab_styling = `font-Montserrat text-explore_label transition-all duration-300 w-full ${activeTab === category ? "text-background_lightTxt p-6 bg-highlight font-bold text-explore_tab_active" : "bg-secondary/60 text-background_lightTxt p-6 font-[500] text-explore_tab_inactive"}`;
+                        
+                        
+                        return (
+                            <button key={category}
+                                onClick={() => setActiveData(category)}
+                                className={tab_styling}
+                            >
+                                {category}
+                            </button>
+                        );
+                    })}
                 </div>
 
                 <motion.div
                     layout
-                    className="grid grid-cols-2 items-center justify-center py-24 px-24 w-full gap-[200px]"
+                    className={`${main_page_grid_cont} py-32`}
                 >
                     <AnimatePresence mode="popLayout">
                         {explore_menu[activeTab].map((item) => (
@@ -88,22 +113,22 @@ const Explore = () => {
                                 animate={exploreVariants.animate}
                                 exit={exploreVariants.exit}
                                 transition={{ duration: 0.4 }}
-                                className="relative group w-full h-[400px] overflow-hidden rounded-lg shadow-lg"
+                                className={`${main_page_content_cont}`}
                             >
-                                <img src={item.src} alt={item.name} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"/>
+                                <img src={item.src} alt={item.name} className={`${main_page_cards_img}`} />
                                 
-                                <div className="absolute bottom-0 left-0 w-full p-6 flex justify-center group-hover:opacity-0">
-                                    <h3 className="font-Montserrat uppercase text-background_lightTxt font-semibold tracking-[5%] text-packages_name">
+                                <div className={`${main_page_content_name_cont}`}>
+                                    <h3 className={`${main_page_content_name}`}>
                                         {item.name}
                                     </h3>
                                 </div>
                                 
-                                <div className="absolute inset-0 left-0 bg-cards_overlay/80 opacity-0 flex flex-col items-center justify-center gap-[40px] group-hover:opacity-100 transition-opacity duration-800 ease-in-out">
-                                    <p className="text-center w-[90%] font-Nunito font-medium text-background_lightTxt text-packages_hover_p">
+                                <div className={`${main_page_desc_cont}`}>
+                                    <p className={`${main_page_desc}`}>
                                         {item.description}
                                     </p>
     
-                                    <a href={item.link} className="font-Montserrat font-medium uppercase text-background_lightTxt/60 absolute bottom-8 flex flex-row items-center justify-center text-packages_btn font-semibold text-packages_hover_a hover:text-highlight hover:scale-105">Know More <MdOutlineChevronRight size={40}  /></a>
+                                    <a href={item.link} className={`${know_more_btn}`}>Know More <MdOutlineChevronRight size={40} /></a>
                                 </div>
                             </motion.div>
                         ))}

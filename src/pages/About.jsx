@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import NavHead from "../reusables/NavHead";
 
 const About = () => {
+    // Styling Variables (USE THIS FORMAT: Permanent Styling [like font fam] then responsive styles starting from smallest size
 
     const moments_assets = [
         { id: 1, src: "/lascalas_assets/Website/About/Moments1.png", label: "Beach Pergola" },

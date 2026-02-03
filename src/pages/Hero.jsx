@@ -4,13 +4,13 @@ import { FaAngleDown } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
 const Hero = () => {
-    // Styling Variables
+    // Styling Variables (USE THIS FORMAT: Permanent Styling [like font fam] then responsive styles starting from smallest size)
     const hero_cont = "hero_cont bg-[url('/lascalas_assets/Hero.png')] bg-cover bg-center bg-no-repeat min-h-screen pb-24";
     const hero_content = "flex flex-col items-center justify-center gap-[120px]";
     const hero_display_cont = "flex flex-col items-center"
 
         // Display Content    
-        const hero_display_h1 = "font-AnticDidone uppercase text-[160px] text-background_lightTxt";
+        const hero_display_h1 = "font-Libre uppercase text-[160px] text-background_lightTxt";
         const hero_display_h2 = "font-Montserrat uppercase font-Regular text-[56px] text-background_lightTxt relative top-[-24px]";
         const hero_display_h3_cont = "flex flex-col items-center";
         const hero_display_h3 = "font-Libre font-Regular text-[24px] text-background_lightTxt";

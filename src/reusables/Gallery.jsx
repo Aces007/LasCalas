@@ -9,6 +9,8 @@ import { useState } from "react";
 import GalleryModal from "./GalleryModal";
 
 const Gallery = () => {
+    // Styling Variables (USE THIS FORMAT: Permanent Styling [like font fam] then responsive styles starting from smallest size)
+
     // MODAL STATES
     const [isOpen, setIsOpen] = useState(false);
     const [activeIndex, setActiveIndex] = useState(0);
@@ -65,7 +67,7 @@ const Gallery = () => {
                 {gallery_assets.map((item, index) => (
                     <SwiperSlide className="flex flex-col items-center">
                     <img 
-                        src={item.src} 
+                        src={item.src}  
                         alt={item.label} 
                         className="h-[240px] overflow-hidden rounded-md hover:cursor-pointer"
                         onClick={() => { 
