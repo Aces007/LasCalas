@@ -5,7 +5,7 @@ import { FaAngleDown } from "react-icons/fa6";
 const NavHead = ({ theme = "light" }) => {
     const variantIsDark = theme === "dark";
 
-    // Dynamic Class 
+    // Styling Variables (USE THIS FORMAT: Permanent Styling [like font fam] then responsive styles starting from smallest size)
     const variantPadding = variantIsDark ? "px-[48px] py-[24px]" : "px-[56px] py-[56px]"
     const variantLogoCol = variantIsDark ? "/lascalas_assets/lascalasBlack.png" : "/lascalas_assets/lascalasWhite.png";
     const variantNavlinks = variantIsDark ? "text-main_text hover:text-highlight hover:font-bold" : "text-background_lightTxt hover:text-highlight hover:font-bold";

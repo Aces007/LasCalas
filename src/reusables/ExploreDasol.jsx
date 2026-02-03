@@ -7,6 +7,7 @@ import 'swiper/css/scrollbar';
 import 'swiper/css/effect-coverflow';
 
 const ExploreDasol = () => {
+    // Styling Variables (USE THIS FORMAT: Permanent Styling [like font fam] then responsive styles starting from smallest size)
 
     // Not accurate data yet, change this as soon as possible
     const exploreDasol_assets = [

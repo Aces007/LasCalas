@@ -1,6 +1,7 @@
 import { MdOutlineLocalPhone, MdOutlineEmail  } from "react-icons/md";
 import { FaInstagram } from "react-icons/fa";
 import { FiFacebook } from "react-icons/fi";
+import { FaArrowRight } from "react-icons/fa6";
 
 import { href, Link } from "react-router-dom";
 
@@ -8,8 +9,9 @@ import ExploreDasol from "./ExploreDasol";
 import Gallery from "./Gallery";
 
 
+
 const NavFoot = () => {
-    // Styling Variables
+    // Styling Variables (USE THIS FORMAT: Permanent Styling [like font fam] then responsive styles starting from smallest size)
     const foot_cont = "flex flex-col items-center px-[16px] py-[24px] w-full";
     const foot_content = "flex flex-col justify-between gap-[120px] w-full py-[40px] px-[8px]";
 
@@ -183,8 +185,10 @@ const NavFoot = () => {
                                     <h3 className={`${foot_h3s}`}>Newsletter</h3>
                     
                                     {/* PLACEHOLDER 1 - Space for Newsletter field */}
-                                    <div> 
-                                        <input type="text" placeholder="Email for newsletter" className="text-main_text border border-main_text/70 w-[310px] py-[20px] px-[24px] rounded-[8px]" />
+                                    <div className="flex flex-row items-center"> 
+                                        <input type="text" placeholder="Email for newsletter" className="text-main_text border border-main_text/70 w-[310px] py-[20px] px-[24px]" />
+
+                                        {/* <FaArrowRight size={24} className="text-main_text/60" /> */}
                                     </div>
                                 </div>
                     

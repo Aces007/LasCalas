@@ -12,6 +12,8 @@ const MainSlides = ({
     autoplay_delay=3000,
 }) => {
 
+    // Styling Variables (USE THIS FORMAT: Permanent Styling [like font fam] then responsive styles starting from smallest size)
+
     return (
         <div className="grid grid-cols-1 grid-rows-1 w-full overflow-hidden relative group">
             <div className="col-start-1 row-start-1 w-full h-full z-0">

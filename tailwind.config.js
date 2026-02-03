@@ -77,6 +77,8 @@ export default {
           packages_hover_p: "20px",
           packages_hover_a: "24px",
           
+          explore_tab_active: "40px",
+          explore_tab_inactive: "40px",
           explore_label: "40px",
           explore_name: "18px",
           explore_btn: "20px",
