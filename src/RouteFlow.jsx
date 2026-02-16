@@ -3,7 +3,8 @@ import { AnimatePresence } from "framer-motion"; // controller that tracks when 
 
 import Hero from "./pages/Hero";
 import About from "./pages/About";
-import Packages from "./pages/Packages";
+import PackagesMenu from "./pages/PackagesMenu";
+import PackageDetails from "./pages/subpages/packages/PackageDetails";
 import Explore from "./pages/Explore";
 import Celebrations from "./pages/Celebrations";
 
@@ -15,7 +16,8 @@ export default function RouteFlow () {
             <Routes location={location} key={location.pathname}>
                 <Route path="/" element={<Hero />}/>
                 <Route path="/about" element={<About />}/>
-                <Route path="/packages" element={<Packages />}/>
+                <Route path="/packagesmenu" element={<PackagesMenu />}/>
+                <Route path="/packagedetails/:id" element={<PackageDetails />}/>
                 <Route path="/explore" element={<Explore />}/>
                 <Route path="/celeb" element={<Celebrations />}/>
             </Routes>

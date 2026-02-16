@@ -72,10 +72,13 @@ export default {
           gal_modal_h1: "56px",
 
           packages_h2: "20px",
-          packages_name: "18px",
+          packages_name: "16px",
           packages_btn: "20px",
           packages_hover_p: "20px",
           packages_hover_a: "24px",
+
+          package_details_name: "48px",
+          package_details_price: "24px",
           
           explore_tab_active: "40px",
           explore_tab_inactive: "40px",
