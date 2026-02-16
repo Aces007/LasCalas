@@ -1,9 +1,11 @@
+
 import MainSlides from "../reusables/MainSlides";
 import { motion } from "framer-motion";
 import { MdOutlineChevronRight } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 
-const Packages = () => {
+const PackagesMenu = () => {
     // Styling Variables (USE THIS FORMAT: Permanent Styling [like font fam] then responsive styles starting from smallest size)
     const packages_h2 = "font-Nunito font-bold w-[50%] text-center text-packages_h2 text-main_text/80";
     
@@ -42,13 +44,13 @@ const Packages = () => {
     ]
 
     const packages_menu = [
-        { id: 1, package_name: "Executive Villa", src: "/lascalas_assets/Website/MainPages_Content/Packages/Package1.jpg", description: "Experience beachfront luxury in the King Villa Tents at Cove 1. Featuring a plush king bed just steps from the waves, wake up to breathtaking sunrise views in your own private, seaside sanctuary.", link: "" },
-        { id: 2, package_name: "Cove 1 Villa Tent - King Bed", src: "/lascalas_assets/Website/MainPages_Content/Packages/Package2.png", description: "Experience beachfront luxury in the King Villa Tents at Cove 1. Featuring a plush king bed just steps from the waves, wake up to breathtaking sunrise views in your own private, seaside sanctuary.", link: "" },
-        { id: 3, package_name: "Cove 1 Villa Tent - Bunk Bed", src: "/lascalas_assets/Website/MainPages_Content/Packages/Package3.png", description: "Elevate your group getaway in the Bunk Villa Tents at Cove 1. Steps from the shore with premium stylish bunks, enjoy the perfect blend of seaside adventure and refined comfort together.", link: "" },
-        { id: 4, package_name: "Lascalas Villa Tents - King Bed", src: "/lascalas_assets/Website/MainPages_Content/Packages/Package4.png", description: "Relax in our King Villa Tents, where nature meets luxury. Featuring a plush king bed and modern amenities, it is your private, romantic sanctuary under the stars.", link: "" },
-        { id: 5, package_name: "Lascalas Villa Tents - Double Size Bed Bunk", src: "/lascalas_assets/Website/MainPages_Content/Packages/Package6.png", description: "Share the experience in our Double Bunk Villa Tents. With spacious double-sized bunks and modern comforts, it is the ideal outdoor luxury escape for families and friends.", link: "" },
-        { id: 6, package_name: "Lascalas Villa Tents - Bunk Bed", src: "/lascalas_assets/Website/MainPages_Content/Packages/Package6.png", description: "Enjoy a fun getaway in our Bunk Villa Tents. With cozy bunk beds and modern comforts, it is the perfect luxury basecamp for friends and families.", link: "" },
-        { id: 7, package_name: "Teepee Tents - Camp Cot", src: "/lascalas_assets/Website/MainPages_Content/Packages/Package7.png", description: "Relax at LasCalas Camping Grounds, where you can book a cozy teepee tent, enjoy a campfire under the full moon, and take in stunning beachfront views. Perfect for couples and families looking to unwind.", link: "" },
+        { id: 1, package_name: "Executive Villa", src: "/lascalas_assets/Website/MainPages_Content/Packages/Package1.jpg", description: "Experience beachfront luxury in the King Villa Tents at Cove 1. Featuring a plush king bed just steps from the waves, wake up to breathtaking sunrise views in your own private, seaside sanctuary." },
+        { id: 2, package_name: "Cove 1 Villa Tent - King Bed", src: "/lascalas_assets/Website/MainPages_Content/Packages/Package2.png", description: "Experience beachfront luxury in the King Villa Tents at Cove 1. Featuring a plush king bed just steps from the waves, wake up to breathtaking sunrise views in your own private, seaside sanctuary." },
+        { id: 3, package_name: "Cove 1 Villa Tent - Bunk Bed", src: "/lascalas_assets/Website/MainPages_Content/Packages/Package3.png", description: "Elevate your group getaway in the Bunk Villa Tents at Cove 1. Steps from the shore with premium stylish bunks, enjoy the perfect blend of seaside adventure and refined comfort together." },
+        { id: 4, package_name: "Lascalas Villa Tents - King Bed", src: "/lascalas_assets/Website/MainPages_Content/Packages/Package4.png", description: "Relax in our King Villa Tents, where nature meets luxury. Featuring a plush king bed and modern amenities, it is your private, romantic sanctuary under the stars." },
+        { id: 5, package_name: "Lascalas Villa Tents - Double Size Bed Bunk", src: "/lascalas_assets/Website/MainPages_Content/Packages/Package6.png", description: "Share the experience in our Double Bunk Villa Tents. With spacious double-sized bunks and modern comforts, it is the ideal outdoor luxury escape for families and friends." },
+        { id: 6, package_name: "Lascalas Villa Tents - Bunk Bed", src: "/lascalas_assets/Website/MainPages_Content/Packages/Package6.png", description: "Enjoy a fun getaway in our Bunk Villa Tents. With cozy bunk beds and modern comforts, it is the perfect luxury basecamp for friends and families." },
+        { id: 7, package_name: "Teepee Tents - Camp Cot", src: "/lascalas_assets/Website/MainPages_Content/Packages/Package7.png", description: "Relax at LasCalas Camping Grounds, where you can book a cozy teepee tent, enjoy a campfire under the full moon, and take in stunning beachfront views. Perfect for couples and families looking to unwind." },
     ]
 
     return (
@@ -81,7 +83,7 @@ const Packages = () => {
                                 {item.description}
                             </p>
 
-                            <a href={item.link} className={`${know_more_btn}`}>Know More <MdOutlineChevronRight size={40}  /></a>
+                            <Link to={`/packagedetails/${item.id}`} className={`${know_more_btn}`}>Know More <MdOutlineChevronRight size={40}  /></Link>
                         </div>
                     </div>
                     ))}
@@ -93,4 +95,4 @@ const Packages = () => {
 }
 
 
-export default Packages;
+export default PackagesMenu;

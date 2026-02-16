@@ -20,7 +20,7 @@ const NavHead = ({ theme = "light" }) => {
             <div className="flex items-center gap-[24px]">
                 <RxHamburgerMenu size={26} className={`${variantSVGs}`}/>
                 <div className="flex justify-center gap-[24px]">
-                    <Link to="/packages" className={`font-Montserrat uppercase ${variantNavlinks}`}>Packages</Link>
+                    <Link to="/packagesmenu" className={`font-Montserrat uppercase ${variantNavlinks}`}>Packages</Link>
                     <Link to="/explore" className={`font-Montserrat uppercase ${variantNavlinks}`}>Explore</Link>
                     <Link to="/celeb" className={`font-Montserrat uppercase ${variantNavlinks}`}>Celebrations</Link>
                 </div>

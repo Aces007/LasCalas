@@ -162,7 +162,7 @@ const NavFoot = () => {
                             <div className={`${start_element_col} gap-8`}>
                                 <h3 className={`${foot_h3s}`}>Navigation</h3>
                                 <div className={`${start_element_col} gap-[16px]`}>
-                                    <Link to="/packages" className={`font-Montserrat text-foot_body_links hover:text-highlight`}>Packages</Link>
+                                    <Link to="/packagesmenu" className={`font-Montserrat text-foot_body_links hover:text-highlight`}>Packages</Link>
                                     <Link to="/explore" className={`font-Montserrat text-foot_body_links hover:text-highlight`}>Explore</Link>
                                     <Link to="/celeb" className={`font-Montserrat text-foot_body_links hover:text-highlight`}>Celebrations</Link>
                                 </div>
