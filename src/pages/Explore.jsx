@@ -2,6 +2,7 @@ import MainSlides from "../reusables/MainSlides";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import { MdOutlineChevronRight } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 
 const Explore = () => {
@@ -49,10 +50,10 @@ const Explore = () => {
 
     const explore_menu = {
         Activities: [
-            { id: 1, name: "ATV Adventure", src: "/lascalas_assets/Website/MainPages_Content/Explore/Activities/Activities1.png", description: "Ready to ride? Ignite your spirit of adventure and go off the beaten path! Whether you're chasing an adrenaline rush or just chasing views, our ATV tour is the ultimate way to experience the wild beauty of Las Calas.", link: "#" },
-            { id: 2, name: "Water Adventure", src: "/lascalas_assets/Website/MainPages_Content/Explore/Activities/Activities2.png", description: "Dive into adventure with the LasCalas Jetski and Kayak Ride Experience, where the thrill of the open water meets the beauty of nature.", link: "#" },
-            { id: 3, name: "Buggy And Polaris Ride", src: "/lascalas_assets/Website/MainPages_Content/Explore/Activities/Activities3.png", description: "Buckle up for the ultimate joyride! Gather your squad and tear up the trails in our heavy-duty Buggies and Polaris RZRs. It’s loud, it’s muddy, and it’s the most fun you’ll have on four wheels.", link: "#" },
-            { id: 4, name: "Rope Course & Obstacle Course", src: "/lascalas_assets/Website/MainPages_Content/Explore/Activities/Activities4.png", description: "Do you have what it takes? Designed by the Special Forces of the Philippines, our authentic Rope and Obstacle Course tests your strength and teamwork in the heart of nature. Step up and conquer the challenge!", link: "#" },
+            { id: 1, name: "ATV Adventure", src: "/lascalas_assets/Website/MainPages_Content/Explore/Activities/Activities1.png", description: "Ready to ride? Ignite your spirit of adventure and go off the beaten path! Whether you're chasing an adrenaline rush or just chasing views, our ATV tour is the ultimate way to experience the wild beauty of Las Calas.", link: "/exploreATV" },
+            { id: 2, name: "Water Adventure", src: "/lascalas_assets/Website/MainPages_Content/Explore/Activities/Activities2.png", description: "Dive into adventure with the LasCalas Jetski and Kayak Ride Experience, where the thrill of the open water meets the beauty of nature.", link: "/exploreWater" },
+            { id: 3, name: "Buggy And Polaris Ride", src: "/lascalas_assets/Website/MainPages_Content/Explore/Activities/Activities3.png", description: "Buckle up for the ultimate joyride! Gather your squad and tear up the trails in our heavy-duty Buggies and Polaris RZRs. It’s loud, it’s muddy, and it’s the most fun you’ll have on four wheels.", link: "/exploreBug" },
+            { id: 4, name: "Rope Course & Obstacle Course", src: "/lascalas_assets/Website/MainPages_Content/Explore/Activities/Activities4.png", description: "Do you have what it takes? Designed by the Special Forces of the Philippines, our authentic Rope and Obstacle Course tests your strength and teamwork in the heart of nature. Step up and conquer the challenge!", link: "/exploreRope" },
         ],
         Experiences: [
             { id: 1, name: "Day Tour", src: "/lascalas_assets/Website/MainPages_Content/Explore/Experiences/Experiences1.png", description: "Step into a living postcard. With breathtaking views and romantic hideaways at every turn, Las Calas is the ultimate backdrop for your special moments. Come for the day, and take home memories that last forever.", link: "#" },
@@ -128,7 +129,7 @@ const Explore = () => {
                                         {item.description}
                                     </p>
     
-                                    <a href={item.link} className={`${know_more_btn}`}>Know More <MdOutlineChevronRight size={40} /></a>
+                                    <Link to={`${item.link}`} className={`${know_more_btn}`}>Know More <MdOutlineChevronRight size={40} /></Link>
                                 </div>
                             </motion.div>
                         ))}

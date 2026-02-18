@@ -87,7 +87,7 @@ const PackageDetails = () => {
                 "Complimentary Robe and Slippers",
             ],
         },
-        preview_images: Array.from({ length: 20 }, (_, i) => 
+        preview_images: Array.from({ length: 11 }, (_, i) => 
             `/lascalas_assets/Website/MainPages_Content/Packages/PackagePreview/C1VT/C1VT${i + 1}.jpg`
         ),
     },
@@ -343,7 +343,7 @@ const PackageDetails = () => {
                             {selectedPackage?.details[detPaneActive].map((item, index) => (
                                 <li key={index} className="flex items-start text-gray-700">
                                 <span className="mr-3 mt-2 h-1.5 w-1.5 rounded-full bg-primary shrink-0" />
-                                <span className="text-base leading-relaxed">{item}</span>
+                                <span className="font-Nunito font-[700] text-base leading-relaxed">{item}</span>
                                 </li>
                             ))}
                         </ul>
