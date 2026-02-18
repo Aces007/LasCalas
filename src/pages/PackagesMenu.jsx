@@ -1,4 +1,4 @@
-
+        
 import MainSlides from "../reusables/MainSlides";
 import { motion } from "framer-motion";
 import { MdOutlineChevronRight } from "react-icons/md";

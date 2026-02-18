@@ -6,6 +6,10 @@ import About from "./pages/About";
 import PackagesMenu from "./pages/PackagesMenu";
 import PackageDetails from "./pages/subpages/packages/PackageDetails";
 import Explore from "./pages/Explore";
+import ATVAdv from "./pages/subpages/explore/ATVAdv";
+import WaterAdv from "./pages/subpages/explore/WaterAdv";
+import BuggyAdv from "./pages/subpages/explore/BuggyAdv";
+import RopeCourse from "./pages/subpages/explore/RopeCourse";
 import Celebrations from "./pages/Celebrations";
 
 export default function RouteFlow () {
@@ -19,6 +23,10 @@ export default function RouteFlow () {
                 <Route path="/packagesmenu" element={<PackagesMenu />}/>
                 <Route path="/packagedetails/:id" element={<PackageDetails />}/>
                 <Route path="/explore" element={<Explore />}/>
+                <Route path="/exploreATV" element={<ATVAdv />}/>
+                <Route path="/exploreWater" element={<WaterAdv />}/>
+                <Route path="/exploreBug" element={<BuggyAdv />}/>
+                <Route path="/exploreRope" element={<RopeCourse />}/>
                 <Route path="/celeb" element={<Celebrations />}/>
             </Routes>
         </AnimatePresence>

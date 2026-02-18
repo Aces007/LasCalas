@@ -79,6 +79,18 @@ export default {
 
           package_details_name: "48px",
           package_details_price: "24px",
+
+          atv_details_name: "14px",
+          atv_details_price: "24px",
+          
+          water_details_name: "20px",
+          water_details_price: "28px",
+
+          rope_description_head: "30px",
+          rope_description_text: "20px",
+
+          buggy_details_name: "14px",
+          buggy_details_price: "20px",
           
           explore_tab_active: "40px",
           explore_tab_inactive: "40px",
