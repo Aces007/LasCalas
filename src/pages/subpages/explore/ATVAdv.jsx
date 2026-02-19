@@ -35,8 +35,8 @@ const ATVAdv = () => {
     
     ]
 
-    const preview_images = [...Array(5)].map((_, i) => 
-        `/lascalas_assets/Website/MainPages_Content/Explore/Activities/atv${i + 1}.jpg`
+    const preview_images = [...Array(6)].map((_, i) => 
+        `/lascalas_assets/Website/MainPages_Content/Explore/Activities/activities/atv${i + 1}.jpg`
     );
 
 
@@ -46,12 +46,24 @@ const ATVAdv = () => {
         beingUnmounted: { opacity: 0, y: -20}
     };
 
+    // -- STYLING -- //
+    const explore_name = "font-Raleway font-semibold text-package_details_name";
+    const explore_price = "font-Raleway font-semibold text-package_details_price text-secondary/60";
+
+    const atv_grid_cont = "grid grid-cols-2 gap-12 items-center w-full max-w-6xl px-6 my-[80px]";
+    const atvCard_grid_cont = "grid grid-cols-2 gap-[8px]";
+    const atv_tagline = "font-Raleway font-bold text-atv_tagline text-main_text/60 tracking-tight uppercase";
+
+
+    const carousel_preview = "h-[400px] overflow-hidden rounded-md hover:cursor-pointer";
+
     // -- FLEX STYLING -- //
         const center_element_col = "flex flex-col items-center";
         const start_element_col = "flex flex-col items-start";
         const center_element_row = "flex items-center";
         const start_element_row = "flex items-start";
-        const between_element_row = "flex justify-between";
+        const justween_element_row = "flex justify-between";
+        const justcenter_element_row = "flex justify-center";
 
 
 
@@ -66,16 +78,16 @@ const ATVAdv = () => {
             <NavHead theme="dark" />
 
             <div className={`${center_element_col} justify-center`}>
-                <h1 className="font-Raleway font-semibold text-package_details_name">ATV Adventure</h1>
-                <h2 className="font-Raleway font-semibold text-package_details_price text-secondary/60">Built for Every Landscape</h2>
+                <h1 className={`${explore_name}`}>ATV Adventure</h1>
+                <h2 className={`${explore_price}`}>Built for Every Landscape</h2>
 
-                <div className="grid grid-cols-2 gap-12 items-center w-full max-w-6xl px-6 my-[80px]">
-                    <div className="grid grid-cols-2 gap-[8px]">
+                <div className={`${atv_grid_cont}`}>
+                    <div className={`${atvCard_grid_cont}`}>
                         {menu_data.slice(0,2).map((atv) => (
                             <ATVCard key={atv.id} atv={atv} />
                         ))}
-                        <div className="col-span-2 flex justify-center py-6">
-                            <h1 className="text-[24px] font-bold text-[#666] tracking-tight uppercase">
+                        <div className={`col-span-2 ${justcenter_element_row} py-6`}>
+                            <h1 className={`${atv_tagline}`}>
                                 Choose Your Adventure
                             </h1>
                         </div>
@@ -100,8 +112,8 @@ const ATVAdv = () => {
                             }}
                         >
                             {preview_images.map((src, index) => (
-                                <SwiperSlide key={index} className="flex flex-col items-center">
-                                    <img src={src} className="h-[400px] overflow-hidden rounded-md hover:cursor-pointer"/>
+                                <SwiperSlide key={index} className={`${center_element_col}`}>
+                                    <img src={src} className={`${carousel_preview}`}/>
                                 </SwiperSlide>
                             ))}
                         </Swiper>
@@ -112,14 +124,20 @@ const ATVAdv = () => {
     )   
 }
 
-const ATVCard = ({ atv }) => (
-    <div>
-        <div className="flex flex-col items-center gap-[8px] bg-main_text/60 p-6 rounded-[16px] hover:scale-105 hover:bg-highlight hover:transition-all">
-            <img src={atv.model_image} alt={atv.name} className="w-[160px]" />
-            <h3 className="font-Raleway font-[400] text-background_lightTxt text-atv_details_name">{atv.name}</h3>
-            <p className="font-Nunito font-[800] text-background_lightTxt text-atv_details_price">{atv.price}</p>
+const ATVCard = ({ atv }) => {
+    const atvCard_cont  = "flex flex-col items-center gap-[8px] bg-main_text/60 p-6 rounded-[16px] hover:scale-105 hover:bg-highlight hover:transition-all"
+    const atvCard_name = "font-Raleway font-[400] text-background_lightTxt text-atv_details_name";
+    const atvCard_price = "font-Nunito font-[800] text-background_lightTxt text-atv_details_price";
+    
+    return (
+        <div>
+            <div className={`${atvCard_cont}`}>
+                <img src={atv.model_image} alt={atv.name} className="w-[160px]" />
+                <h3 className={`${atvCard_name}`}>{atv.name}</h3>
+                <p className={`${atvCard_price}`}>{atv.price}</p>
+            </div>
         </div>
-    </div>
-);
+    )
+};
 
 export default ATVAdv;

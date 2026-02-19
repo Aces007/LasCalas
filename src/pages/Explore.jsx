@@ -13,7 +13,7 @@ const Explore = () => {
     const main_page_cards_img = "w-full h-full object-cover transition-transform duration-700 group-hover:scale-110";
     const main_page_content_name_cont = "absolute bottom-0 left-0 w-full p-6 flex justify-center group-hover:opacity-0";
     const main_page_content_name = "font-Montserrat uppercase text-background_lightTxt font-semibold tracking-[5%] text-packages_name";
-    const main_page_desc_cont = "absolute inset-0 left-0 bg-cards_overlay/80 opacity-0 flex flex-col items-center justify-center gap-[40px] group-hover:opacity-100 transition-opacity duration-800 ease-in-out";
+    const main_page_desc_cont = "absolute inset-0 left-0 bg-cards_overlay/80 opacity-0 flex flex-col items-center justify-center gap-[40px] group-hover:opacity-100 transition-opacity duration-800 ease-in-out hover:cursor-pointer";
     const main_page_desc = "text-center w-[90%] font-Nunito font-medium text-background_lightTxt text-packages_hover_p";
     const know_more_btn = "font-Montserrat font-medium uppercase text-background_lightTxt/60 absolute bottom-8 flex flex-row items-center justify-center hover:gap-[4px] text-packages_btn font-semibold text-packages_hover_a hover:text-highlight hover:scale-105";
 
@@ -26,7 +26,7 @@ const Explore = () => {
         const start_element_row = "flex items-start";
         const between_element_row = "flex justify-between";
 
-    const [activeTab, setActiveData] = useState("Experiences")
+    const [activeTab, setActiveData] = useState("Activities")
 
     const pageVariants = {
         unmounted: { opacity: 0, y: 20},
@@ -49,6 +49,15 @@ const Explore = () => {
     ]
 
     const explore_menu = {
+        Attractions: [
+            { id: 1, name: "Coves", src: "/lascalas_assets/Website/MainPages_Content/Explore/Attractions/Attractions1.png", description: "Discover the edge of paradise. Explore the hidden beaches and tranquil inlets of Las Calas Coves. Enclosed by majestic cliffs, it is the ultimate setting for private escapes and nature’s purest serenity.", link: "#" },
+            { id: 2, name: "Gazebo", src: "/lascalas_assets/Website/MainPages_Content/Explore/Attractions/Attractions2.png", description: "Unwind in style. The Las Calas Gazebo offers a haven of peace surrounded by nature’s beauty. With the gentle sound of the waves as your soundtrack, it’s the perfect spot for romance, luxury, and unforgettable sunsets.", link: "#" },
+            { id: 3, name: "Lucky Park", src: "/lascalas_assets/Website/MainPages_Content/Explore/Attractions/Attractions3.png", description: "Walk on the bright side. Step into Lucky Park, a whimsical garden designed to inspire joy and prosperity. From vibrant wishing ribbons to playful lucky charms, every corner radiates positive energy and a touch of magic.", link: "#" },
+            { id: 4, name: "Mango Tree", src: "/lascalas_assets/Website/MainPages_Content/Explore/Attractions/Attractions4.png", description: "Rooted in magic. Experience the quiet power of the Millennium Mango Tree. This ancient wonder offers a unique blend of nature and luxury, a perfect, opulent spot to pause and embrace the soul of Las Calas.", link: "#" },
+            { id: 5, name: "Pearl Collections", src: "/lascalas_assets/Website/MainPages_Content/Explore/Attractions/Attractions5.png", description: "Treasures of the deep. Explore the Las Calas Pearl Collection, an exclusive showcase of rare, elegant gems that perfectly reflect the timeless beauty of the sea.", link: "#" },
+            { id: 6, name: "Swing", src: "/lascalas_assets/Website/MainPages_Content/Explore/Attractions/Attractions6.png", description: "Swing into paradise. Hover above crystal-clear shallows on our iconic overwater swing. With the ocean breeze in your hair and endless blue horizons, it’s the ultimate spot for romance and unforgettable photos.", link: "#" },
+            { id: 7, name: "Wishing Well", src: "/lascalas_assets/Website/MainPages_Content/Explore/Attractions/Attractions7.png", description: "A sanctuary for your dreams. Hidden within our lush greenery, the Wishing Well offers a moment of pure serenity. Embrace the magic of the moment in this elegant setting, where every wish feels a little closer to coming true.", link: "#" },
+        ],
         Activities: [
             { id: 1, name: "ATV Adventure", src: "/lascalas_assets/Website/MainPages_Content/Explore/Activities/Activities1.png", description: "Ready to ride? Ignite your spirit of adventure and go off the beaten path! Whether you're chasing an adrenaline rush or just chasing views, our ATV tour is the ultimate way to experience the wild beauty of Las Calas.", link: "/exploreATV" },
             { id: 2, name: "Water Adventure", src: "/lascalas_assets/Website/MainPages_Content/Explore/Activities/Activities2.png", description: "Dive into adventure with the LasCalas Jetski and Kayak Ride Experience, where the thrill of the open water meets the beauty of nature.", link: "/exploreWater" },
@@ -63,15 +72,6 @@ const Explore = () => {
             { id: 5, name: "Polaris", src: "/lascalas_assets/Website/MainPages_Content/Explore/Experiences/Experiences5.png", description: "Dominate the terrain in ultimate style. Our elite Polaris RZRs are built for extreme performance without compromising on comfort. This isn't just an off-road ride; it’s luxury unleashed on the wild.", link: "#" },
             { id: 6, name: "Prenup Shoot", src: "/lascalas_assets/Website/MainPages_Content/Explore/Experiences/Experiences6.png", description: "Create magic in every shot. From dramatic cliffs to serene sunsets, Las Calas offers an ambiance of pure romance. It’s more than a venue; it’s the canvas for your most unforgettable milestones.", link: "#" },
         ],
-        Attractions: [
-            { id: 1, name: "Coves", src: "/lascalas_assets/Website/MainPages_Content/Explore/Attractions/Attractions1.png", description: "Discover the edge of paradise. Explore the hidden beaches and tranquil inlets of Las Calas Coves. Enclosed by majestic cliffs, it is the ultimate setting for private escapes and nature’s purest serenity.", link: "#" },
-            { id: 2, name: "Gazebo", src: "/lascalas_assets/Website/MainPages_Content/Explore/Attractions/Attractions2.png", description: "Unwind in style. The Las Calas Gazebo offers a haven of peace surrounded by nature’s beauty. With the gentle sound of the waves as your soundtrack, it’s the perfect spot for romance, luxury, and unforgettable sunsets.", link: "#" },
-            { id: 3, name: "Lucky Park", src: "/lascalas_assets/Website/MainPages_Content/Explore/Attractions/Attractions3.png", description: "Walk on the bright side. Step into Lucky Park, a whimsical garden designed to inspire joy and prosperity. From vibrant wishing ribbons to playful lucky charms, every corner radiates positive energy and a touch of magic.", link: "#" },
-            { id: 4, name: "Mango Tree", src: "/lascalas_assets/Website/MainPages_Content/Explore/Attractions/Attractions4.png", description: "Rooted in magic. Experience the quiet power of the Millennium Mango Tree. This ancient wonder offers a unique blend of nature and luxury, a perfect, opulent spot to pause and embrace the soul of Las Calas.", link: "#" },
-            { id: 5, name: "Pearl Collections", src: "/lascalas_assets/Website/MainPages_Content/Explore/Attractions/Attractions5.png", description: "Treasures of the deep. Explore the Las Calas Pearl Collection, an exclusive showcase of rare, elegant gems that perfectly reflect the timeless beauty of the sea.", link: "#" },
-            { id: 6, name: "Swing", src: "/lascalas_assets/Website/MainPages_Content/Explore/Attractions/Attractions6.png", description: "Swing into paradise. Hover above crystal-clear shallows on our iconic overwater swing. With the ocean breeze in your hair and endless blue horizons, it’s the ultimate spot for romance and unforgettable photos.", link: "#" },
-            { id: 7, name: "Wishing Well", src: "/lascalas_assets/Website/MainPages_Content/Explore/Attractions/Attractions7.png", description: "A sanctuary for your dreams. Hidden within our lush greenery, the Wishing Well offers a moment of pure serenity. Embrace the magic of the moment in this elegant setting, where every wish feels a little closer to coming true.", link: "#" },
-        ]
     }
 
     return (
@@ -129,7 +129,9 @@ const Explore = () => {
                                         {item.description}
                                     </p>
     
-                                    <Link to={`${item.link}`} className={`${know_more_btn}`}>Know More <MdOutlineChevronRight size={40} /></Link>
+                                    {activeTab === "Activities" && (
+                                        <Link to={`${item.link}`} className={`${know_more_btn}`}>Know More <MdOutlineChevronRight size={40} /></Link>
+                                    )}
                                 </div>
                             </motion.div>
                         ))}

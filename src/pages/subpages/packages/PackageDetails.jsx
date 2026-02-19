@@ -49,7 +49,7 @@ const PackageDetails = () => {
                 "Complimentary Robe and Slippers",
             ],
         },
-        preview_images: Array.from({ length: 15 }, (_, i) => 
+        preview_images: Array.from({ length: 6 }, (_, i) => 
             `/lascalas_assets/Website/MainPages_Content/Packages/PackagePreview/Executive/EX${i + 1}.jpg`
         ),
     },
@@ -201,7 +201,7 @@ const PackageDetails = () => {
                 "Complimentary Robe and Slippers"
             ],
         },
-        preview_images: Array.from({ length: 17 }, (_, i) => 
+        preview_images: Array.from({ length: 11 }, (_, i) => 
             `/lascalas_assets/Website/MainPages_Content/Packages/PackagePreview/LC_Villa_DSBB/DS${i + 1}.jpg`
         ),
     },
@@ -239,7 +239,7 @@ const PackageDetails = () => {
                 "Complimentary Robe and Slippers"
             ],
         },
-        preview_images: Array.from({ length: 19 }, (_, i) => 
+        preview_images: Array.from({ length: 9 }, (_, i) => 
             `/lascalas_assets/Website/MainPages_Content/Packages/PackagePreview/LC_Villa_BB/BB${i + 1}.jpg`
         ),
     },
@@ -277,7 +277,7 @@ const PackageDetails = () => {
                 "Complimentary Robe and Slippers"
             ],
         },
-        preview_images: Array.from({ length: 11 }, (_, i) => 
+        preview_images: Array.from({ length: 3 }, (_, i) => 
             `/lascalas_assets/Website/MainPages_Content/Packages/PackagePreview/Teepee/TEE${i + 1}.jpg`
         ),
     },
@@ -294,6 +294,21 @@ const PackageDetails = () => {
         mounted: { opacity: 1, y: 0},
         beingUnmounted: { opacity: 0, y: -20}
     };
+
+    // -- STYLING -- //
+    const package_details_cont = "grid grid-cols-2 gap-12 items-center w-full max-w-6xl px-6 mt-[40px]";
+    const package_name = "font-Raleway font-semibold text-package_details_name";
+    const package_price = "font-Raleway font-semibold text-package_details_price text-secondary/60";
+    
+    const detPaneButton = "flex-1 py-4 flex items-center justify-center transition-all";
+    const detPaneActiveStyle = "bg-primary text-white";
+    const detPaneInActiveStyle = "text-gray-400 hover:text-primary hover:bg-gray-100";
+
+    const bullet_cont = "space-y-3 border-2 border-accent p-4 min-h-[350px] rounded-b-[8px]";
+    const bullet_text = "font-Nunito font-[700] text-base leading-relaxed";
+    const bullet_points = "mr-3 mt-2 h-1.5 w-1.5 rounded-full bg-primary shrink-0 border";
+
+    const carousel_preview = "h-[400px] overflow-hidden rounded-md hover:cursor-pointer";
 
     // -- FLEX STYLING -- //
         const center_element_col = "flex flex-col items-center";
@@ -317,11 +332,11 @@ const PackageDetails = () => {
             <NavHead theme="dark" />
 
             <div className={`${center_element_col} justify-center`}>
-                <h1 className="font-Raleway font-semibold text-package_details_name">{selectedPackage?.name}</h1>
-                <h2 className="font-Raleway font-semibold text-package_details_price text-secondary/60">{selectedPackage?.price}</h2>
+                <h1 className={`${package_name}`}>{selectedPackage?.name}</h1>
+                <h2 className={`${package_price}`}>{selectedPackage?.price}</h2>
 
-                <div className="grid grid-cols-2 gap-12 items-start w-full max-w-6xl px-6 mt-[40px]">
-                    <div className="w-full max-w-[400px]">
+                <div className={`${package_details_cont}`}>
+                    <div className={`w-full max-w-[400px]`}>
                         <div className="flex bg-gray-50 border-b border-gray-200">
                             {[
                             { id: "inclusions", icon: <FaGift size={20} /> },
@@ -331,19 +346,19 @@ const PackageDetails = () => {
                             <button
                                 key={tab.id}
                                 onClick={() => setDetPaneActive(tab.id)}
-                                className={`flex-1 py-4 flex items-center justify-center transition-all
-                                ${detPaneActive === tab.id ? "bg-primary text-white" : "text-gray-400 hover:text-primary hover:bg-gray-100"}`}
+                                className={`${detPaneButton}
+                                ${detPaneActive === tab.id ? `${detPaneActiveStyle}` : `${detPaneInActiveStyle}`}`}
                             >
                                 {tab.icon}
                             </button>
                             ))}
                         </div>
 
-                        <ul className="space-y-3 border-2 border-accent p-4 min-h-[350px] rounded-b-[8px]">
+                        <ul className={`${bullet_cont}`}>
                             {selectedPackage?.details[detPaneActive].map((item, index) => (
-                                <li key={index} className="flex items-start text-gray-700">
-                                <span className="mr-3 mt-2 h-1.5 w-1.5 rounded-full bg-primary shrink-0" />
-                                <span className="font-Nunito font-[700] text-base leading-relaxed">{item}</span>
+                                <li key={index} className={`${start_element_row}`}>
+                                    <span className={`${bullet_points}`} />
+                                    <span className={`${bullet_text}`}>{item}</span>
                                 </li>
                             ))}
                         </ul>
@@ -372,8 +387,8 @@ const PackageDetails = () => {
                             }}
                         >
                             {selectedPackage?.preview_images.map((src, index) => (
-                                <SwiperSlide key={index}  className="flex flex-col items-center">
-                                    <img src={src} className="h-[400px] overflow-hidden rounded-md hover:cursor-pointer"/>
+                                <SwiperSlide key={index}  className={`${center_element_col}`}>
+                                    <img src={src} className={`${carousel_preview}`}/>
                                 </SwiperSlide>
                             ))}
                         </Swiper>
