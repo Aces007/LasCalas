@@ -65,6 +65,14 @@ const WaterAdv = () => {
         beingUnmounted: { opacity: 0, y: -20}
     };
 
+    // -- STYLING -- //
+    const explore_name = "font-Raleway font-semibold text-package_details_name";
+    const explore_subhead = "font-Raleway font-semibold text-package_details_price text-secondary/60";
+
+    const water_grid_cont = "grid grid-cols-2 gap-12 items-center w-full max-w-6xl px-6 my-[80px]";
+
+    const carousel_preview = "h-[400px] overflow-hidden rounded-md hover:cursor-pointer";
+
     // -- FLEX STYLING -- //
         const center_element_col = "flex flex-col items-center";
         const start_element_col = "flex flex-col items-start";
@@ -85,12 +93,12 @@ const WaterAdv = () => {
             <NavHead theme="dark" />
 
             <div className={`${center_element_col} justify-center`}>
-                <h1 className="font-Raleway font-semibold text-package_details_name">Water Adventure</h1>
-                <h2 className="font-Raleway font-semibold text-package_details_price text-secondary/60">Dive into the deep blue</h2>
+                <h1 className={`${explore_name}`}>Water Adventure</h1>
+                <h2 className={`${explore_subhead}`}>Dive into the deep blue</h2>
 
-                <div className="grid grid-cols-2 gap-12 items-center w-full max-w-6xl px-6 my-[80px]">
-                    <div className="w-full max-w-[600px] flex flex-col items-center font-Nunito text-main_text/60">
-                        <p>Drag to view the variations</p>
+                <div className={`${water_grid_cont}`}>
+                    <div className={`w-full max-w-[600px] ${center_element_col}`}>
+                        <p className="font-Nunito text-main_text/60">Drag to view the variations</p>
                         <Swiper
                                 grabCursor={true}
                                 centeredSlides={true}
@@ -128,8 +136,8 @@ const WaterAdv = () => {
                             }}
                         >
                             {preview_images.map((src, index) => (
-                                <SwiperSlide key={index} className="flex flex-col items-center">
-                                    <img src={src} className="h-[400px] overflow-hidden rounded-md hover:cursor-pointer"/>
+                                <SwiperSlide key={index} className={`${center_element_col}`}>
+                                    <img src={src} className={`${carousel_preview}`}/>
                                 </SwiperSlide>
                             ))}
                         </Swiper>
@@ -140,14 +148,20 @@ const WaterAdv = () => {
     )   
 }
 
-const WaterCard = ({ water }) => (
-    <div>
-        <div className="flex flex-col items-center justify-evenly gap-[8px] bg-main_text/60 p-6 rounded-[16px] h-full hover:scale-105 hover:bg-highlight hover:transition-all">
-            <img src={water.model_image} alt={water.name} className="w-[250px]" />
-            <h3 className="font-Raleway font-[400] text-background_lightTxt text-water_details_name">{water.name}</h3>
-            <p className="font-Nunito font-[800] text-background_lightTxt text-water_details_price">{water.price}</p>
+const WaterCard = ({ water }) => {
+    const waterCard_cont  = "flex flex-col items-center gap-[8px] bg-main_text/60 p-6 rounded-[16px] hover:scale-105 hover:bg-highlight hover:transition-all"
+    const waterCard_name = "font-Raleway font-[400] text-background_lightTxt text-water_details_name";
+    const waterCard_price = "font-Nunito font-[800] text-background_lightTxt text-water_details_price";
+
+    return (
+        <div>
+            <div className={`${waterCard_cont}`}>
+                <img src={water.model_image} alt={water.name} className="w-[250px]" />
+                <h3 className={`${waterCard_name}`}>{water.name}</h3>
+                <p className={`${waterCard_price}`}>{water.price}</p>
+            </div>
         </div>
-    </div>
-);
+    )
+};
 
 export default WaterAdv;

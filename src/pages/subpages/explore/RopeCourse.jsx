@@ -18,6 +18,18 @@ const RopeCourse = () => {
         beingUnmounted: { opacity: 0, y: -20}
     };
 
+    // -- STYLING -- //
+    const explore_name = "font-Raleway font-semibold text-package_details_name";
+    const explore_subhead = "font-Raleway font-semibold text-package_details_price text-secondary/60";
+
+    const rope_grid_cont = "grid grid-cols-2 gap-12 items-center w-full max-w-6xl px-6 my-[80px]";
+    const ropeCard_grid_cont = "grid grid-cols-2 gap-[8px]";
+    const rope_tagline = "font-Raleway font-semibold text-package_details_price text-rope_description_head";
+
+    const rope_description = "font-Nunito font-regular text-rope_description_text";
+
+    const carousel_preview = "h-[400px] overflow-hidden rounded-md hover:cursor-pointer";
+
     // -- FLEX STYLING -- //
         const center_element_col = "flex flex-col items-center";
         const start_element_col = "flex flex-col items-start";
@@ -38,15 +50,15 @@ const RopeCourse = () => {
             <NavHead theme="dark" />
 
             <div className={`${center_element_col} justify-center`}>
-                <h1 className="font-Raleway font-semibold text-package_details_name">LCR Xtreme Quest</h1>
-                <h2 className="font-Raleway font-semibold text-package_details_price text-secondary/60">The Ultimate Rope & Obstacle Course Challenge at LasCalas</h2>
+                <h1 className={`${explore_name}`}>LCR Xtreme Quest</h1>
+                <h2 className={`${explore_subhead}`}>The Ultimate Rope & Obstacle Course Challenge at LasCalas</h2>
 
-                <div className="grid grid-cols-2 gap-12 items-center w-full max-w-6xl px-6 my-[80px]">
-                    <div className="flex flex-col items-start gap-8">
-                        <h3 className="font-Raleway font-semibold text-package_details_price text-rope_description_head">Conquer the Obstacle Gauntlet</h3>
-                        <div className="flex flex-col items-start justify-betwee gap-4">
-                            <p className="font-Nunito font-regular text-rope_description_text">Conquer our elite Rope and Obstacle Course, originally built by the Philippine Special Forces. Test your strength on high ropes and suspended bridges in an authentic, adrenaline-pumping experience perfect for friends and corporate team building.</p>
-                            <p className="font-Nunito font-regular text-rope_description_text">Battlefield-inspired and built for thrill-seekers, our intense Obstacle Course tests your agility, speed, and endurance. From wall climbs to crawling pits, this rugged terrain is the ultimate playground for friends and teams looking to get stronger together.</p>
+                <div className={`${rope_grid_cont}`}>
+                    <div className={`${start_element_col} gap-8`}>
+                        <h3 className={`${rope_tagline}`}>Conquer the Obstacle Gauntlet</h3>
+                        <div className={`${center_element_col} justify-between gap-4`}>
+                            <p className={`${rope_description}`}>Conquer our elite Rope and Obstacle Course, originally built by the Philippine Special Forces. Test your strength on high ropes and suspended bridges in an authentic, adrenaline-pumping experience perfect for friends and corporate team building.</p>
+                            <p className={`${rope_description}`}>Battlefield-inspired and built for thrill-seekers, our intense Obstacle Course tests your agility, speed, and endurance. From wall climbs to crawling pits, this rugged terrain is the ultimate playground for friends and teams looking to get stronger together.</p>
                         </div>
                     </div>
 
@@ -66,8 +78,8 @@ const RopeCourse = () => {
                             }}
                         >
                             {preview_images.map((src, index) => (
-                                <SwiperSlide key={index} className="flex flex-col items-center">
-                                    <img src={src} className="h-[400px] overflow-hidden rounded-md hover:cursor-pointer"/>
+                                <SwiperSlide key={index} className={`${center_element_col}`}>
+                                    <img src={src} className={`${carousel_preview}`} />
                                 </SwiperSlide>
                             ))}
                         </Swiper>

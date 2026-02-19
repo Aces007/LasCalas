@@ -46,13 +46,25 @@ const BuggyAdv = () => {
         beingUnmounted: { opacity: 0, y: -20}
     };
 
+    // -- STYLING -- //
+    const explore_name = "font-Raleway font-semibold text-package_details_name";
+    const explore_subhead = "font-Raleway font-semibold text-package_details_price text-secondary/60";
+
+    const buggy_grid_cont = "grid grid-cols-2 gap-12 items-center w-full max-w-6xl px-6 my-[80px]";
+    const buggyCard_grid_cont = "grid grid-cols-2 gap-[8px]";
+    const buggy_tagline = "font-Raleway font-bold text-atv_tagline text-main_text/60 tracking-tight uppercase";
+
+
+
+    const carousel_preview = "h-[400px] overflow-hidden rounded-md hover:cursor-pointer";
+
     // -- FLEX STYLING -- //
         const center_element_col = "flex flex-col items-center";
         const start_element_col = "flex flex-col items-start";
         const center_element_row = "flex items-center";
         const start_element_row = "flex items-start";
-        const between_element_row = "flex justify-between";
-
+        const justween_element_row = "flex justify-between";
+        const justcenter_element_row = "flex justify-center";
 
 
     return (
@@ -66,16 +78,16 @@ const BuggyAdv = () => {
             <NavHead theme="dark" />
 
             <div className={`${center_element_col} justify-center`}>
-                <h1 className="font-Raleway font-semibold text-package_details_name">Buggy & Polaris Adventure</h1>
-                <h2 className="font-Raleway font-semibold text-package_details_price text-secondary/60">Built for Every Landscape</h2>
+                <h1 className={`${explore_name}`}>Buggy & Polaris Adventure</h1>
+                <h2 className={`${explore_subhead}`}>Built for Every Landscape</h2>
 
-                <div className="grid grid-cols-2 gap-12 items-center w-full max-w-6xl px-6 my-[80px]">
-                    <div className="grid grid-cols-2 gap-[8px]">
+                <div className={`${buggy_grid_cont}`}>
+                    <div className={`${buggyCard_grid_cont}`}>
                         {menu_data.slice(0,2).map((buggy) => (
                             <BuggyCard key={buggy.id} buggy={buggy} />
                         ))}
-                        <div className="col-span-2 flex justify-center py-6">
-                            <h1 className="text-[24px] font-bold text-[#666] tracking-tight uppercase">
+                        <div className={`${justcenter_element_row} col-span-2 py-6`}>
+                            <h1 className={`${buggy_tagline}`}>
                                 Choose Your Adventure
                             </h1>
                         </div>
@@ -100,8 +112,8 @@ const BuggyAdv = () => {
                             }}
                         >
                             {preview_images.map((src, index) => (
-                                <SwiperSlide key={index} className="flex flex-col items-center">
-                                    <img src={src} className="h-[400px] overflow-hidden rounded-md hover:cursor-pointer"/>
+                                <SwiperSlide key={index} className={`${center_element_col}`}>
+                                    <img src={src} className={`${carousel_preview}`}/>
                                 </SwiperSlide>
                             ))}
                         </Swiper>
@@ -112,14 +124,20 @@ const BuggyAdv = () => {
     )   
 }
 
-const BuggyCard = ({ buggy }) => (
-    <div>
-        <div className="flex flex-col items-center justify-evenly gap-[8px] bg-main_text/60 p-6 rounded-[16px] h-full hover:scale-105 hover:bg-highlight hover:transition-all">
-            <img src={buggy.model_image} alt={buggy.name} className="w-[160px]" />
-            <h3 className="font-Raleway font-[400] text-background_lightTxt text-buggy_details_name">{buggy.name}</h3>
-            <p className="font-Nunito font-[800] text-background_lightTxt text-buggy_details_price">{buggy.price}</p>
+const BuggyCard = ({ buggy }) => {
+    const buggyCard_cont  = "flex flex-col items-center justify-evenly gap-[8px] bg-main_text/60 p-6 rounded-[16px] h-full hover:scale-105 hover:bg-highlight hover:transition-all"
+    const buggyCard_name = "font-Raleway font-[400] text-background_lightTxt text-buggy_details_name";
+    const buggyCard_price = "font-Nunito font-[800] text-background_lightTxt text-buggy_details_price";
+
+    return (
+        <div>
+            <div className={`${buggyCard_cont}`}>
+                <img src={buggy.model_image} alt={buggy.name} className="w-[160px]" />
+                <h3 className={`${buggyCard_name}`}>{buggy.name}</h3>
+                <p className={`${buggyCard_price}`}>{buggy.price}</p>
+            </div>
         </div>
-    </div>
-);
+    )
+};
 
 export default BuggyAdv;
