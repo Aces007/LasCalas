@@ -13,7 +13,7 @@ const Explore = () => {
     const main_page_cards_img = "w-full h-full object-cover transition-transform duration-700 group-hover:scale-110";
     const main_page_content_name_cont = "absolute bottom-0 left-0 w-full p-6 flex justify-center group-hover:opacity-0";
     const main_page_content_name = "font-Montserrat uppercase text-background_lightTxt font-semibold tracking-[5%] text-packages_name";
-    const main_page_desc_cont = "absolute inset-0 left-0 bg-cards_overlay/80 opacity-0 flex flex-col items-center justify-center gap-[40px] group-hover:opacity-100 transition-opacity duration-800 ease-in-out";
+    const main_page_desc_cont = "absolute inset-0 left-0 bg-cards_overlay/80 opacity-0 flex flex-col items-center justify-center gap-[40px] group-hover:opacity-100 transition-opacity duration-800 ease-in-out hover:cursor-pointer";
     const main_page_desc = "text-center w-[90%] font-Nunito font-medium text-background_lightTxt text-packages_hover_p";
     const know_more_btn = "font-Montserrat font-medium uppercase text-background_lightTxt/60 absolute bottom-8 flex flex-row items-center justify-center hover:gap-[4px] text-packages_btn font-semibold text-packages_hover_a hover:text-highlight hover:scale-105";
 
@@ -129,7 +129,9 @@ const Explore = () => {
                                         {item.description}
                                     </p>
     
-                                    <Link to={`${item.link}`} className={`${know_more_btn}`}>Know More <MdOutlineChevronRight size={40} /></Link>
+                                    {activeTab === "Activities" && (
+                                        <Link to={`${item.link}`} className={`${know_more_btn}`}>Know More <MdOutlineChevronRight size={40} /></Link>
+                                    )}
                                 </div>
                             </motion.div>
                         ))}

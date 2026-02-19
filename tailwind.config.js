@@ -84,7 +84,7 @@ export default {
           atv_details_price: "24px",
           
           water_details_name: "20px",
-          water_details_price: "28px",
+          water_details_price: "20px",
 
           rope_description_head: "30px",
           rope_description_text: "20px",

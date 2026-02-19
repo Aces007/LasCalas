@@ -49,7 +49,7 @@ const PackageDetails = () => {
                 "Complimentary Robe and Slippers",
             ],
         },
-        preview_images: Array.from({ length: 15 }, (_, i) => 
+        preview_images: Array.from({ length: 6 }, (_, i) => 
             `/lascalas_assets/Website/MainPages_Content/Packages/PackagePreview/Executive/EX${i + 1}.jpg`
         ),
     },
@@ -201,7 +201,7 @@ const PackageDetails = () => {
                 "Complimentary Robe and Slippers"
             ],
         },
-        preview_images: Array.from({ length: 17 }, (_, i) => 
+        preview_images: Array.from({ length: 11 }, (_, i) => 
             `/lascalas_assets/Website/MainPages_Content/Packages/PackagePreview/LC_Villa_DSBB/DS${i + 1}.jpg`
         ),
     },
@@ -239,7 +239,7 @@ const PackageDetails = () => {
                 "Complimentary Robe and Slippers"
             ],
         },
-        preview_images: Array.from({ length: 19 }, (_, i) => 
+        preview_images: Array.from({ length: 9 }, (_, i) => 
             `/lascalas_assets/Website/MainPages_Content/Packages/PackagePreview/LC_Villa_BB/BB${i + 1}.jpg`
         ),
     },
@@ -277,7 +277,7 @@ const PackageDetails = () => {
                 "Complimentary Robe and Slippers"
             ],
         },
-        preview_images: Array.from({ length: 11 }, (_, i) => 
+        preview_images: Array.from({ length: 3 }, (_, i) => 
             `/lascalas_assets/Website/MainPages_Content/Packages/PackagePreview/Teepee/TEE${i + 1}.jpg`
         ),
     },

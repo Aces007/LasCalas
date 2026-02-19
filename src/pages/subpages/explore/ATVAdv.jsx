@@ -35,8 +35,8 @@ const ATVAdv = () => {
     
     ]
 
-    const preview_images = [...Array(5)].map((_, i) => 
-        `/lascalas_assets/Website/MainPages_Content/Explore/Activities/atv${i + 1}.jpg`
+    const preview_images = [...Array(6)].map((_, i) => 
+        `/lascalas_assets/Website/MainPages_Content/Explore/Activities/activities/atv${i + 1}.jpg`
     );
 
 
