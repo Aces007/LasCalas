@@ -101,6 +101,9 @@ export default {
           explore_hover_p: "20px",
           explore_hover_a: "24px",
 
+          pav_details_price: "20px",
+          pergola_details_price: "20px",
+          gamPool_details_price: "20px",
 
         // LG Desktop 
           // -- FOOTER -- //
