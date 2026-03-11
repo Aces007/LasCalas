@@ -22,7 +22,7 @@ const NavHead = ({ theme = "light" }) => {
                 <div className="flex justify-center gap-[24px]">
                     <Link to="/packagesmenu" className={`font-Montserrat uppercase ${variantNavlinks}`}>Packages</Link>
                     <Link to="/explore" className={`font-Montserrat uppercase ${variantNavlinks}`}>Explore</Link>
-                    <Link to="/celeb" className={`font-Montserrat uppercase ${variantNavlinks}`}>Celebrations</Link>
+                    <Link to="/celebrations" className={`font-Montserrat uppercase ${variantNavlinks}`}>Celebrations</Link>
                 </div>
             </div>
 
