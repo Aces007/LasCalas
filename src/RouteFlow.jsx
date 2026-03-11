@@ -11,11 +11,6 @@ import WaterAdv from "./pages/subpages/explore/WaterAdv";
 import BuggyAdv from "./pages/subpages/explore/BuggyAdv";
 import RopeCourse from "./pages/subpages/explore/RopeCourse";
 import Celebrations from "./pages/Celebrations";
-import EventPavilion from "./pages/subpages/celebrations/EventPavilion";
-import Pergola from "./pages/subpages/celebrations/Pergola";
-import GamingPool from "./pages/subpages/celebrations/GamingPool";
-import CampingGround from "./pages/subpages/celebrations/CampingGround";
-import Gazebo from "./pages/subpages/celebrations/Gazebo";
 
 export default function RouteFlow () {
     const location = useLocation();
@@ -33,11 +28,6 @@ export default function RouteFlow () {
                 <Route path="/exploreBug" element={<BuggyAdv />}/>
                 <Route path="/exploreRope" element={<RopeCourse />}/>
                 <Route path="/celeb" element={<Celebrations />}/>
-                <Route path="/eventPav" element={<EventPavilion />}/>
-                <Route path="/gamPool" element={<GamingPool />}/>
-                <Route path="/campGround" element={<CampingGround />}/>
-                <Route path="/gaze" element={<Gazebo />}/>
-
             </Routes>
         </AnimatePresence>
     );
