@@ -1,7 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react"; 
 import { Navigation, Autoplay } from "swiper/modules"; 
 import "swiper/css"; 
-import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { motion } from "framer-motion";
 import NavHead from "../../../reusables/NavHead";

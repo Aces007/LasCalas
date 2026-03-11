@@ -34,6 +34,7 @@ export default function RouteFlow () {
                 <Route path="/exploreRope" element={<RopeCourse />}/>
                 <Route path="/celeb" element={<Celebrations />}/>
                 <Route path="/eventPav" element={<EventPavilion />}/>
+                <Route path="/pergola" element={<Pergola />}/>
                 <Route path="/gamPool" element={<GamingPool />}/>
                 <Route path="/campGround" element={<CampingGround />}/>
                 <Route path="/gaze" element={<Gazebo />}/>
