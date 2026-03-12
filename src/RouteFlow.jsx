@@ -16,6 +16,8 @@ import Pergola from "./pages/subpages/celebration_showcase/Pergola";
 import GamingPool from "./pages/subpages/celebration_showcase/GamingPool";
 import CampingGround from "./pages/subpages/celebration_showcase/CampingGround";
 import Gazebo from "./pages/subpages/celebration_showcase/Gazebo";
+import Amenities from "./pages/Amenities";
+import FAQs from "./pages/FAQs";
 
 export default function RouteFlow () {
     const location = useLocation();
@@ -38,6 +40,9 @@ export default function RouteFlow () {
                 <Route path="/gamingPool" element={<GamingPool />} />
                 <Route path="/campingGround" element={<CampingGround />} />
                 <Route path="/gazebo" element={<Gazebo />} />
+                <Route path="/amenities" element={<Amenities />} />
+                <Route path="/faqs" element={<FAQs />} />
+                <Route path="/amenities" element={<Amenities />} />
             </Routes>
         </AnimatePresence>
     );
