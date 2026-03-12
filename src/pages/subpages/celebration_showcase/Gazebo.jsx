@@ -15,27 +15,18 @@ const Gazebo = () => {
     };
 
     const menu_data = [
-    {
-        id: 1,
-        name: "Pool Party",
-        model_image: "/lascalas_assets/Website/MainPages_Content/Celebrations/EventSpacePreviews/Gaming_Pool/menu_data/1.jpg",
-    },
-    {
-        id: 2,
-        name: "Arcade Fun",
-        model_image: "/lascalas_assets/Website/MainPages_Content/Celebrations/EventSpacePreviews/Gaming_Pool/menu_data/2.jpg",
-    },
-    {
-        id: 3,
-        name: "Exclusive Dining",
-        model_image: "/lascalas_assets/Website/MainPages_Content/Celebrations/EventSpacePreviews/Gaming_Pool/menu_data/3.jpg",
-    },
-    {
-        id: 4,
-        name: "Billiard Games",
-        model_image: "/lascalas_assets/Website/MainPages_Content/Celebrations/EventSpacePreviews/Gaming_Pool/menu_data/4.jpg",
-    },
-    
+        {
+            id: 1,
+            name: "Wedding Reception",
+            description: "An intimate, elegant gazebo venue beside our grand event tent, the perfect blend of charm and romance for your ceremony.",
+            model_image: "/lascalas_assets/Website/MainPages_Content/Celebrations/EventSpacePreviews/Gazebo/menu_data/1.jpg",
+        },
+        {
+            id: 2,
+            name: "Custom Packages",
+            description: "Design your dream event with our customizable packages. Whether it's a corporate gathering, birthday, or any special occasion, we tailor every detail to your needs.",
+            model_image: "/lascalas_assets/Website/MainPages_Content/Celebrations/EventSpacePreviews/Gazebo/menu_data/2.jpg",
+        },
     ]
     
     const preview_images = [...Array(5)].map((_, i) => 
@@ -44,12 +35,12 @@ const Gazebo = () => {
     
 
     // -- STYLING -- //
-    const space_name = "font-Raleway font-semibold text-package_details_name";
-    const space_price = "font-Raleway font-semibold text-package_details_price text-secondary/60";
+    const space_name = "font-Raleway font-semibold text-event_dets_name";
+    const space_price = "font-Raleway font-semibold text-event_dets_price text-secondary/60";
 
-    const gamPool_grid_cont = "grid grid-cols-2 gap-12 items-center w-full max-w-6xl px-6 my-[80px]";
-    const gamPoolCard_grid_cont = "grid grid-cols-2 gap-[8px] items-stretch";
-    const gamPool_tagline = "font-Raleway font-bold text-atv_tagline text-main_text/60 tracking-tight uppercase";
+    const gazeBo_grid_cont = "grid grid-cols-2 gap-12 items-start w-full max-w-6xl px-6 my-[80px]";
+    const gazeBoCard_grid_cont = "grid grid-cols-2 gap-[8px] items-stretch";
+    const gazeBo_tagline = "font-Raleway font-bold text-atv_tagline text-main_text/60 tracking-tight uppercase";
 
     const carousel_preview = "h-[400px] overflow-hidden rounded-md hover:cursor-pointer";
     // -- FLEX STYLING -- //
@@ -75,18 +66,10 @@ const Gazebo = () => {
                 <h1 className={`${space_name}`}>Gazebo</h1>
                 <h2 className={`${space_price}`}>Starting at PHP 30,000 for duration of 2 hours exclusive use</h2>
 
-                <div className={`${gamPool_grid_cont}`}>
-                    <div className={`${gamPoolCard_grid_cont}`}>
-                        {menu_data.slice(0,2).map((gamPool) => (
-                            <GamingPoolCard key={gamPool.id} gamPool={gamPool} />
-                        ))}
-                        <div className={`col-span-2 ${justcenter_element_row} py-6`}>
-                            <h1 className={`${gamPool_tagline}`}>
-                                Events We Cater For
-                            </h1>
-                        </div>
-                        {menu_data.slice(2,4).map((gamPool) => (
-                            <GamingPoolCard key={gamPool.id} gamPool={gamPool} />
+                <div className={`${gazeBo_grid_cont}`}>
+                    <div className={`${gazeBoCard_grid_cont}`}>
+                        {menu_data.slice(0,2).map((gazeBo) => (
+                            <GazeboCard key={gazeBo.id} gazeBo={gazeBo} />
                         ))}
                     </div>
                     
@@ -118,15 +101,17 @@ const Gazebo = () => {
     )
 }
 
-const GamingPoolCard = ({ gamPool }) => {
-    const gamPoolCard_cont  = "flex flex-col items-center h-full gap-[8px] bg-main_text/60 p-6 rounded-[12px] hover:scale-105 hover:bg-highlight hover:transition-all"
-    const gamPoolCard_name = "font-Nunito font-[800] text-background_lightTxt text-gamPool_details_price";
+const GazeboCard = ({ gazeBo }) => {
+    const gazeBoCard_cont  = "flex flex-col items-center h-full gap-[8px] bg-main_text/60 p-6 rounded-[12px] hover:scale-105 hover:bg-highlight hover:transition-all"
+    const gazeBoCard_name = "font-Nunito font-[700] text-background_lightTxt text-events_h3 hover:font-[800] hover:cursor-pointer";
+    const gazeBoCard_desc = "font-Nunito font-[400] text-background_lightTxt text-events_dets text-center";
     
     return (
         <div className="h-full">
-            <div className={`${gamPoolCard_cont}`}>
-                <img src={gamPool.model_image} alt={gamPool.name} className="w-[160px]" />
-                <h3 className={`${gamPoolCard_name}`}>{gamPool.name}</h3>
+            <div className={`${gazeBoCard_cont}`}>
+                <img src={gazeBo.model_image} alt={gazeBo.name} className="w-[160px] h-[160px] aspect-square object-cover rounded-md" />
+                <h3 className={`${gazeBoCard_name}`}>{gazeBo.name}</h3>
+                <p className={`${gazeBoCard_desc}`}>{gazeBo.description}</p>
             </div>
         </div>
     )
