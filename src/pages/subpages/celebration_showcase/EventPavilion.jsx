@@ -43,8 +43,8 @@ const EventPavilion = () => {
     
 
     // -- STYLING -- //
-    const space_name = "font-Raleway font-semibold text-package_details_name";
-    const space_price = "font-Raleway font-semibold text-package_details_price text-secondary/60";
+    const space_name = "font-Raleway font-semibold text-event_dets_name";
+    const space_price = "font-Raleway font-semibold text-event_dets_price text-secondary/60";
 
     const pav_grid_cont = "grid grid-cols-2 gap-12 items-center w-full max-w-6xl px-6 my-[80px]";
     const pavCard_grid_cont = "grid grid-cols-2 gap-[8px] items-stretch";
@@ -119,7 +119,7 @@ const EventPavilion = () => {
 
 const PavilionCard = ({ pav }) => {
     const pavilionCard_cont  = "flex flex-col items-center h-full gap-[8px] bg-main_text/60 p-6 rounded-[12px] hover:scale-105 hover:bg-highlight hover:transition-all"
-    const pavilionCard_name = "font-Nunito font-[800] text-background_lightTxt text-pav_details_price";
+    const pavilionCard_name = "font-Nunito font-[700] text-background_lightTxt text-events_h3 hover:font-[800] hover:cursor-pointer";
     
     return (
         <div className="h-full">
