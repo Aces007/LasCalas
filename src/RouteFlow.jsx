@@ -42,6 +42,7 @@ export default function RouteFlow () {
                 <Route path="/gazebo" element={<Gazebo />} />
                 <Route path="/amenities" element={<Amenities />} />
                 <Route path="/faqs" element={<FAQs />} />
+                <Route path="/amenities" element={<Amenities />} />
             </Routes>
         </AnimatePresence>
     );
