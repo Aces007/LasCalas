@@ -38,7 +38,7 @@ const GamingPool = () => {
     
     ]
     
-    const preview_images = [...Array(5)].map((_, i) => 
+    const preview_images = [...Array(10)].map((_, i) => 
         `/lascalas_assets/Website/MainPages_Content/Celebrations/EventSpacePreviews/Gaming_Pool/${i + 1}.jpg`
     );
     

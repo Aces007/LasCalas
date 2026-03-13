@@ -156,7 +156,7 @@ const WaterCard = ({ water }) => {
     return (
         <div>
             <div className={`${waterCard_cont}`}>
-                <img src={water.model_image} alt={water.name} className="w-[250px]" />
+                <img src={water.model_image} alt={water.name} className="w-[250px] h-[180px]" />
                 <h3 className={`${waterCard_name}`}>{water.name}</h3>
                 <p className={`${waterCard_price}`}>{water.price}</p>
             </div>
