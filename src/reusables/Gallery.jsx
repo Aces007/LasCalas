@@ -16,30 +16,10 @@ const Gallery = () => {
     const [activeIndex, setActiveIndex] = useState(0);
 
 
-    const gallery_assets = [
-        { id: 1, src: "/lascalas_assets/Website/Gallery/1.png" },
-        { id: 2, src: "/lascalas_assets/Website/Gallery/2.png" },
-        { id: 3, src: "/lascalas_assets/Website/Gallery/3.png" },
-        { id: 4, src: "/lascalas_assets/Website/Gallery/4.png" },
-        { id: 5, src: "/lascalas_assets/Website/Gallery/5.png" },
-        { id: 6, src: "/lascalas_assets/Website/Gallery/6.png" },
-        { id: 7, src: "/lascalas_assets/Website/Gallery/7.png" },
-        { id: 8, src: "/lascalas_assets/Website/Gallery/8.png" },
-        { id: 9, src: "/lascalas_assets/Website/Gallery/9.png" },
-        { id: 10, src: "/lascalas_assets/Website/Gallery/10.png" },
-        { id: 11, src: "/lascalas_assets/Website/Gallery/11.jpg" },
-        { id: 12, src: "/lascalas_assets/Website/Gallery/12.png" },
-        { id: 13, src: "/lascalas_assets/Website/Gallery/13.png" },
-        { id: 14, src: "/lascalas_assets/Website/Gallery/14.png" },
-        { id: 15, src: "/lascalas_assets/Website/Gallery/15.png" },
-        { id: 16, src: "/lascalas_assets/Website/Gallery/16.png" },
-        { id: 17, src: "/lascalas_assets/Website/Gallery/17.png" },
-        { id: 18, src: "/lascalas_assets/Website/Gallery/18.png" },
-        { id: 19, src: "/lascalas_assets/Website/Gallery/19.png" },
-        { id: 20, src: "/lascalas_assets/Website/Gallery/20.png" },
-        { id: 21, src: "/lascalas_assets/Website/Gallery/21.png" },
-        { id: 22, src: "/lascalas_assets/Website/Gallery/22.png" },
-    ]
+    const gallery_assets = [...Array(46)].map((_, i) => ({
+        id: i + 1,
+        src: `/lascalas_assets/Website/Gallery/${i + 1}.png`
+    }));
 
     return (
         <>

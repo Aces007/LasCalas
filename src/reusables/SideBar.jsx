@@ -6,7 +6,7 @@ import { FiChevronsLeft } from "react-icons/fi";
 const SideBar = ({ isOpen, toggleSidebar }) => { 
     const sideBarLinks = [
         { name: "Amenities", path: "/amenities" },
-        { name: "FAQs", path: "/faqs" },
+        // { name: "Reach Out To Us!", path: "/faqs" },
     ]
 
     // -- STYLING -- //
@@ -63,6 +63,7 @@ const SideBar = ({ isOpen, toggleSidebar }) => {
                                     {link.name}
                                 </Link>
                             ))}
+                            <a href="https://www.facebook.com/lascalasresortluxuryestate/" className="font-Raleway text-xl font-semibold text-main_text hover:text-highlight transition-colors">Reach Out To Us!</a>
                         </nav>
                     </div>
                 </motion.div>

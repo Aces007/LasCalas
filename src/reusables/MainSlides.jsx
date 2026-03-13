@@ -33,7 +33,7 @@ const MainSlides = ({
                         <SwiperSlide>
                             <img
                                 src={item.src}
-                                className="w-full overflow-hidden rounded-md hover:cursor-pointer"
+                                className="h-[80vh] w-full overflow-hidden rounded-md hover:cursor-pointer"
                                 onClick={() => {
                                     setActiveIndex(index);
                                     setIsOpen(true);
@@ -43,12 +43,12 @@ const MainSlides = ({
                 </Swiper>
             </div>
 
-            <div className="col-start-1 row-start-1 w-full h-full z-50 flex flex-col justify-between">
+            <div className="col-start-1 row-start-1 w-full h-full z-50 flex flex-col justify-between gap-16">
                 <div>
                     <NavHead theme={`${theme}`} />
                 </div>
 
-                <div className="flex-grow flex justify-center pb-20">
+                <div className="flex-grow flex justify-center">
                     <h1 className="font-AnticDidone text-background_lightTxt text-slide_h1">{pageTitle}</h1>
                 </div>
             </div>

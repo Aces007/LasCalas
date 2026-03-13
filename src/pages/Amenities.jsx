@@ -34,23 +34,25 @@ const Amenities = () => {
     };
 
     const amenities_slideshow = [
-        { id: 1, src: "/lascalas_assets/Website/Slideshows/Packages_Slideshow/Pack_Slider1.png" },
-        { id: 2, src: "/lascalas_assets/Website/Slideshows/Packages_Slideshow/Pack_Slider2.png" },
-        { id: 3, src: "/lascalas_assets/Website/Slideshows/Packages_Slideshow/Pack_Slider3.png" },
-        { id: 4, src: "/lascalas_assets/Website/Slideshows/Packages_Slideshow/Pack_Slider4.png" },
-        { id: 5, src: "/lascalas_assets/Website/Slideshows/Packages_Slideshow/Pack_Slider5.png" },
-        { id: 6, src: "/lascalas_assets/Website/Slideshows/Packages_Slideshow/Pack_Slider6.png" },
-        { id: 7, src: "/lascalas_assets/Website/Slideshows/Packages_Slideshow/Pack_Slider7.png" },
+        { id: 1, src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities1.png" },
+        { id: 2, src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities2.png" },
+        { id: 3, src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities3.png" },
+        { id: 4, src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities4.png" },
+        { id: 5, src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities5.png" },
+        { id: 6, src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities6.png" },
+        { id: 7, src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities7.png" },
     ]
 
     const packages_menu = [
-        { id: 1, package_name: "Executive Villa", src: "/lascalas_assets/Website/MainPages_Content/Packages/Package1.jpg", description: "Experience beachfront luxury in the King Villa Tents at Cove 1. Featuring a plush king bed just steps from the waves, wake up to breathtaking sunrise views in your own private, seaside sanctuary." },
-        { id: 2, package_name: "Cove 1 Villa Tent - King Bed", src: "/lascalas_assets/Website/MainPages_Content/Packages/Package2.png", description: "Experience beachfront luxury in the King Villa Tents at Cove 1. Featuring a plush king bed just steps from the waves, wake up to breathtaking sunrise views in your own private, seaside sanctuary." },
-        { id: 3, package_name: "Cove 1 Villa Tent - Bunk Bed", src: "/lascalas_assets/Website/MainPages_Content/Packages/Package3.png", description: "Elevate your group getaway in the Bunk Villa Tents at Cove 1. Steps from the shore with premium stylish bunks, enjoy the perfect blend of seaside adventure and refined comfort together." },
-        { id: 4, package_name: "Lascalas Villa Tents - King Bed", src: "/lascalas_assets/Website/MainPages_Content/Packages/Package4.png", description: "Relax in our King Villa Tents, where nature meets luxury. Featuring a plush king bed and modern amenities, it is your private, romantic sanctuary under the stars." },
-        { id: 5, package_name: "Lascalas Villa Tents - Double Size Bed Bunk", src: "/lascalas_assets/Website/MainPages_Content/Packages/Package6.png", description: "Share the experience in our Double Bunk Villa Tents. With spacious double-sized bunks and modern comforts, it is the ideal outdoor luxury escape for families and friends." },
-        { id: 6, package_name: "Lascalas Villa Tents - Bunk Bed", src: "/lascalas_assets/Website/MainPages_Content/Packages/Package6.png", description: "Enjoy a fun getaway in our Bunk Villa Tents. With cozy bunk beds and modern comforts, it is the perfect luxury basecamp for friends and families." },
-        { id: 7, package_name: "Teepee Tents - Camp Cot", src: "/lascalas_assets/Website/MainPages_Content/Packages/Package7.png", description: "Relax at LasCalas Camping Grounds, where you can book a cozy teepee tent, enjoy a campfire under the full moon, and take in stunning beachfront views. Perfect for couples and families looking to unwind." },
+        { id: 1, amenity_name: "Gaming Villa", src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities1.png", description: "Unwind in the Gaming Villa, a tranquil retreat designed for slow-paced leisure. From a quiet game of Billiards or Chess to nostalgic Arcade classics, this sanctuary offers a relaxing indoor escape to enjoy shared moments and gentle fun." },
+        { id: 2, amenity_name: "Pool Area", src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities2.png", description: "Unwind at our Pool Area, a serene oasis designed for quiet relaxation. Whether you're lounging by the water or enjoying a gentle evening swim under the stars, this tranquil space offers the perfect atmosphere to refresh your mind and body in total peace." },
+        { id: 3, amenity_name: "Steam Sauna", src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities3.png", description: "Rejuvenate your senses in our restorative Steam Sauna. A private, barrel-style sanctuary nestled in nature, it offers a gentle, purifying heat designed to detoxify your body and provide a deep sense of calm and well-being" },
+        { id: 4, amenity_name: "Cove 1 Beach Front", src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities4.png", description: "Embrace seaside serenity at Cove 1. Whether you're lounging with a fresh coconut or listening to the gentle rhythm of the waves, this premier beachfront sanctuary offers an exclusive space to bask in the sun and unwind in total comfort." },
+        { id: 5, amenity_name: "Obstacle Course", src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities5.png", description: "Find your balance on our nature-integrated Obstacle Course. A low-impact way to enjoy the outdoors, this space encourages mindful movement and playful coordination amidst the resort's greenery." },
+        { id: 6, amenity_name: "Rope Course", src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities6.png", description: "Experience a fresh perspective from our Rope Course. Nestled within the canopy, this guided adventure offers a calm way to reconnect with nature while enjoying a scenic view of the estate." },
+        { id: 7, amenity_name: "Cove 2", src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities7.png", description: "Discover the vibrant waters of Cove 2. Perfect for a peaceful paddle or a slow boat ride, this crystal-clear lagoon is your gateway to exploring the gentle rhythms of the sea." },
+        { id: 7, amenity_name: "Cove 3", src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities8.png", description: "Escape to the expansive beauty of Cove 3. This panoramic coastal stretch offers a quiet sanctuary for those looking to soak in the vast ocean horizon and the lush island landscape." },
+        { id: 7, amenity_name: "Cove 4", src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities9.png", description: "Discover the breathtaking heights of Cove 4, where our exclusive Cliff Dining area offers a front-row seat to the horizon. Enjoy a serene, open-air meal perched above the waves, the perfect setting for a tranquil sunset or a private, starlit dinner." },
     ]
 
     return (
@@ -64,17 +66,14 @@ const Amenities = () => {
             <MainSlides pageTitle="Amenities" slideContent={amenities_slideshow} />
 
             <div className={`${center_element_col} gap-[120px] py-32`}>
-                <h2 className={`${packages_h2}`}>LasCalas Resort & Luxury Estate blends premium accommodations with immersive nature, offering exclusive adventures in a luxurious setting.</h2>
-
-
                 <div className={`${main_page_grid_cont}`}>
                 {packages_menu.map((item) => (
                     <div key={item.id} className={`${main_page_content_cont}`}>
-                        <img src={item.src} alt={item.package_name} className={`${main_page_cards_img}`}/>
+                        <img src={item.src} alt={item.amenity_name} className={`${main_page_cards_img}`}/>
 
                         <div className={`${main_page_content_name_cont}`}>
                             <h3 className={`${main_page_content_name}`}>
-                                {item.package_name}
+                                {item.amenity_name}
                             </h3>
                         </div>
                         
