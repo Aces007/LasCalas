@@ -1,7 +1,7 @@
 import { IoMdClose } from "react-icons/io";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay, EffectCoverflow } from "swiper/modules";
+import { Navigation, Autoplay, EffectCoverflow } from "swiper/modules";
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -16,8 +16,8 @@ const GalleryModal = ({ isOpen, onClose, galleryItems, currentImg }) => {
     
     // Styling Variables (USE THIS FORMAT: Permanent Styling [like font fam] then responsive styles starting from smallest size)
     const modalCont = "bg-main_text/90 fixed z-50 inset-0 flex flex-col items-center justify-center gap-16 text-gal_modal_close";
-    const modalCloseButton = "flex items-center justify-center text-accent font-Montserrat uppercase hover:text-highlight hover:font-semibold";
-    const modalH1 = "font-Libre text-background_lightTxt/90 font-semibold text-gal_modal_h1";
+    const modalCloseButton = "flex items-center justify-center text-accent font-Montserrat uppercase hover:text-highlight hover:font-semibold resSm:text-[24px] resMd:text-[26px] resLg:text-[32px]";
+    const modalH1 = "font-Libre text-background_lightTxt/90 font-semibold resSm:text-[24px] resMd:text-[32px] resLg:text-[40px]";
 
     const pagination = {
         clickable: true,
@@ -39,7 +39,7 @@ const GalleryModal = ({ isOpen, onClose, galleryItems, currentImg }) => {
         // inset-0 = "top:0,bottom:0,left:0,right:0"
         <div className={`${modalCont}`}>
             <button className={`${modalCloseButton}`} onClick={onClose}>
-                Close<IoMdClose size={32} /> 
+                Close<IoMdClose /> 
             </button>
 
             <h1 className={`${modalH1}`}>A New Standard of Luxury</h1>
@@ -48,8 +48,13 @@ const GalleryModal = ({ isOpen, onClose, galleryItems, currentImg }) => {
                 effect={'coverflow'}
                 grabCursor={true}
                 centeredSlides={true}
-                slidesPerView={3}
+                slidesPerView={2}
                 loop={true}
+                breakpoints={{
+                    360: { slidesPerView: 1 },
+                    768: { slidesPerView: 2 },
+                    1280: { slidesPerView: 3 }
+                }}
                 coverflowEffect={{
                 rotate: 50,
                 stretch: 0,
@@ -57,9 +62,8 @@ const GalleryModal = ({ isOpen, onClose, galleryItems, currentImg }) => {
                 modifier: 1,
                 slideShadows: false,
                 }}
-                pagination={pagination}
-                modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
-                className="w-[1500px] pb-[64px]"
+                modules={[EffectCoverflow, Navigation, Autoplay]}
+                className="resSm:w-[380px] resSm:h-[400px] resMd:w-[1040px] resMd:h-[540px] resLg:w-[1400px] pb-[64px]"
                 navigation
                 autoplay={{
                     delay: 3000,

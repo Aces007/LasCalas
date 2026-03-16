@@ -6,73 +6,19 @@ export default {
   ],
   theme: {
     screens: {
-      resSm: { min: "360px", max: "480px" },      // regular phones
-      resMd: { min: "768px", max: "1120px" },     // tablets
-      resLg: { min: "1280px", max: "1366px" },    // laptops (your native res)
-      resHD: { min: "1920px", max: "2560px" },    // full HD monitors
+      resSm: { min: "360px", max: "767px" },      // regular phones
+      resMd: { min: "768px", max: "1279px" },     // tablets
+      resLg: { min: "1280px" },                    // laptops and desktops (1280px and above)
     },
     fontSize: {
         // HD Desktop
-
-          // -- PACKAGES -- //
-          slide_h1: "80px",
-          // -- FOOTER -- //
-          location_p: "18px",
-          contacts_p: "16px",
-
-          foot_display: "24px",
-          foot_display2: "16px",
-          foot_display3: "12px",
-          foot_h3s: "20px",
-          foot_body_links: "16px",
-
-          gal_modal_close: "24px",
-          gal_modal_h1: "56px",
-
-          // -- PACKAGES -- //          
-          packages_h2: "20px",
-          packages_name: "16px",
-          packages_btn: "20px",
-          packages_hover_p: "20px",
-          packages_hover_a: "24px",
-
-          package_details_name: "48px",
-          package_details_price: "24px",
-
-          // -- EXPLORE -- //
-          atv_details_name: "14px",
-          atv_details_price: "24px",
-          atv_tagline: "26px",
           
-          water_details_name: "20px",
-          water_details_price: "24px",
-
-          rope_description_head: "30px",
-          rope_description_text: "20px",
-
-          buggy_details_name: "14px",
-          buggy_details_price: "20px",
-          
-          explore_tab_active: "40px",
-          explore_tab_inactive: "40px",
-          explore_label: "40px",
-          explore_name: "18px",
-          explore_btn: "20px",
-          explore_hover_p: "20px",
-          explore_hover_a: "24px",
-
-          // -- CELEBRATIONS / EVENT SPACES -- //
-          event_dets_name: "48px",
-          event_dets_price: "24px",
-          events_h3: "20px",
-          events_dets: "16px",
-
         // LG Desktop 
-          // -- FOOTER -- //
+          
         // MD Tablets
-          // -- FOOTER -- //
+          
         // SM Phones
-          // -- FOOTER -- //
+          
       },
     extend: {
       // You can use scale in the keyframes config but use transform 
