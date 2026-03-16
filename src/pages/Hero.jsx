@@ -13,7 +13,7 @@ const Hero = () => {
         const hero_display_h1 = "font-Libre uppercase text-background_lightTxt resSm:text-[40px] resMd:text-[120px] resLg:text-[160px]";
         const hero_display_h2 = "font-Montserrat uppercase font-Regular text-background_lightTxt relative top-[-24px] resSm:text-[24px] resMd:text-[50px] resLg:text-[64px]";
         const hero_display_h3_cont = "flex flex-col items-center";
-        const hero_display_h3 = "font-Libre font-Regular text-background_lightTxt tracking-[5%] resLg:text-hero_display_h3";
+        const hero_display_h3 = "font-Libre font-Regular text-background_lightTxt tracking-[5%] resSm:text-[16px] resMd:text-[24px] resLg:text-[32px]";
 
         const hero_about_us_btn = "flex flex-col items-center gap-[8px] font-Montserrat text-background_lightTxt font-bold tracking-[5%] hover:text-highlight resSm:text-[18px] resMd:text-[24px] resLg:text-[32px]";
 
