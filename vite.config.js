@@ -8,5 +8,8 @@ export default defineConfig({
     watch: {
       usePolling: true, // Forces Vite to check files every X milliseconds
     },
+    headers: {
+      'Cache-Control': 'no-store, no-cache, must-revalidate, proxy-revalidate',
+    },
   },
 })

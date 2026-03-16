@@ -5,6 +5,9 @@ import { FiChevronsLeft } from "react-icons/fi";
 // Change toggleSidebar to onClose to match NavHead, or update NavHead to match this
 const SideBar = ({ isOpen, toggleSidebar }) => { 
     const sideBarLinks = [
+        { name: "Packages", path: "/packagesmenu" },
+        { name: "Explore", path: "/explore" },
+        { name: "Celebrations", path: "/celebrations" },
         { name: "Amenities", path: "/amenities" },
         // { name: "Reach Out To Us!", path: "/faqs" },
     ]
@@ -48,10 +51,11 @@ const SideBar = ({ isOpen, toggleSidebar }) => {
                     // Changed right-0 to left-0
                     className={`${sidebar_cont}`}
                 >
-                    <div className="flex flex-col justify-between gap-14">
-                        {/* Ensure this button calls the correct function */}
+                    <div className="flex flex-col justify-between h-full">
+                        {/* Close Button */}
                         <button onClick={toggleSidebar} className="self-end text-main_text text-2xl"><FiChevronsLeft size={28} className="hover:text-highlight" /></button>
 
+                        {/* Navigation Links */}
                         <nav className="flex flex-col gap-6">
                             {sideBarLinks.map((link) => (
                                 <Link 
@@ -65,6 +69,9 @@ const SideBar = ({ isOpen, toggleSidebar }) => {
                             ))}
                             <a href="https://www.facebook.com/lascalasresortluxuryestate/" className="font-Raleway text-xl font-semibold text-main_text hover:text-highlight transition-colors">Reach Out To Us!</a>
                         </nav>
+
+                        {/* Book Now Button */}
+                        <a href="https://us2.cloudbeds.com/reservation/10IVXw" target="_blank" className="font-Montserrat font-extrabold uppercase p-4 rounded-[8px] border-[3px] border-main_text text-main_text hover:bg-highlight hover:border-highlight hover:text-background_lightTxt transition-all duration-300 text-center">Book Now</a>
                     </div>
                 </motion.div>
                 </>

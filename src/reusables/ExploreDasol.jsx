@@ -23,8 +23,13 @@ const ExploreDasol = () => {
             effect={'coverflow'}
             grabCursor={true}
             centeredSlides={true}
-            slidesPerView={3}
+            slidesPerView={1}
             loop={true}
+            breakpoints={{
+                360: { slidesPerView: 1 },
+                768: { slidesPerView: 2 },
+                1280: { slidesPerView: 3 }
+            }}
             coverflowEffect={{
             rotate: 50,
             stretch: 0,
@@ -33,7 +38,7 @@ const ExploreDasol = () => {
             slideShadows: false,
             }}
             modules={[EffectCoverflow, Navigation, Autoplay]}
-            className="w-[600px] py-[40px]"
+            className="w-full resSm:w-full resMd:w-[500px] resLg:w-[600px] py-[40px]"
             navigation
             autoplay={{
                 delay: 500,

@@ -9,7 +9,8 @@ const NavHead = ({ theme = "light" }) => {
     const [sideBarOpen, setSideBarOpen] = useState(false);
 
     // Styling Variables
-    const variantPadding = variantIsDark ? "px-[48px] py-[24px]" : "px-[56px] py-[56px]"
+    const variantPaddingDesktop = variantIsDark ? "px-[48px] py-[24px]" : "px-[56px] py-[56px]"
+    const variantPaddingMobile = variantIsDark ? "px-[32px] py-[20px]" : "px-[32px] py-[20px]"
     const variantLogoCol = variantIsDark ? "/lascalas_assets/lascalasBlack.png" : "/lascalas_assets/lascalasWhite.png";
     const variantNavlinks = variantIsDark ? "text-main_text hover:text-highlight hover:font-bold" : "text-background_lightTxt hover:text-highlight hover:font-bold";
     const variantText = variantIsDark ? "text-main_text" : "text-background_lightTxt";
@@ -18,10 +19,10 @@ const NavHead = ({ theme = "light" }) => {
 
     return (
         <>
-            <div className={`grid grid-cols-3 items-center ${variantPadding}`}>
+            {/* Desktop Layout (resLg and up: 1280px and above) */}
+            <div className={`hidden resLg:grid grid-cols-3 items-center ${variantPaddingDesktop}`}>
                 {/* NavButtons (Left) */}
                 <div className="flex items-center gap-[24px]">
-                    {/* TRIGGER: Added onClick to open the sidebar */}
                     <RxHamburgerMenu 
                         size={26} 
                         className={`${variantSVGs} cursor-pointer hover:text-highlight transition-colors`} 
@@ -47,6 +48,19 @@ const NavHead = ({ theme = "light" }) => {
                     </button>
                     <a href="https://us2.cloudbeds.com/reservation/10IVXw" target="_blank" className={`font-Montserrat font-extrabold uppercase p-4 rounded-[8px] ${variantBorder} ${variantText} hover:p-6 transition-all duration-300`}>Book Now</a>
                 </div>
+            </div>
+
+            {/* Mobile/Tablet Layout (below resLg: below 1280px) */}
+            <div className={`resLg:hidden flex items-center justify-between ${variantPaddingMobile}`}>
+                {/* Logo (Left) */}
+                <Link to="/"><img src={variantLogoCol} alt="lasCalas logo" className="resSm:w-[40px] resMd:w-[60px]" /></Link>
+
+                {/* Hamburger Menu (Right) */}
+                <RxHamburgerMenu 
+                    size={26} 
+                    className={`${variantSVGs} cursor-pointer hover:text-highlight transition-colors`} 
+                    onClick={() => setSideBarOpen(true)}
+                />
             </div>
 
             {/* SIDEBAR: Pass state and close function as props */}

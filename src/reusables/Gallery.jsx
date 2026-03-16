@@ -27,8 +27,13 @@ const Gallery = () => {
                 effect={'coverflow'}
                 grabCursor={true}
                 centeredSlides={true}
-                slidesPerView={3}
+                slidesPerView={1}
                 loop={true}
+                breakpoints={{
+                    360: { slidesPerView: 1 },
+                    768: { slidesPerView: 2 },
+                    1280: { slidesPerView: 3 }
+                }}
                 coverflowEffect={{
                 rotate: 50,
                 stretch: 0,
@@ -37,7 +42,7 @@ const Gallery = () => {
                 slideShadows: false,
                 }}
                 modules={[Navigation, Autoplay]}
-                className="w-[1400px] py-[56px]"
+                className="w-full resSm:w-full resMd:w-[1100px] resLg:w-[1400px] py-[56px]"
                 navigation
                 autoplay={{
                     delay: 3000,
