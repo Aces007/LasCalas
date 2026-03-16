@@ -101,7 +101,7 @@ const NavFoot = () => {
             <div className={`${foot_content}`}>
 
                 {/* LOCATION AND MAP CONTAINER */}
-                <div className={`flex flex-col resMd:flex-col resLg:flex-row justify-between px-[32px] gap-[40px] resSm:gap-[24px]`}>
+                <div className={`flex flex-col resMd:flex-row resLg:flex-row justify-between px-[32px] gap-[40px] resSm:gap-[24px]`}>
                     <div className={foot_loc_explore}>
                         <div className={foot_location_cont}>
                             <h1 className={`${foot_section_heads}`}>Our Location</h1>
@@ -153,9 +153,9 @@ const NavFoot = () => {
                             <img src="/lascalas_assets/lascalasBlue.png" alt="LasCalas Logo Blue" className="resSm:w-[80px] resMd:w-[120px] resLg:w-[132px]" />
                             <div className={`${center_element_col}`}>
                                 <h1 className={`${foot_display} resSm:text-[24px] resMd:text-[28px] resLg:text-[28px]`}>LasCalas</h1>
-                                <h2 className={`${foot_display} resSm:text-[16px] resMd:text-[18px] resLg:text-[18px]`}>Resort & LUXURY ESTATE</h2>
+                                <h2 className={`${foot_display} resSm:text-[16px] resMd:text-[16px] resLg:text-[18px]`}>Resort & LUXURY ESTATE</h2>
                             </div>
-                            <p className={`${foot_display} text-center resSm:text-[14px] resMd:text-[14px] resLg:text-[18px]`}><span className="text-main_text">Indulge in</span> Serenity | <br /> <span className="text-main_text">Discover Your Sanctuary of</span> Luxury</p>
+                            <p className={`${foot_display} text-center resSm:text-[14px] resMd:text-[13px] resLg:text-[17px]`}><span className="text-main_text">Indulge in</span> Serenity | <br /> <span className="text-main_text">Discover Your Sanctuary of</span> Luxury</p>
                         </div>
 
                         <div className={`flex flex-col resMd:flex-row resLg:flex-row items-start resSm:items-center justify-evenly gap-[50px] resSm:gap-[40px] resLg:gap-[120px]`}>
