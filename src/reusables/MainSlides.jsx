@@ -33,7 +33,7 @@ const MainSlides = ({
                         <SwiperSlide>
                             <img
                                 src={item.src}
-                                className="h-[80vh] resSm:h-[30vh] w-full overflow-hidden hover:cursor-pointer"
+                                className="h-[80vh] resSm:h-[60vh] w-full overflow-hidden hover:cursor-pointer"
                                 onClick={() => {
                                     setActiveIndex(index);
                                     setIsOpen(true);
