@@ -48,7 +48,7 @@ const MainSlides = ({
                     <NavHead theme={`${theme}`} />
                 </div>
 
-                <div className="flex-grow flex justify-center">
+                <div className="flex-grow flex justify-center resMd:relative resMd:bottom-[80px]">
                     <h1 className="font-AnticDidone text-background_lightTxt resSm:text-[48px] resMd:text-[80px] resLg:text-[104px]">{pageTitle}</h1>
                 </div>
             </div>
