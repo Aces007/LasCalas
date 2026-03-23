@@ -18,7 +18,7 @@ const NavFoot = () => {
         const locationContact = "flex items-center gap-[24px]";
         const foot_loc_explore = "flex flex-col items-start gap-[40px]";
 
-        const foot_section_heads = "font-Raleway resSm:text-[22px] resMd:text-[26px] resLg:text-[32px]";
+        const foot_section_heads = "font-Raleway resSm:text-[20px] resMd:text-[26px] resLg:text-[32px]";
 
         const foot_location_cont = "flex flex-col items-start gap-[16px]";
         const foot_location_content = "flex flex-col items-start gap-[16px]"
@@ -128,7 +128,7 @@ const NavFoot = () => {
                     <div className={`${foot_map_cont}`}>
                         <div className="flex items-center justify-between">
                             <h1 className={`${foot_section_heads}`}>Map</h1>
-                            <a href="https://maps.app.goo.gl/1gqmxGKsbwLfq4bo9" className="font-Montserrat text-accent hover:text-highlight hover:underline resSm:text-[14px]" target="_blank">View On Google Maps</a>
+                            <a href="https://maps.app.goo.gl/1gqmxGKsbwLfq4bo9" className="font-Montserrat text-accent hover:text-highlight hover:underline" target="_blank">View On Google Maps</a>
                         </div>
                         <img
                             src={foot_map.src}
