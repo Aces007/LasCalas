@@ -42,7 +42,7 @@ const Gallery = () => {
                 slideShadows: false,
                 }}
                 modules={[Navigation, Autoplay]}
-                className="w-full resSm:w-full resMd:w-[1100px] resLg:w-[1400px] py-[56px]"
+                className="w-full resSm:w-full resSm:h-[350px] resSm:top-[-40px] resMd:w-[1100px] resLg:w-[1400px] py-[56px] rounded-lg flex items-center justify-center"
                 navigation
                 autoplay={{
                     delay: 3000,
