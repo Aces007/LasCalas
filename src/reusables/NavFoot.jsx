@@ -189,7 +189,7 @@ const NavFoot = () => {
                             </div>
 
                             <div className={`${start_element_col} gap-[32px] resSm:items-center resSm:w-full resMd:w-full resLg:w-[360px]`}>
-                                <div className={`${start_element_col} resSm:items-center gap-[8px]`}>
+                                <div className={`hidden ${start_element_col} resSm:items-center gap-[8px]`}>
                                     <h3 className={`${foot_h3s}`}>Newsletter</h3>
                     
                                     {/* PLACEHOLDER 1 - Space for Newsletter field */}
