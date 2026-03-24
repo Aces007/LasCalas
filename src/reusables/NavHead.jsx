@@ -9,49 +9,65 @@ const NavHead = ({ theme = "light" }) => {
     const [sideBarOpen, setSideBarOpen] = useState(false);
 
     // Styling Variables
-    const variantPaddingDesktop = variantIsDark ? "px-[48px] py-[24px]" : "px-[56px] py-[56px]"
-    const variantPaddingMobile = variantIsDark ? "px-[32px] py-[20px]" : "px-[32px] py-[20px]"
-    const variantLogoCol = variantIsDark ? "/lascalas_assets/lascalasBlack.png" : "/lascalas_assets/lascalasWhite.png";
-    const variantNavlinks = variantIsDark ? "text-main_text hover:text-highlight hover:font-bold" : "text-background_lightTxt hover:text-highlight hover:font-bold";
-    const variantText = variantIsDark ? "text-main_text" : "text-background_lightTxt";
-    const variantBorder = variantIsDark ? "border-[3px] border-black hover:bg-highlight hover:text-background_lightTxt" : "border-[3px] border-background_lightTxt hover:bg-highlight";
-    const variantSVGs = variantIsDark ? "text-main_text" : "text-background_lightTxt";
 
+        //--CONTAINERS--//
+        const variantPaddingDesktop = variantIsDark ? "px-[48px] py-[24px]" : "px-[56px] py-[56px]"
+        const variantPaddingMobile = variantIsDark ? "px-[32px] py-[20px]" : "px-[32px] py-[20px]"
+        const variantBorder = variantIsDark ? "border-[3px] border-black hover:bg-highlight hover:text-background_lightTxt" : "border-[3px] border-background_lightTxt hover:bg-highlight";
+
+        //--TEXTS--//
+        const variantLogoCol = variantIsDark ? "/lascalas_assets/lascalasBlack.png" : "/lascalas_assets/lascalasWhite.png";
+        const variantNavlinks = variantIsDark ? "text-main_text hover:text-highlight hover:font-bold font-Montserrat uppercase resLg:text-[18px]" : "text-background_lightTxt font-Montserrat uppercase resLg:text-[18px] hover:text-highlight hover:font-bold";
+        const variantText = variantIsDark ? "text-main_text" : "text-background_lightTxt";
+        const variantSVGs = variantIsDark ? "text-main_text" : "text-background_lightTxt";
+        const language_btn_head = "font-Montserrat font-bold flex flex-row items-center gap-[8px] resLg:text-[20px]";
+        const booking_btn_head = "font-Montserrat font-extrabold uppercase p-4 rounded-[8px] resLg:text-[20px] hover:p-6 transition-all duration-300";
+    
+
+    // -- FLEX STYLING -- //
+        const center_element_col = "flex flex-col items-center";
+        const start_element_col = "flex flex-col items-start";
+        const center_element_row = "flex items-center";
+        const start_element_row = "flex items-start";
+        const between_element_row = "flex justify-between";
+        const center_justify_row = "flex justify-center";
+    
+    
     return (
         <>
             {/* Desktop Layout (resLg and up: 1280px and above) */}
             <div className={`hidden resLg:grid grid-cols-3 items-center ${variantPaddingDesktop}`}>
                 {/* NavButtons (Left) */}
-                <div className="flex items-center gap-[24px] resLg:gap-[20px]">
+                <div className={`${center_element_row} gap-[24px] resLg:gap-[20px]`}>
                     <RxHamburgerMenu 
                         size={26} 
-                        className={`${variantSVGs} cursor-pointer hover:text-highlight transition-colors resLg:text-[20px]`} 
+                        className={`${variantSVGs} cursor-pointer transition-colors resLg:text-[20px] hover:text-highlight`} 
                         onClick={() => setSideBarOpen(true)}
                     />
                     
-                    <div className="flex justify-center gap-[24px] resLg:gap-[20px]">
-                        <Link to="/packagesmenu" className={`font-Montserrat uppercase resLg:text-[18px] ${variantNavlinks}`}>Packages</Link>
-                        <Link to="/explore" className={`font-Montserrat uppercase resLg:text-[18px] ${variantNavlinks}`}>Explore</Link>
-                        <Link to="/celebrations" className={`font-Montserrat uppercase resLg:text-[18px] ${variantNavlinks}`}>Celebrations</Link>
+                    <div className={`${center_justify_row} gap-[24px] resLg:gap-[20px]`}>
+                        <Link to="/packagesmenu" className={`${variantNavlinks}`}>Packages</Link>
+                        <Link to="/explore" className={`${variantNavlinks}`}>Explore</Link>
+                        <Link to="/celebrations" className={`${variantNavlinks}`}>Celebrations</Link>
                     </div>
                 </div>
 
                 {/* Logo (Center) */}
-                <div className="flex justify-center">
+                <div className={`${center_justify_row}`}>
                     <Link to="/"><img src={variantLogoCol} alt="lasCalas logo" className="w-[104px]" /></Link>
                 </div>
 
                 {/* CTA Btns (Right) */}
                 <div className="flex justify-end gap-[24px]">
-                    <button className={`font-Montserrat font-bold flex flex-row items-center gap-[8px] resLg:text-[20px] ${variantText}`}>
+                    <button className={`${language_btn_head} ${variantText}`}>
                         ENG <FaAngleDown size={20} className={`${variantSVGs}`}/>
                     </button>
-                    <a href="https://us2.cloudbeds.com/reservation/10IVXw" target="_blank" className={`font-Montserrat font-extrabold uppercase p-4 rounded-[8px] resLg:text-[20px] ${variantBorder} ${variantText} hover:p-6 transition-all duration-300`}>Book Now</a>
+                    <a href="https://us2.cloudbeds.com/reservation/10IVXw" target="_blank" className={`${booking_btn_head} ${variantBorder} ${variantText}`}>Book Now</a>
                 </div>
             </div>
 
             {/* Mobile/Tablet Layout (below resLg: below 1280px) */}
-            <div className={`resLg:hidden flex items-center justify-between ${variantPaddingMobile}`}>
+            <div className={`resLg:hidden ${center_element_row} justify-between ${variantPaddingMobile}`}>
                 {/* Logo (Left) */}
                 <Link to="/"><img src={variantLogoCol} alt="lasCalas logo" className="resSm:w-[40px] resMd:w-[60px]" /></Link>
 

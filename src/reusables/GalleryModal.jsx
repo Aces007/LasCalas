@@ -8,16 +8,29 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import 'swiper/css/effect-coverflow';
-import { img } from "framer-motion/client";
 import { useEffect } from "react";
 
 const GalleryModal = ({ isOpen, onClose, galleryItems, currentImg }) => {
     if (!isOpen) return null;
     
     // Styling Variables (USE THIS FORMAT: Permanent Styling [like font fam] then responsive styles starting from smallest size)
-    const modalCont = "bg-main_text/90 fixed z-50 inset-0 flex flex-col items-center justify-center gap-16 text-gal_modal_close";
-    const modalCloseButton = "flex items-center justify-center text-accent font-Montserrat uppercase hover:text-highlight hover:font-semibold resSm:text-[24px] resMd:text-[26px] resLg:text-[32px]";
-    const modalH1 = "font-Libre text-background_lightTxt/90 font-semibold resSm:text-[24px] resMd:text-[32px] resLg:text-[40px]";
+        //--CONTAINERS--//
+        const modalCont = "bg-main_text/90 fixed z-50 inset-0 flex flex-col items-center justify-center gap-16 text-gal_modal_close";
+        const sliderCont_galModal = "pb-[64px] resSm:w-[380px] resSm:h-[400px] resMd:w-[1040px] resMd:h-[540px] resLg:w-[1400px]";
+        const sliderContent_galModal = "h-[400px] overflow-hidden rounded-md hover:cursor-pointer";
+        
+        //--TEXTS--//
+        const modalCloseButton = "flex items-center justify-center text-accent font-Montserrat uppercase hover:text-highlight hover:font-semibold resSm:text-[24px] resMd:text-[26px] resLg:text-[32px]";
+        const modalH1 = "font-Libre text-background_lightTxt/90 font-semibold resSm:text-[24px] resMd:text-[32px] resLg:text-[40px]";
+        
+        // -- FLEX STYLING -- //
+        const center_element_col = "flex flex-col items-center";
+        const start_element_col = "flex flex-col items-start";
+        const center_element_row = "flex items-center";
+        const start_element_row = "flex items-start";
+        const justween_element_row = "flex justify-between";
+        const justween_element_col = "flex flex-col justify-between";
+        const justcenter_element_row = "flex justify-center";
 
     const pagination = {
         clickable: true,
@@ -63,7 +76,7 @@ const GalleryModal = ({ isOpen, onClose, galleryItems, currentImg }) => {
                 slideShadows: false,
                 }}
                 modules={[EffectCoverflow, Navigation, Autoplay]}
-                className="resSm:w-[380px] resSm:h-[400px] resMd:w-[1040px] resMd:h-[540px] resLg:w-[1400px] pb-[64px]"
+                className={`${sliderCont_galModal}`}
                 navigation
                 autoplay={{
                     delay: 3000,
@@ -71,8 +84,8 @@ const GalleryModal = ({ isOpen, onClose, galleryItems, currentImg }) => {
                 }}
             >
                 {galleryItems.map((item) => (
-                    <SwiperSlide key={item.id}  className="flex flex-col items-center">
-                        <img src={item.src} className="h-[400px] overflow-hidden rounded-md hover:cursor-pointer"/>
+                    <SwiperSlide key={item.id}  className={`${center_element_col}`}>
+                        <img src={item.src} className={`${sliderContent_galModal}`} />
                     </SwiperSlide>
                 ))}
             </Swiper>
