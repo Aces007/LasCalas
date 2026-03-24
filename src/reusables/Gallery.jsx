@@ -10,6 +10,17 @@ import GalleryModal from "./GalleryModal";
 
 const Gallery = () => {
     // Styling Variables (USE THIS FORMAT: Permanent Styling [like font fam] then responsive styles starting from smallest size)
+    const gallery_cont = "w-full resSm:w-full resMd:w-[1100px] resLg:w-[1200px] mt-[8px]";
+    const gallery_slide_content = "h-[240px] overflow-hidden rounded-md hover:cursor-pointer";
+
+    // -- FLEX STYLING -- //
+        const center_element_col = "flex flex-col items-center";
+        const start_element_col = "flex flex-col items-start";
+        const center_element_row = "flex items-center";
+        const start_element_row = "flex items-start";
+        const between_element_row = "flex justify-between";
+
+
 
     // MODAL STATES
     const [isOpen, setIsOpen] = useState(false);
@@ -42,7 +53,7 @@ const Gallery = () => {
                 slideShadows: false,
                 }}
                 modules={[Navigation, Autoplay]}
-                className="w-full resSm:w-full resMd:w-[1100px] resLg:w-[1200px] mt-[8px]"
+                className={`${gallery_cont}`}
                 navigation
                 autoplay={{
                     delay: 3000,
@@ -50,15 +61,16 @@ const Gallery = () => {
                 }}
             >
                 {gallery_assets.map((item, index) => (
-                    <SwiperSlide className="flex flex-col items-center">
-                    <img 
-                        src={item.src}  
-                        alt={item.label} 
-                        className="h-[240px] overflow-hidden rounded-md hover:cursor-pointer"
-                        onClick={() => { 
-                            setActiveIndex(index);
-                            setIsOpen(true);
-                        }} />
+                    <SwiperSlide className={`${center_element_col}`}>
+                        <img 
+                            src={item.src}  
+                            alt={item.label} 
+                            className={`${gallery_slide_content}`}
+                            onClick={() => { 
+                                setActiveIndex(index);
+                                setIsOpen(true);
+                            }} 
+                        />
                     </SwiperSlide>
                 ))}
             </Swiper>

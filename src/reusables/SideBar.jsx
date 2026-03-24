@@ -13,22 +13,22 @@ const SideBar = ({ isOpen, toggleSidebar }) => {
     ]
 
     // -- STYLING -- //
-    const overlay_cont = "fixed inset-0 bg-black/50 z-40 backdrop-blur-sm";
-    const sidebar_cont = "fixed left-0 top-0 h-full w-[300px] bg-background_lightTxt z-50 p-8 shadow-2xl";
-    const space_name = "font-Raleway font-semibold text-event_dets_name";
-    const space_price = "font-Raleway font-semibold text-event_dets_price text-secondary/60";
+        //--CONTAIENRS--//
+        const overlay_cont = "fixed inset-0 bg-black/50 z-40 backdrop-blur-sm";
+        const sidebar_cont = "fixed left-0 top-0 h-full w-[300px] bg-background_lightTxt z-50 p-8 shadow-2xl";
 
-    const camp_grid_cont = "grid grid-cols-2 gap-12 items-center w-full max-w-6xl px-6 my-[80px]";
-    const campCard_grid_cont = "grid grid-cols-2 gap-[8px] items-stretch";
-    const camp_tagline = "font-Raleway font-bold text-atv_tagline text-main_text/60 tracking-tight uppercase";
+        //--TEXTS--//
+        const reachOut_btn_sidebar = "font-Raleway text-xl font-semibold text-main_text hover:text-highlight transition-colors";
+        const booking_btn_sidebar = "font-Montserrat font-extrabold uppercase p-4 rounded-[8px] border-[3px] border-main_text text-main_text hover:bg-highlight hover:border-highlight hover:text-background_lightTxt transition-all duration-300 text-center";
+        const sidebarLinks_btns = "font-Raleway text-xl font-semibold text-main_text hover:text-highlight transition-colors";
 
-    const carousel_preview = "h-[400px] overflow-hidden rounded-md hover:cursor-pointer";
     // -- FLEX STYLING -- //
         const center_element_col = "flex flex-col items-center";
         const start_element_col = "flex flex-col items-start";
         const center_element_row = "flex items-center";
         const start_element_row = "flex items-start";
         const justween_element_row = "flex justify-between";
+        const justween_element_col = "flex flex-col justify-between";
         const justcenter_element_row = "flex justify-center";
     
     return (
@@ -51,7 +51,7 @@ const SideBar = ({ isOpen, toggleSidebar }) => {
                     // Changed right-0 to left-0
                     className={`${sidebar_cont}`}
                 >
-                    <div className="flex flex-col justify-between h-full">
+                    <div className={`${justween_element_col} h-full`}>
                         {/* Close Button */}
                         <button onClick={toggleSidebar} className="self-end text-main_text text-2xl"><FiChevronsLeft size={28} className="hover:text-highlight" /></button>
 
@@ -61,17 +61,17 @@ const SideBar = ({ isOpen, toggleSidebar }) => {
                                 <Link 
                                     key={link.name} 
                                     to={link.path}
-                                    className="font-Raleway text-xl font-semibold text-main_text hover:text-highlight transition-colors"
+                                    className={sidebarLinks_btns}
                                     onClick={toggleSidebar}
                                 >
                                     {link.name}
                                 </Link>
                             ))}
-                            <a href="https://www.facebook.com/lascalasresortluxuryestate/" className="font-Raleway text-xl font-semibold text-main_text hover:text-highlight transition-colors">Reach Out To Us!</a>
+                            <a href="https://www.facebook.com/lascalasresortluxuryestate/" className={`${reachOut_btn_sidebar}`}>Reach Out To Us!</a>
                         </nav>
 
                         {/* Book Now Button */}
-                        <a href="https://us2.cloudbeds.com/reservation/10IVXw" target="_blank" className="font-Montserrat font-extrabold uppercase p-4 rounded-[8px] border-[3px] border-main_text text-main_text hover:bg-highlight hover:border-highlight hover:text-background_lightTxt transition-all duration-300 text-center">Book Now</a>
+                        <a href="https://us2.cloudbeds.com/reservation/10IVXw" target="_blank" className={`${booking_btn_sidebar}`}>Book Now</a>
                     </div>
                 </motion.div>
                 </>
