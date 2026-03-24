@@ -7,7 +7,7 @@ export default {
   theme: {
     screens: {
       resSm: { min: "360px", max: "767px" },      // regular phones
-      resMd: { min: "768px", max: "1279px" },     // tablets
+      resMd: { min: "768px", max: "1366px" },     // tablets
       resLg: { min: "1280px" },                    // laptops and desktops (1280px and above)
     },
     fontSize: {

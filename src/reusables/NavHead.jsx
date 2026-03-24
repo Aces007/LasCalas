@@ -22,17 +22,17 @@ const NavHead = ({ theme = "light" }) => {
             {/* Desktop Layout (resLg and up: 1280px and above) */}
             <div className={`hidden resLg:grid grid-cols-3 items-center ${variantPaddingDesktop}`}>
                 {/* NavButtons (Left) */}
-                <div className="flex items-center gap-[24px]">
+                <div className="flex items-center gap-[24px] resLg:gap-[20px]">
                     <RxHamburgerMenu 
                         size={26} 
-                        className={`${variantSVGs} cursor-pointer hover:text-highlight transition-colors`} 
+                        className={`${variantSVGs} cursor-pointer hover:text-highlight transition-colors resLg:text-[20px]`} 
                         onClick={() => setSideBarOpen(true)}
                     />
                     
-                    <div className="flex justify-center gap-[24px]">
-                        <Link to="/packagesmenu" className={`font-Montserrat uppercase ${variantNavlinks}`}>Packages</Link>
-                        <Link to="/explore" className={`font-Montserrat uppercase ${variantNavlinks}`}>Explore</Link>
-                        <Link to="/celebrations" className={`font-Montserrat uppercase ${variantNavlinks}`}>Celebrations</Link>
+                    <div className="flex justify-center gap-[24px] resLg:gap-[20px]">
+                        <Link to="/packagesmenu" className={`font-Montserrat uppercase resLg:text-[18px] ${variantNavlinks}`}>Packages</Link>
+                        <Link to="/explore" className={`font-Montserrat uppercase resLg:text-[18px] ${variantNavlinks}`}>Explore</Link>
+                        <Link to="/celebrations" className={`font-Montserrat uppercase resLg:text-[18px] ${variantNavlinks}`}>Celebrations</Link>
                     </div>
                 </div>
 
@@ -43,10 +43,10 @@ const NavHead = ({ theme = "light" }) => {
 
                 {/* CTA Btns (Right) */}
                 <div className="flex justify-end gap-[24px]">
-                    <button className={`font-Montserrat font-bold flex flex-row items-center gap-[8px] ${variantText}`}>
+                    <button className={`font-Montserrat font-bold flex flex-row items-center gap-[8px] resLg:text-[20px] ${variantText}`}>
                         ENG <FaAngleDown size={20} className={`${variantSVGs}`}/>
                     </button>
-                    <a href="https://us2.cloudbeds.com/reservation/10IVXw" target="_blank" className={`font-Montserrat font-extrabold uppercase p-4 rounded-[8px] ${variantBorder} ${variantText} hover:p-6 transition-all duration-300`}>Book Now</a>
+                    <a href="https://us2.cloudbeds.com/reservation/10IVXw" target="_blank" className={`font-Montserrat font-extrabold uppercase p-4 rounded-[8px] resLg:text-[20px] ${variantBorder} ${variantText} hover:p-6 transition-all duration-300`}>Book Now</a>
                 </div>
             </div>
 

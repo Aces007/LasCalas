@@ -1,4 +1,4 @@
-import { MdOutlineLocalPhone, MdOutlineEmail  } from "react-icons/md";
+import { MdOutlineLocalPhone, MdOutlineEmail, MdOutlineShareLocation   } from "react-icons/md";
 import { FaInstagram } from "react-icons/fa";
 import { FiFacebook } from "react-icons/fi";
 import { FaArrowRight } from "react-icons/fa6";
@@ -22,15 +22,16 @@ const NavFoot = () => {
 
         const foot_location_cont = "flex flex-col items-start gap-[16px]";
         const foot_location_content = "flex flex-col items-start gap-[16px]"
-        const foot_location_p = "w-[70%] text-main_text/60 resSm:text-[14px] resMd:text-[16px] resLg:text-[24px]";
-        const foot_contacts_p = "text-main_text/60 resSm:text-[14px] resMd:text-[16px] resLg:text-[24px]";
+        const foot_location_p = "w-[70%] text-main_text/60 resSm:text-[14px] resMd:text-[16px] resLg:text-[18px] resSm:w-[90%]";
+        const foot_contacts_p = "text-main_text/60 resSm:text-[14px] resMd:text-[16px] resLg:text-[18px]";
 
         const foot_explore_cont = "flex flex-col items-start gap-[8px] object-cover overflow-hidden relative";
 
         const foot_map_cont = "flex flex-col gap-[24px]";
 
         const foot_display = "font-Libre text-primary";
-        const foot_h3s = "font-Raleway font-medium text-[20px] resSm:text-[16px] resMd:text-[18px]";
+        const foot_h3s = "font-Raleway font-medium text-[20px] resSm:text-[18px] resMd:text-[20px]";
+        const foot_svgs = "text-main_text/80";
 
 
         // -- FLEX STYLING -- //
@@ -56,7 +57,7 @@ const NavFoot = () => {
     const contact_links_map = [
         {
             id: 1,
-            iconPack: <FiFacebook size={24}/>,
+            iconPack: <FiFacebook size={24} className={`${foot_svgs} hover:text-highlight`}/>,
             label: "Facebook",
             href: "https://www.facebook.com/lascalasresortluxuryestate/",
             class: "hover:text-highlight",
@@ -64,7 +65,7 @@ const NavFoot = () => {
         },
         {
             id: 2,
-            iconPack: <FaInstagram size={24}/>,
+            iconPack: <FaInstagram size={24} className={`${foot_svgs} hover:text-highlight`}/>,
             label: "Instagram",
             href: "",
             class: "hover:text-highlight",
@@ -72,7 +73,7 @@ const NavFoot = () => {
         },
         {
             id: 3,
-            iconPack: <MdOutlineEmail size={24} />,
+            iconPack: <MdOutlineEmail size={24} className={`${foot_svgs} hover:text-highlight`}/>,
             label: "info@lascalasresort.com",
             href: "mailto:info@lascalasresort.com",
             class: "hover:text-highlight",
@@ -80,7 +81,7 @@ const NavFoot = () => {
         },
         {
             id: 4,
-            iconPack: <MdOutlineLocalPhone size={24} />,
+            iconPack: <MdOutlineLocalPhone size={24} className={`${foot_svgs} hover:text-highlight`}/>,
             label: "(+63) 917 707 3891",
             href: "tel:+639177073891",
             class: "hover:text-highlight",
@@ -88,7 +89,7 @@ const NavFoot = () => {
         },
         {
             id: 5,
-            iconPack: <MdOutlineLocalPhone size={24} />,
+            iconPack: <MdOutlineLocalPhone size={24} className={`${foot_svgs} hover:text-highlight`}/>,
             label: "(+63) 2 8531 3008",
             href: "tel:+63285313008",
             class: "hover:text-highlight",
@@ -106,7 +107,10 @@ const NavFoot = () => {
                         <div className={foot_location_cont}>
                             <h1 className={`${foot_section_heads}`}>Our Location</h1>
                             <div className={foot_location_content}>
-                                <p className={foot_location_p}><span className="text-accent">LasCalas Resort and Luxury Estate</span>, Barangay Osmena, Dasol, 2411 Pangasinan</p>
+                                <div className={locationContact}>
+                                    <MdOutlineShareLocation size={24} className="text-main_text/60"/>
+                                    <p className={foot_location_p}><span className="text-accent">LasCalas Resort and Luxury Estate</span>, Barangay Osmena, Dasol, 2411 Pangasinan</p>
+                                </div>
                     
                                 {/* Contact Number - Information */}
                                 {contact_info_map.map((number, index) => (
@@ -119,10 +123,10 @@ const NavFoot = () => {
                                 ))}
                             </div>
                         </div>
-                        <div className={`${foot_explore_cont} resSm:hidden`}>
+                        <div className={`${foot_explore_cont} resSm:w-[80%]`}>
                             <h1 className={`${foot_section_heads}`}>Explore <a href="https://seepangasinan.com/wheretogo/dasol/" target="_blank" className="hover:text-highlight hover:font-semibold hover:cursor-pointer">Dasol</a></h1>
                             <ExploreDasol />
-                        </div>
+                        </div>  
                     </div>
 
                     <div className={`${foot_map_cont}`}>
@@ -148,7 +152,7 @@ const NavFoot = () => {
 
                 {/* FOOTER CONTAINER */}
                 <div className="flex flex-col items-center gap-24">
-                    <div className={`flex flex-col resMd:flex-row resLg:flex-row items-center justify-center gap-[24px] resSm:gap-[24px] resMd:gap-[80px] resLg:gap-24 px-[24px] resSm:px-[24px] resMd:px-[48px] resLg:px-[48px]`}>
+                    <div className={`flex flex-col resMd:flex-row resLg:flex-row items-center justify-center gap-[24px] resSm:gap-[56px] resMd:gap-[80px] resLg:gap-24 px-[24px] resSm:px-[24px] resMd:px-[48px] resLg:px-[48px]`}>
                         <div className={`${center_element_col} gap-[4px] resSm:w-full resMd:w-[30%] resLg:w-[50%]`}>
                             <img src="/lascalas_assets/lascalasBlue.png" alt="LasCalas Logo Blue" className="resSm:w-[80px] resMd:w-[120px] resLg:w-[132px]" />
                             <div className={`${center_element_col}`}>
@@ -158,13 +162,13 @@ const NavFoot = () => {
                             <p className={`${foot_display} text-center resSm:text-[14px] resMd:text-[13px] resLg:text-[17px]`}><span className="text-main_text">Indulge in</span> Serenity | <br /> <span className="text-main_text">Discover Your Sanctuary of</span> Luxury</p>
                         </div>
 
-                        <div className={`flex flex-col resMd:flex-row resLg:flex-row items-start resSm:items-center justify-evenly gap-[50px] resSm:gap-[40px] resLg:gap-[120px]`}>
+                        <div className={`flex flex-col resMd:flex-row resLg:flex-row items-start resSm:items-center justify-evenly gap-[50px] resSm:gap-[40px] resLg:gap-[90px]`}>
                             <div className={`${start_element_col} resSm:items-center gap-8`}>
                                 <h3 className={`${foot_h3s}`}>Navigation</h3>
                                 <div className={`${start_element_col} resSm:items-center resMd:${start_element_col} gap-[16px]`}>
-                                    <Link to="/packagesmenu" className={`font-Montserrat resSm:text-[14px] hover:text-highlight`}>Packages</Link>
-                                    <Link to="/explore" className={`font-Montserrat resSm:text-[14px] hover:text-highlight`}>Explore</Link>
-                                    <Link to="/celeb" className={`font-Montserrat resSm:text-[14px] hover:text-highlight`}>Celebrations</Link>
+                                    <Link to="/packagesmenu" className={`font-Montserrat text-main_text/80 resSm:text-[15px] hover:text-highlight`}>Packages</Link>
+                                    <Link to="/explore" className={`font-Montserrat text-main_text/80 resSm:text-[15px] hover:text-highlight`}>Explore</Link>
+                                    <Link to="/celeb" className={`font-Montserrat text-main_text/80 resSm:text-[15px] hover:text-highlight`}>Celebrations</Link>
                                 </div>
                             </div>
 
@@ -174,7 +178,7 @@ const NavFoot = () => {
                                     {contact_links_map.map((item) => (
                                         <div className={`${center_element_row} gap-[8px] ${item.class}`}>
                                             {item.iconPack}
-                                            <a href={item.href} className="font-Nunito resSm:text-[14px]">{item.label}</a>
+                                            <a href={item.href} className="text-main_text/80 font-Nunito resSm:text-[16px] hover:text-highlight">{item.label}</a>
                                         </div>
                                     ))}
                                 </div>
@@ -186,7 +190,7 @@ const NavFoot = () => {
                     
                                     {/* PLACEHOLDER 1 - Space for Newsletter field */}
                                     <div className="flex flex-row items-center justify-center"> 
-                                        <input type="text" placeholder="Email for newsletter" className="text-main_text border border-main_text/70 resSm:w-[310px] resSm:h-[40px] resMd:w-[320px] resMd:h-[60px] resLg:w-[310px] py-[20px] px-[24px]" />
+                                        <input type="text" placeholder="Email for newsletter" className="text-main_text border border-3 border-main_text/70 rounded-[8px] resSm:w-[310px] resSm:h-[60px] resMd:w-[320px] resMd:h-[60px] resLg:w-[310px] py-[20px] px-[24px]" />
 
                                         {/* <FaArrowRight size={24} className="text-main_text/60" /> */}
                                     </div>
