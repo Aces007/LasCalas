@@ -7,6 +7,13 @@ import { useState } from "react";
 const NavHead = ({ theme = "light" }) => {
     const variantIsDark = theme === "dark";
     const [sideBarOpen, setSideBarOpen] = useState(false);
+    const [langOpen, setLangOpen] = useState(false);
+    const [currentLang, setCurrentLang] = useState("ENG");
+
+    const languages = [
+        { code: "ENG", label: "English" },
+        { code: "FIL", label: "Filipino"},
+    ];
 
     // Styling Variables
 
@@ -18,10 +25,10 @@ const NavHead = ({ theme = "light" }) => {
         //--TEXTS--//
         const variantLogoCol = variantIsDark ? "/lascalas_assets/lascalasBlack.png" : "/lascalas_assets/lascalasWhite.png";
         const variantNavlinks = variantIsDark ? "text-main_text hover:text-highlight hover:font-bold font-Montserrat uppercase resLg:text-[18px]" : "text-background_lightTxt font-Montserrat uppercase resLg:text-[18px] hover:text-highlight hover:font-bold";
-        const variantText = variantIsDark ? "text-main_text" : "text-background_lightTxt";
+        const variantText = variantIsDark ? "text-main_text text-center" : "text-background_lightTxt text-center";
         const variantSVGs = variantIsDark ? "text-main_text" : "text-background_lightTxt";
         const language_btn_head = "font-Montserrat font-bold flex flex-row items-center gap-[8px] resLg:text-[20px]";
-        const booking_btn_head = "font-Montserrat font-extrabold uppercase p-4 rounded-[8px] resLg:text-[20px] hover:p-6 transition-all duration-300";
+        const booking_btn_head = "font-Montserrat font-extrabold uppercase p-4 rounded-[8px] w-[50%] resLg:text-[20px] hover:p-6 transition-all duration-300";
     
 
     // -- FLEX STYLING -- //
@@ -59,9 +66,6 @@ const NavHead = ({ theme = "light" }) => {
 
                 {/* CTA Btns (Right) */}
                 <div className="flex justify-end gap-[24px]">
-                    <button className={`${language_btn_head} ${variantText}`}>
-                        ENG <FaAngleDown size={20} className={`${variantSVGs}`}/>
-                    </button>
                     <a href="https://us2.cloudbeds.com/reservation/10IVXw" target="_blank" className={`${booking_btn_head} ${variantBorder} ${variantText}`}>Book Now</a>
                 </div>
             </div>
