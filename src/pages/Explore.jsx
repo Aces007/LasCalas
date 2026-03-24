@@ -88,9 +88,8 @@ const Explore = () => {
             <div className={`${center_element_col} gap-[40px]`}>
                 <div className={`${center_element_row} justify-center w-full`}>
                     {Object.keys(explore_menu).map((category) => {
-                        const tab_styling = `font-Montserrat text-explore_label transition-all duration-300 w-full resSm:text-[12px] resSm:p-3 resMd:p-6 resLg:p-6 ${activeTab === category ? "text-background_lightTxt bg-highlight font-bold text-explore_tab_active" : "bg-secondary/60 text-background_lightTxt font-[500] text-explore_tab_inactive"}`;
-                        
-                        
+                        const tab_styling = `font-Montserrat text-explore_label transition-all duration-300 w-full text-[40px] resSm:text-[12px] resSm:p-3 resMd:text-[24px] resMd:p-6 resLg:text-[32px] resLg:p-6 ${activeTab === category ? "text-background_lightTxt bg-highlight font-bold text-explore_tab_active" : "bg-secondary/60 text-background_lightTxt font-[500] text-explore_tab_inactive"}`;
+                                                
                         return (
                             <button key={category}
                                 onClick={() => setActiveData(category)}
