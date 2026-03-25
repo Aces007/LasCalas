@@ -1,7 +1,7 @@
 import { IoMdClose } from "react-icons/io";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay, EffectCoverflow } from "swiper/modules";
+import { Navigation, Autoplay, EffectCoverflow, Keyboard } from "swiper/modules";
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -39,9 +39,10 @@ const GalleryModal = ({ isOpen, onClose, galleryItems, currentImg }) => {
         },
     };
 
+    // Using keybinding to close modal using ESCAPE key
     useEffect(() => {
         const handleEscapeKey = (e) => {
-            if (e.key === "Escape") OnClose();
+            if (e.key === "Escape") onClose();
         };
 
         window.addEventListener("keydown", handleEscapeKey);
@@ -49,7 +50,6 @@ const GalleryModal = ({ isOpen, onClose, galleryItems, currentImg }) => {
     }, [onClose]);
 
     return (
-        // inset-0 = "top:0,bottom:0,left:0,right:0"
         <div className={`${modalCont}`}>
             <button className={`${modalCloseButton}`} onClick={onClose}>
                 Close<IoMdClose /> 
@@ -75,9 +75,13 @@ const GalleryModal = ({ isOpen, onClose, galleryItems, currentImg }) => {
                 modifier: 1,
                 slideShadows: false,
                 }}
-                modules={[EffectCoverflow, Navigation, Autoplay]}
+                modules={[EffectCoverflow, Navigation, Autoplay, Keyboard]}
                 className={`${sliderCont_galModal}`}
                 navigation
+                keyboard={{
+                    enabled: true,
+                    onlyInViewport: false
+                }}
                 autoplay={{
                     delay: 3000,
                     disableOnInteraction: false,
@@ -90,8 +94,6 @@ const GalleryModal = ({ isOpen, onClose, galleryItems, currentImg }) => {
                 ))}
             </Swiper>
         </div>
-
-        
     )
 }
 
