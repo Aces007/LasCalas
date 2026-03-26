@@ -1,7 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react"; 
-import { Pagination, Navigation, Autoplay } from "swiper/modules"; 
+import { Navigation, Autoplay } from "swiper/modules"; 
 import "swiper/css"; 
-import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { motion } from "framer-motion";
 import NavHead from "../../../reusables/NavHead";
@@ -66,19 +65,19 @@ const WaterAdv = () => {
     };
 
     // -- STYLING -- //
-    const explore_name = "font-Raleway font-semibold text-package_details_name";
-    const explore_subhead = "font-Raleway font-semibold text-package_details_price text-secondary/60";
+    const explore_name = "font-Raleway font-semibold text-[48px] resSm:text-[28px] resMd:text-[42px]";
+    const explore_subhead = "font-Raleway font-semibold text-secondary/60 text-[24px] resSm:text-[18px] resMd:text-[22px]";
 
-    const water_grid_cont = "grid grid-cols-2 gap-12 items-center w-full max-w-6xl px-6 my-[80px]";
+    const water_grid_cont = "grid grid-cols-2 gap-10 resMd:gap-[4px] items-center w-full max-w-6xl px-6 my-[80px]  resSm:flex resSm:flex-col";
 
     const carousel_preview = "h-[400px] overflow-hidden rounded-md hover:cursor-pointer";
 
     // -- FLEX STYLING -- //
-        const center_element_col = "flex flex-col items-center";
-        const start_element_col = "flex flex-col items-start";
-        const center_element_row = "flex items-center";
-        const start_element_row = "flex items-start";
-        const between_element_row = "flex justify-between";
+    const center_element_col = "flex flex-col items-center";
+    const start_element_col = "flex flex-col items-start";
+    const center_element_row = "flex items-center";
+    const start_element_row = "flex items-start";
+    const between_element_row = "flex justify-between";
 
 
 
@@ -92,7 +91,7 @@ const WaterAdv = () => {
         >
             <NavHead theme="dark" />
 
-            <div className={`${center_element_col} justify-center`}>
+            <div className={`${center_element_col} justify-center  resSm:mt-[40px] resMd:mt-[60px]`}>
                 <h1 className={`${explore_name}`}>Water Adventure</h1>
                 <h2 className={`${explore_subhead}`}>Dive into the deep blue</h2>
 
@@ -120,15 +119,14 @@ const WaterAdv = () => {
                     </div>
 
 
-                    <div className="w-full max-w-[400px]">
+                    <div className="w-full max-w-[400px] resSm:w-[500px] resMd:w-[600px]">
                         <Swiper
                             grabCursor={true}
                             centeredSlides={true}
                             slidesPerView={1}
                             loop={true}
-                            pagination
-                            modules={[Pagination, Navigation, Autoplay]}
-                            className="w-[600px] pb-[40px]"
+                            modules={[ Navigation, Autoplay]}
+                            className="w-[600px] pb-[40px] resSm:w-[400px] resMd:w-[540px]"
                             navigation
                             autoplay={{
                                 delay: 3000,
@@ -150,8 +148,8 @@ const WaterAdv = () => {
 
 const WaterCard = ({ water }) => {
     const waterCard_cont  = "flex flex-col items-center gap-[8px] bg-main_text/60 p-6 rounded-[16px] hover:scale-105 hover:bg-highlight hover:transition-all"
-    const waterCard_name = "font-Raleway font-[400] text-background_lightTxt text-water_details_name";
-    const waterCard_price = "font-Nunito font-[800] text-background_lightTxt text-water_details_price";
+    const waterCard_name = "font-Raleway font-[400] text-background_lightTxt text-[14px] resSm:text-[14px] resSm:text-center resMd:text-[18px]";
+    const waterCard_price = "font-Nunito font-[800] text-background_lightTxt text-[20px] resSm:text-[16px] resMd:text-[22px]";
 
     return (
         <div>

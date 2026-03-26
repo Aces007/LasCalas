@@ -16,21 +16,12 @@ const MainSlides = ({
         //--CONTAINERS--//
         const mainSlides_cont = "grid grid-cols-1 grid-rows-1 w-full overflow-hidden relative group";
         const mainSlides_content = "col-start-1 row-start-1 w-full h-full z-0";
-        const mainSlides_slide_contents = "h-[80vh] resSm:h-[60vh] w-full overflow-hidden hover:cursor-pointer";
+        const mainSlides_slide_contents = "h-[80vh] resSm:h-[40vh] w-full overflow-hidden hover:cursor-pointer";
         const mainSlides_head_cont = "col-start-1 row-start-1 w-full h-full z-50 flex flex-col justify-between gap-8 resMd:gap-32";
         const mainSlides_title_cont = "flex-grow flex justify-center resMd:relative resMd:bottom-[80px]";
         
         //--TEXTS--//
-        const mainSlides_titles = "font-AnticDidone text-background_lightTxt resSm:text-[48px] resMd:text-[80px] resLg:text-[104px]";
-
-        // -- FLEX STYLING -- //
-            const center_element_col = "flex flex-col items-center";
-            const start_element_col = "flex flex-col items-start";
-            const center_element_row = "flex items-center";
-            const start_element_row = "flex items-start";
-            const justween_element_row = "flex justify-between";
-            const justween_element_col = "flex flex-col justify-between";
-            const justcenter_element_row = "flex justify-center";
+        const mainSlides_titles = "font-AnticDidone text-background_lightTxt resSm:text-[48px] resMd:text-[80px] resMd:relative resMd:top-[80px] resLg:text-[96px]";
 
         
     return (
@@ -41,7 +32,7 @@ const MainSlides = ({
                     slidesPerView={1}
                     loop={true}
                     modules={[Autoplay]}
-                    className="w-full h-full"
+                    className="w-full h-full resSm:w-[100vw] resSm:h-[40vh]"
                     autoplay={{
                         delay: autoplay_delay,
                         disableOnInteraction: false,

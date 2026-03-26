@@ -1,4 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    /*SM - Phones*/
+
+        /*-- EXPLORE --*/
+        .sm_tab_styling { font-size: 16px; }
+
+    /*MD - Tablets*/
+}
 /* Above is the Tailwind Directives - Do Not Remove */

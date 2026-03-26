@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Celebrations = () => {
     // Styling Variables (USE THIS FORMAT: Permanent Styling [like font fam] then responsive styles starting from smallest size
         //--CONTAINERS--//
-        const main_page_grid_cont = "grid resSm:grid-cols-1 resMd:grid-cols-2 resLg:grid-cols-2 items-center justify-center px-6 resSm:px-6 resMd:px-12 resLg:px-24 gap-6 resSm:gap-8 resMd:gap-12 resLg:gap-[200px]";
+        const main_page_grid_cont = "grid resSm:flex resSm:flex-col resMd:grid-cols-2 resLg:grid-cols-2 items-center justify-center px-6 resSm:px-6 resMd:px-12 resLg:px-24 gap-6 resSm:gap-8 resMd:gap-12 resLg:gap-[200px]";
         const main_page_content_cont = "relative group w-full h-[300px] resSm:h-[250px] resMd:h-[350px] resLg:h-[400px] overflow-hidden rounded-lg";
         const main_page_cards_img = "w-full h-full object-cover transition-transform duration-700 group-hover:scale-110";
         const main_page_content_name_cont = "absolute bottom-0 left-0 w-full p-6 flex justify-center group-hover:opacity-0";

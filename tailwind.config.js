@@ -10,16 +10,6 @@ export default {
       resMd: { min: "768px", max: "1366px" },     // tablets
       resLg: { min: "1280px" },                    // laptops and desktops (1280px and above)
     },
-    fontSize: {
-        // HD Desktop
-          
-        // LG Desktop 
-          
-        // MD Tablets
-          
-        // SM Phones
-          
-      },
     extend: {
       // You can use scale in the keyframes config but use transform 
       keyframes: 
