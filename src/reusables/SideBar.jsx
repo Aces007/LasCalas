@@ -15,7 +15,7 @@ const SideBar = ({ isOpen, toggleSidebar }) => {
     // -- STYLING -- //
         //--CONTAIENRS--//
         const overlay_cont = "fixed inset-0 bg-black/50 z-40 backdrop-blur-sm";
-        const sidebar_cont = "fixed left-0 top-0 h-full w-[300px] bg-background_lightTxt z-50 p-8 shadow-2xl";
+        const sidebar_cont = "fixed left-0 top-0 h-full w-[300px] bg-background_lightTxt z-9999 p-8 shadow-2xl";
 
         //--TEXTS--//
         const reachOut_btn_sidebar = "font-Raleway text-xl font-semibold text-main_text hover:text-highlight transition-colors";
