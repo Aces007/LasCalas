@@ -20,14 +20,14 @@ const NavHead = ({ theme = "light" }) => {
         //--CONTAINERS--//
         const variantPaddingDesktop = variantIsDark ? "px-[48px] py-[24px]" : "px-[56px] py-[56px]"
         const variantPaddingMobile = variantIsDark ? "px-[32px] py-[20px]" : "px-[32px] py-[20px]"
-        const variantBorder = variantIsDark ? "border-[3px] border-black hover:bg-highlight hover:text-background_lightTxt" : "border-[3px] border-background_lightTxt hover:bg-highlight";
+        const variantBorder = variantIsDark ? "border-[3px] border-black hover:bg-highlight hover:text-highlight" : "border-[3px] border-background_lightTxt/50 hover:bg-highlight hover:border-highlight";
 
         //--TEXTS--//
         const variantLogoCol = variantIsDark ? "/lascalas_assets/lascalasBlack.png" : "/lascalas_assets/lascalasWhite.png";
         const variantNavlinks = variantIsDark ? "text-main_text hover:text-highlight hover:font-bold font-Montserrat uppercase resLg:text-[18px]" : "text-background_lightTxt font-Montserrat uppercase resLg:text-[18px] hover:text-highlight hover:font-bold";
         const variantText = variantIsDark ? "text-main_text text-center" : "text-background_lightTxt text-center";
         const variantSVGs = variantIsDark ? "text-main_text" : "text-background_lightTxt";
-        const booking_btn_head = "font-Montserrat font-extrabold uppercase p-4 rounded-[6px] w-[45%] resLg:text-[20px] hover:p-6 transition-all duration-300 bg-primary";
+        const booking_btn_head = "font-Montserrat font-extrabold uppercase p-4 rounded-[6px] w-[45%] resLg:text-[20px] transition-all duration-300 bg-accent";
     
 
     // -- FLEX STYLING -- //
