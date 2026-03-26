@@ -1,7 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react"; 
-import { Pagination, Navigation, Autoplay } from "swiper/modules"; 
+import { Navigation, Autoplay } from "swiper/modules"; 
 import "swiper/css"; 
-import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { motion } from "framer-motion";
 import NavHead from "../../../reusables/NavHead";
@@ -10,26 +9,26 @@ const ATVAdv = () => {
     const menu_data = [
     {
         id: 1,
-        name: "ATV Scorpion 150 cc",
-        price: "PHP 1,000.00 / hr",
+        name: "ATV Scorpion 150cc",
+        price: "PHP 1,000 /hr",
         model_image: "/lascalas_assets/Website/MainPages_Content/Explore/Activities/atvModels/1.png",
     },
     {
         id: 2,
-        name: "ATV Mseries 210 cc",
-        price: "PHP 1,500.00 / hr",
+        name: "ATV Mseries 210cc",
+        price: "PHP 1,500 /hr",
         model_image: "/lascalas_assets/Website/MainPages_Content/Explore/Activities/atvModels/2.png",
     },
     {
         id: 3,
-        name: "ATV TGB Target/Blade 600 cc",
-        price: "PHP 2,000.00 / hr",
+        name: "ATV TGB Target/Blade 600cc",
+        price: "PHP 2,000 /hr",
         model_image: "/lascalas_assets/Website/MainPages_Content/Explore/Activities/atvModels/3.png",
     },
     {
         id: 4,
-        name: "ATV TGB Target/Blade 1000 cc",
-        price: "PHP 4,000.00 / hr",
+        name: "ATV TGB Target/Blade 1000cc",
+        price: "PHP 4,000 /hr",
         model_image: "/lascalas_assets/Website/MainPages_Content/Explore/Activities/atvModels/4.png",
     },
     
@@ -47,25 +46,22 @@ const ATVAdv = () => {
     };
 
     // -- STYLING -- //
-    const explore_name = "font-Raleway font-semibold text-package_details_name";
-    const explore_price = "font-Raleway font-semibold text-package_details_price text-secondary/60";
+    const explore_name = "font-Raleway font-semibold text-[48px] resSm:text-[28px] resMd:text-[42px]";
+    const explore_subhead = "font-Raleway font-semibold text-secondary/60 text-[24px] resSm:text-[18px] resMd:text-[22px]";
 
-    const atv_grid_cont = "grid grid-cols-2 gap-12 items-center w-full max-w-6xl px-6 my-[80px]";
+    const atv_grid_cont = "grid grid-cols-2 gap-12 items-center w-full max-w-6xl px-6 my-[80px] resSm:flex resSm:flex-col";
     const atvCard_grid_cont = "grid grid-cols-2 gap-[8px]";
-    const atv_tagline = "font-Raleway font-bold text-atv_tagline text-main_text/60 tracking-tight uppercase";
-
+    const atv_tagline = "font-Raleway font-bold text-main_text/60 tracking-tight uppercase text-[32px] resSm:text-[20px] resMd:text-[26px]";
 
     const carousel_preview = "h-[400px] overflow-hidden rounded-md hover:cursor-pointer";
 
     // -- FLEX STYLING -- //
-        const center_element_col = "flex flex-col items-center";
-        const start_element_col = "flex flex-col items-start";
-        const center_element_row = "flex items-center";
-        const start_element_row = "flex items-start";
-        const justween_element_row = "flex justify-between";
-        const justcenter_element_row = "flex justify-center";
-
-
+    const center_element_col = "flex flex-col items-center";
+    const start_element_col = "flex flex-col items-start";
+    const center_element_row = "flex items-center";
+    const start_element_row = "flex items-start";
+    const justween_element_row = "flex justify-between";
+    const justcenter_element_row = "flex justify-center";
 
     return (
         <motion.div 
@@ -77,16 +73,16 @@ const ATVAdv = () => {
         >
             <NavHead theme="dark" />
 
-            <div className={`${center_element_col} justify-center`}>
+            <div className={`${center_element_col} justify-center resSm:mt-[40px] resMd:mt-[60px]`}>
                 <h1 className={`${explore_name}`}>ATV Adventure</h1>
-                <h2 className={`${explore_price}`}>Built for Every Landscape</h2>
+                <h2 className={`${explore_subhead}`}>Built for Every Landscape</h2>
 
                 <div className={`${atv_grid_cont}`}>
                     <div className={`${atvCard_grid_cont}`}>
                         {menu_data.slice(0,2).map((atv) => (
                             <ATVCard key={atv.id} atv={atv} />
                         ))}
-                        <div className={`col-span-2 ${justcenter_element_row} py-6`}>
+                        <div className={`${justcenter_element_row} col-span-2 py-6`}>
                             <h1 className={`${atv_tagline}`}>
                                 Choose Your Adventure
                             </h1>
@@ -96,15 +92,14 @@ const ATVAdv = () => {
                         ))}
                     </div>
 
-                    <div className="w-full max-w-[400px]">
+                    <div className="w-full max-w-[400px] resSm:w-[500px] resMd:w-[600px]">
                         <Swiper
                             grabCursor={true}
                             centeredSlides={true}
                             slidesPerView={1}
                             loop={true}
-                            pagination
-                            modules={[Pagination, Navigation, Autoplay]}
-                            className="w-[600px] pb-[40px]"
+                            modules={[ Navigation, Autoplay]}
+                            className="w-[600px] pb-[40px] resSm:w-[400px] resMd:w-[540px]"
                             navigation
                             autoplay={{
                                 delay: 3000,
@@ -126,8 +121,8 @@ const ATVAdv = () => {
 
 const ATVCard = ({ atv }) => {
     const atvCard_cont  = "flex flex-col items-center gap-[8px] bg-main_text/60 p-6 rounded-[16px] hover:scale-105 hover:bg-highlight hover:transition-all"
-    const atvCard_name = "font-Raleway font-[400] text-background_lightTxt text-atv_details_name";
-    const atvCard_price = "font-Nunito font-[800] text-background_lightTxt text-atv_details_price";
+    const atvCard_name = "font-Raleway font-[400] text-background_lightTxt text-[14px]  resSm:text-[14px] resSm:text-center";
+    const atvCard_price = "font-Nunito font-[800] text-background_lightTxt text-[20px] resSm:text-[18px] resSm:text-center";
     
     return (
         <div>

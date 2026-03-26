@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay, Pagination } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 import { useParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useState } from "react";
@@ -18,7 +18,7 @@ const PackageDetails = () => {
     {
         id: 1,
         name: "Executive Villa",
-        price: "PHP 31,000.00/night",
+        price: "PHP 31,000 /night",
         details: {
             inclusions: [
                 "All Meals Included",
@@ -56,7 +56,7 @@ const PackageDetails = () => {
     {
         id: 2,
         name: "Cove 1 Villa Tent - King Bed",
-        price: "PHP 23,000.00/night",
+        price: "PHP 23,000 /night",
         details: {
             inclusions: [
                 "All Meals Included",
@@ -94,7 +94,7 @@ const PackageDetails = () => {
     {
         id: 3,
         name: "Cove 1 Villa Tent - Bunk Bed",
-        price: "PHP 26,000.00/night",
+        price: "PHP 26,000 /night",
         details: {
             inclusions: [
                 "All Meals Included",
@@ -132,7 +132,7 @@ const PackageDetails = () => {
     {
         id: 4,
         name: "Lascalas Villa Tents - King Bed",
-        price: "PHP 18,500.00/night",
+        price: "PHP 18,500 /night",
         details: {
             inclusions: [
                 "All Meals Included",
@@ -170,7 +170,7 @@ const PackageDetails = () => {
     {
         id: 5,
         name: "Lascalas Villa Tents - Double Size Bunk Bed",
-        price: "PHP 21,000.00/night",
+        price: "PHP 21,000 /night",
         details: {
             inclusions: [
                 "All Meals Included",
@@ -208,7 +208,7 @@ const PackageDetails = () => {
     {
         id: 6,
         name: "Lascalas Villa Tents - Bunk Bed",
-        price: "PHP 21,000.00/night",
+        price: "PHP 21,000 /night",
         details: {
             inclusions: [
                 "All Meals Included",
@@ -246,7 +246,7 @@ const PackageDetails = () => {
     {
         id: 7,
         name: "Teepee Tents - Camp Cot",
-        price: "PHP 7,500.00/night",
+        price: "PHP 7,500 /night",
         details: {
             inclusions: [
                 "All Meals Included",
@@ -282,7 +282,7 @@ const PackageDetails = () => {
         ),
     },
     
-    ]
+    ];
 
     const [detPaneActive, setDetPaneActive] = useState("inclusions");
     const { id } = useParams();
@@ -296,10 +296,10 @@ const PackageDetails = () => {
     };
 
     // -- STYLING -- //
-    const package_details_cont = "grid grid-cols-2 gap-12 items-center w-full max-w-6xl px-6 mt-[40px]";
-    const package_name = "font-Raleway font-semibold text-package_details_name";
-    const package_price = "font-Raleway font-semibold text-package_details_price text-secondary/60";
-    
+    const package_details_cont = "grid grid-cols-2 gap-8 justify-center w-full px-6 mt-[40px] resSm:flex resSm:flex-col";
+    const package_name = "font-Raleway font-semibold text-[48px] resSm:text-[24px] resMd:text-[42px]";
+    const package_price = "font-Raleway font-semibold text-secondary/60 text-[24px] resSm:text-[26px] resMd:text-[22px]";
+
     const detPaneButton = "flex-1 py-4 flex items-center justify-center transition-all";
     const detPaneActiveStyle = "bg-primary text-white";
     const detPaneInActiveStyle = "text-gray-400 hover:text-primary hover:bg-gray-100";
@@ -311,15 +311,12 @@ const PackageDetails = () => {
     const carousel_preview = "h-[400px] overflow-hidden rounded-md hover:cursor-pointer";
 
     // -- FLEX STYLING -- //
-        const center_element_col = "flex flex-col items-center";
-        const start_element_col = "flex flex-col items-start";
-        const center_element_row = "flex items-center";
-        const start_element_row = "flex items-start";
-        const between_element_row = "flex justify-between";
-
-
-
-    
+    const center_element_col = "flex flex-col items-center";
+    const start_element_col = "flex flex-col items-start";
+    const center_element_row = "flex items-center";
+    const start_element_row = "flex items-start";
+    const between_element_row = "flex justify-between";
+   
 
     return (
         <motion.div 
@@ -339,9 +336,9 @@ const PackageDetails = () => {
                     <div className={`w-full max-w-[400px]`}>
                         <div className="flex bg-gray-50 border-b border-gray-200">
                             {[
-                            { id: "inclusions", icon: <FaGift size={20} /> },
-                            { id: "bed", icon: <FaBed size={20} /> },
-                            { id: "bath", icon: <FaBath size={20} /> }
+                                { id: "inclusions", icon: <FaGift size={20} /> },
+                                { id: "bed", icon: <FaBed size={20} /> },
+                                { id: "bath", icon: <FaBath size={20} /> }
                             ].map((tab) => (
                             <button
                                 key={tab.id}
@@ -364,7 +361,7 @@ const PackageDetails = () => {
                         </ul>
                     </div>
 
-                    <div className="w-full max-w-[400px]">
+                    <div className="w-full max-w-[400px] resSm:w-[500px] resMd:w-[600px]">
                         <Swiper
                             grabCursor={true}
                             centeredSlides={true}
@@ -377,9 +374,8 @@ const PackageDetails = () => {
                             modifier: 1,
                             slideShadows: false,
                             }}
-                            pagination
-                            modules={[Pagination, Navigation, Autoplay]}
-                            className="w-[600px] pb-[40px]"
+                            modules={[Navigation, Autoplay]}
+                            className="w-[600px] pb-[40px] resSm:w-[400px] resMd:w-[540px]"
                             navigation
                             autoplay={{
                                 delay: 3000,

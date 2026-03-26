@@ -1,7 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react"; 
-import { Pagination, Navigation, Autoplay } from "swiper/modules"; 
+import { Navigation, Autoplay } from "swiper/modules"; 
 import "swiper/css"; 
-import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { motion } from "framer-motion";
 import NavHead from "../../../reusables/NavHead";
@@ -19,14 +18,12 @@ const RopeCourse = () => {
     };
 
     // -- STYLING -- //
-    const explore_name = "font-Raleway font-semibold text-package_details_name";
-    const explore_subhead = "font-Raleway font-semibold text-package_details_price text-secondary/60";
+    const explore_name = "font-Raleway font-semibold text-[48px] resSm:text-[32px] resMd:text-[42px]";
+    const explore_subhead = "font-Raleway font-semibold text-secondary/60 text-[24px] resSm:text-[18px] resSm:text-center resMd:text-[22px]";
 
-    const rope_grid_cont = "grid grid-cols-2 gap-12 items-center w-full max-w-6xl px-6 my-[80px]";
-    const ropeCard_grid_cont = "grid grid-cols-2 gap-[8px]";
-    const rope_tagline = "font-Raleway font-semibold text-package_details_price text-rope_description_head";
-
-    const rope_description = "font-Nunito font-regular text-rope_description_text";
+    const rope_grid_cont = "grid grid-cols-2 gap-12 items-center w-full max-w-6xl px-6 my-[80px] resSm:flex resSm:flex-col";
+    const rope_tagline = "font-Raleway font-semibold resSm:flex resSm:self-center resSm:text-[20px]";
+    const rope_description = "font-Nunito font-regular resSm:text-center";
 
     const carousel_preview = "h-[400px] overflow-hidden rounded-md hover:cursor-pointer";
 
@@ -49,9 +46,9 @@ const RopeCourse = () => {
         >
             <NavHead theme="dark" />
 
-            <div className={`${center_element_col} justify-center`}>
+            <div className={`${center_element_col} justify-center resSm:mt-[40px] resMd:mt-[60px]`}>
                 <h1 className={`${explore_name}`}>LCR Xtreme Quest</h1>
-                <h2 className={`${explore_subhead}`}>The Ultimate Rope & Obstacle Course Challenge at LasCalas</h2>
+                <h2 className={`${explore_subhead}`}>The Ultimate Rope & Obstacle Challenge</h2>
 
                 <div className={`${rope_grid_cont}`}>
                     <div className={`${start_element_col} gap-8`}>
@@ -62,15 +59,14 @@ const RopeCourse = () => {
                         </div>
                     </div>
 
-                    <div className="w-full max-w-[400px]">
+                    <div className="w-full max-w-[400px] resSm:w-[500px] resMd:w-[600px]">
                         <Swiper
                             grabCursor={true}
                             centeredSlides={true}
                             slidesPerView={1}
                             loop={true}
-                            pagination
-                            modules={[Pagination, Navigation, Autoplay]}
-                            className="w-[600px] pb-[40px]"
+                            modules={[Navigation, Autoplay]}
+                            className="w-[600px] pb-[40px] resSm:w-[400px] resMd:w-[540px]"
                             navigation
                             autoplay={{
                                 delay: 3000,
