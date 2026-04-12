@@ -18,28 +18,28 @@ const GamingPool = () => {
     {
         id: 1,
         name: "Pool Party",
-        model_image: "/lascalas_assets/Website/MainPages_Content/Celebrations/EventSpacePreviews/Gaming_Pool/menu_data/1.jpg",
+        model_image: "/lascalas_assets/Website/MainPages_Content/Celebrations/EventSpacePreviews/Gaming_Pool/menu_data/1.webp",
     },
     {
         id: 2,
         name: "Arcade Fun",
-        model_image: "/lascalas_assets/Website/MainPages_Content/Celebrations/EventSpacePreviews/Gaming_Pool/menu_data/2.jpg",
+        model_image: "/lascalas_assets/Website/MainPages_Content/Celebrations/EventSpacePreviews/Gaming_Pool/menu_data/2.webp",
     },
     {
         id: 3,
         name: "Exclusive Dining",
-        model_image: "/lascalas_assets/Website/MainPages_Content/Celebrations/EventSpacePreviews/Gaming_Pool/menu_data/3.jpg",
+        model_image: "/lascalas_assets/Website/MainPages_Content/Celebrations/EventSpacePreviews/Gaming_Pool/menu_data/3.webp",
     },
     {
         id: 4,
         name: "Billiard Games",
-        model_image: "/lascalas_assets/Website/MainPages_Content/Celebrations/EventSpacePreviews/Gaming_Pool/menu_data/4.jpg",
+        model_image: "/lascalas_assets/Website/MainPages_Content/Celebrations/EventSpacePreviews/Gaming_Pool/menu_data/4.webp",
     },
     
     ]
     
     const preview_images = [...Array(10)].map((_, i) => 
-        `/lascalas_assets/Website/MainPages_Content/Celebrations/EventSpacePreviews/Gaming_Pool/${i + 1}.jpg`
+        `/lascalas_assets/Website/MainPages_Content/Celebrations/EventSpacePreviews/Gaming_Pool/${i + 1}.webp`
     );
     
 

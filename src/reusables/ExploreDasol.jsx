@@ -22,11 +22,11 @@ const ExploreDasol = () => {
         const justcenter_element_row = "flex justify-center";
 
     const exploreDasol_assets = [
-        { id: 1, src: "/lascalas_assets/Website/Dasol/Dasol1.jpg", label: "Tambobong Beach", link: "https://www.tripadvisor.com.ph/Attraction_Review-g294248-d2081254-Reviews-Tambobong_Beach-Luzon.html" },
-        { id: 2, src: "/lascalas_assets/Website/Dasol/Dasol2.png", label: "Cabongaoan Beach", link: "https://www.tripadvisor.com.ph/Attraction_Review-g2559454-d6608888-Reviews-Cabongaoan_Beach-Burgos_Ilocos_Norte_Province_Ilocos_Region_Luzon.html" },
-        { id: 3, src: "/lascalas_assets/Website/Dasol/Dasol3.jpg", label: "Depth Pool", link: "https://ilovepangasinan.com/cabongaoan-beach-death-pool-in-burgos-pangasinan/" },
-        { id: 4, src: "/lascalas_assets/Website/Dasol/Dasol4.png", label: "Colibra Island", link: "https://ilovepangasinan.com/colibra-island-in-dasol-pangasinan/" },
-        { id: 5, src: "/lascalas_assets/Website/Dasol/Dasol5.png", label: "Sand Bar", link: "" },
+        { id: 1, src: "/lascalas_assets/Website/Dasol/Dasol1.webp", label: "Tambobong Beach", link: "https://www.tripadvisor.com.ph/Attraction_Review-g294248-d2081254-Reviews-Tambobong_Beach-Luzon.html" },
+        { id: 2, src: "/lascalas_assets/Website/Dasol/Dasol2.webp", label: "Cabongaoan Beach", link: "https://www.tripadvisor.com.ph/Attraction_Review-g2559454-d6608888-Reviews-Cabongaoan_Beach-Burgos_Ilocos_Norte_Province_Ilocos_Region_Luzon.html" },
+        { id: 3, src: "/lascalas_assets/Website/Dasol/Dasol3.webp", label: "Depth Pool", link: "https://ilovepangasinan.com/cabongaoan-beach-death-pool-in-burgos-pangasinan/" },
+        { id: 4, src: "/lascalas_assets/Website/Dasol/Dasol4.webp", label: "Colibra Island", link: "https://ilovepangasinan.com/colibra-island-in-dasol-pangasinan/" },
+        { id: 5, src: "/lascalas_assets/Website/Dasol/Dasol5.webp", label: "Sand Bar", link: "" },
     ]
 
     return (

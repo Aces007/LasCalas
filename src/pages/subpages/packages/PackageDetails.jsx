@@ -50,7 +50,7 @@ const PackageDetails = () => {
             ],
         },
         preview_images: Array.from({ length: 6 }, (_, i) => 
-            `/lascalas_assets/Website/MainPages_Content/Packages/PackagePreview/Executive/EX${i + 1}.jpg`
+            `/lascalas_assets/Website/MainPages_Content/Packages/PackagePreview/Executive/EX${i + 1}.webp`
         ),
     },
     {
@@ -88,7 +88,7 @@ const PackageDetails = () => {
             ],
         },
         preview_images: Array.from({ length: 11 }, (_, i) => 
-            `/lascalas_assets/Website/MainPages_Content/Packages/PackagePreview/C1VT/C1VT${i + 1}.jpg`
+            `/lascalas_assets/Website/MainPages_Content/Packages/PackagePreview/C1VT/C1VT${i + 1}.webp`
         ),
     },
     {
@@ -126,7 +126,7 @@ const PackageDetails = () => {
             ],
         },
         preview_images: Array.from({ length: 6 }, (_, i) => 
-            `/lascalas_assets/Website/MainPages_Content/Packages/PackagePreview/C1VT_BB/C1VT_BB${i + 1}.png`
+            `/lascalas_assets/Website/MainPages_Content/Packages/PackagePreview/C1VT_BB/C1VT_BB${i + 1}.webp`
         ),
     },
     {
@@ -164,7 +164,7 @@ const PackageDetails = () => {
             ],
         },
         preview_images: Array.from({ length: 4 }, (_, i) => 
-            `/lascalas_assets/Website/MainPages_Content/Packages/PackagePreview/LC_Villa_KB/LC_Villa_KB${i + 1}.jpg`
+            `/lascalas_assets/Website/MainPages_Content/Packages/PackagePreview/LC_Villa_KB/LC_Villa_KB${i + 1}.webp`
         ),
     },
     {
@@ -202,7 +202,7 @@ const PackageDetails = () => {
             ],
         },
         preview_images: Array.from({ length: 11 }, (_, i) => 
-            `/lascalas_assets/Website/MainPages_Content/Packages/PackagePreview/LC_Villa_DSBB/DS${i + 1}.jpg`
+            `/lascalas_assets/Website/MainPages_Content/Packages/PackagePreview/LC_Villa_DSBB/DS${i + 1}.webp`
         ),
     },
     {
@@ -240,7 +240,7 @@ const PackageDetails = () => {
             ],
         },
         preview_images: Array.from({ length: 9 }, (_, i) => 
-            `/lascalas_assets/Website/MainPages_Content/Packages/PackagePreview/LC_Villa_BB/BB${i + 1}.jpg`
+            `/lascalas_assets/Website/MainPages_Content/Packages/PackagePreview/LC_Villa_BB/BB${i + 1}.webp`
         ),
     },
     {
@@ -278,7 +278,7 @@ const PackageDetails = () => {
             ],
         },
         preview_images: Array.from({ length: 3 }, (_, i) => 
-            `/lascalas_assets/Website/MainPages_Content/Packages/PackagePreview/Teepee/TEE${i + 1}.jpg`
+            `/lascalas_assets/Website/MainPages_Content/Packages/PackagePreview/Teepee/TEE${i + 1}.webp`
         ),
     },
     

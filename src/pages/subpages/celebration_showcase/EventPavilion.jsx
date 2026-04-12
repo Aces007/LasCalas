@@ -17,28 +17,28 @@ const EventPavilion = () => {
     {
         id: 1,
         name: "Wedding Reception",
-        model_image: "/lascalas_assets/Website/MainPages_Content/Celebrations/EventSpacePreviews/Event_Pavilion/menu_data/1.jpg",
+        model_image: "/lascalas_assets/Website/MainPages_Content/Celebrations/EventSpacePreviews/Event_Pavilion/menu_data/1.webp",
     },
     {
         id: 2,
         name: "Corporate Gatherings",
-        model_image: "/lascalas_assets/Website/MainPages_Content/Celebrations/EventSpacePreviews/Event_Pavilion/menu_data/2.jpg",
+        model_image: "/lascalas_assets/Website/MainPages_Content/Celebrations/EventSpacePreviews/Event_Pavilion/menu_data/2.webp",
     },
     {
         id: 3,
         name: "Birthday Celebrations",
-        model_image: "/lascalas_assets/Website/MainPages_Content/Celebrations/EventSpacePreviews/Event_Pavilion/menu_data/3.jpg",
+        model_image: "/lascalas_assets/Website/MainPages_Content/Celebrations/EventSpacePreviews/Event_Pavilion/menu_data/3.webp",
     },
     {
         id: 4,
         name: "Debut Celebrations",
-        model_image: "/lascalas_assets/Website/MainPages_Content/Celebrations/EventSpacePreviews/Event_Pavilion/menu_data/4.jpg",
+        model_image: "/lascalas_assets/Website/MainPages_Content/Celebrations/EventSpacePreviews/Event_Pavilion/menu_data/4.webp",
     },
     
     ]
     
     const preview_images = [...Array(6)].map((_, i) => 
-        `/lascalas_assets/Website/MainPages_Content/Celebrations/EventSpacePreviews/Event_Pavilion/${i + 1}.jpg`
+        `/lascalas_assets/Website/MainPages_Content/Celebrations/EventSpacePreviews/Event_Pavilion/${i + 1}.webp`
     );
     
 

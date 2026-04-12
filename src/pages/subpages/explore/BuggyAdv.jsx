@@ -11,31 +11,31 @@ const BuggyAdv = () => {
         id: 1,
         name: "Kayo Buggy 200cc",
         price: "PHP 2,000 /hr",
-        model_image: "/lascalas_assets/Website/MainPages_Content/Explore/Activities/buggyModels/Pola1.jpg",
+        model_image: "/lascalas_assets/Website/MainPages_Content/Explore/Activities/buggyModels/Pola1.webp",
     },
     {
         id: 2,
         name: "Sand Buggy 200cc",
         price: "PHP 4,000 /hr",
-        model_image: "/lascalas_assets/Website/MainPages_Content/Explore/Activities/buggyModels/Pola2.jpg",
+        model_image: "/lascalas_assets/Website/MainPages_Content/Explore/Activities/buggyModels/Pola2.webp",
     },
     {
         id: 3,
         name: "Polaris Turbo XP 1000 cc",
         price: "PHP 15,000 /hr",
-        model_image: "/lascalas_assets/Website/MainPages_Content/Explore/Activities/buggyModels/Pola3.jpg",
+        model_image: "/lascalas_assets/Website/MainPages_Content/Explore/Activities/buggyModels/Pola3.webp",
     },
     {
         id: 4,
         name: "Polaris RZR XP 4 1000 cc",
         price: "PHP 20,000 /hr",
-        model_image: "/lascalas_assets/Website/MainPages_Content/Explore/Activities/buggyModels/Pola4.jpg",
+        model_image: "/lascalas_assets/Website/MainPages_Content/Explore/Activities/buggyModels/Pola4.webp",
     },
     
     ]
 
     const preview_images = [...Array(14)].map((_, i) => 
-        `/lascalas_assets/Website/MainPages_Content/Explore/Activities/activities/buggy${i + 1}.jpg`
+        `/lascalas_assets/Website/MainPages_Content/Explore/Activities/activities/buggy${i + 1}.webp`
     );
 
 

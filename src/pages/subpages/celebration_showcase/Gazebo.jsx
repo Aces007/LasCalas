@@ -19,18 +19,18 @@ const Gazebo = () => {
             id: 1,
             name: "Wedding Reception",
             description: "An intimate, elegant gazebo venue beside our grand event tent, the perfect blend of charm and romance for your ceremony.",
-            model_image: "/lascalas_assets/Website/MainPages_Content/Celebrations/EventSpacePreviews/Gazebo/menu_data/1.jpg",
+            model_image: "/lascalas_assets/Website/MainPages_Content/Celebrations/EventSpacePreviews/Gazebo/menu_data/1.webp",
         },
         {
             id: 2,
             name: "Custom Packages",
             description: "Design your dream event with our customizable packages. Whether it's a corporate gathering, birthday, or any special occasion, we tailor every detail to your needs.",
-            model_image: "/lascalas_assets/Website/MainPages_Content/Celebrations/EventSpacePreviews/Gazebo/menu_data/2.jpg",
+            model_image: "/lascalas_assets/Website/MainPages_Content/Celebrations/EventSpacePreviews/Gazebo/menu_data/2.webp",
         },
     ]
     
     const preview_images = [...Array(5)].map((_, i) => 
-        `/lascalas_assets/Website/MainPages_Content/Celebrations/EventSpacePreviews/Gazebo/${i + 1}.jpg`
+        `/lascalas_assets/Website/MainPages_Content/Celebrations/EventSpacePreviews/Gazebo/${i + 1}.webp`
     );
     
 
