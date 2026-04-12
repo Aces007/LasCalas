@@ -48,7 +48,7 @@ const NavFoot = () => {
     // Map Iframe Resource
     const foot_map = {
         title: "LasCalas Location",
-        src: "/lascalas_assets/Website/Map/map.png",
+        src: "/lascalas_assets/Website/Map/map.webp",
         class: "w-[400px] h-[500px] rounded-[8px] hover:scale-105",
     }
 
@@ -158,7 +158,7 @@ const NavFoot = () => {
                 <div className={`${center_element_col} gap-24`}>
                     <div className={`${mainFooter_cont}`}>
                         <div className={`${center_element_col} gap-[4px] resSm:w-full resMd:w-[30%] resLg:w-[50%]`}>
-                            <img src="/lascalas_assets/lascalasBlue.png" alt="LasCalas Logo Blue" className="resSm:w-[80px] resMd:w-[120px] resLg:w-[132px]" />
+                            <img src="/lascalas_assets/lascalasBlue.webp" alt="LasCalas Logo Blue" className="resSm:w-[80px] resMd:w-[120px] resLg:w-[132px]" />
                             <div className={`${center_element_col}`}>
                                 <h1 className={`${foot_display} resSm:text-[24px] resMd:text-[28px] resLg:text-[28px]`}>LasCalas</h1>
                                 <h2 className={`${foot_display} resSm:text-[16px] resMd:text-[16px] resLg:text-[18px]`}>Resort & LUXURY ESTATE</h2>

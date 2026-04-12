@@ -18,28 +18,28 @@ const CampingGround = () => {
     {
         id: 1,
         name: "Romantic Dates",
-        model_image: "/lascalas_assets/Website/MainPages_Content/Celebrations/EventSpacePreviews/Teepee/menu_data/1.jpg",
+        model_image: "/lascalas_assets/Website/MainPages_Content/Celebrations/EventSpacePreviews/Teepee/menu_data/1.webp",
     },
     {
         id: 2,
         name: "Bonfire Gatherings",
-        model_image: "/lascalas_assets/Website/MainPages_Content/Celebrations/EventSpacePreviews/Teepee/menu_data/2.jpg",
+        model_image: "/lascalas_assets/Website/MainPages_Content/Celebrations/EventSpacePreviews/Teepee/menu_data/2.webp",
     },
     {
         id: 3,
         name: "Campsite Dinner",
-        model_image: "/lascalas_assets/Website/MainPages_Content/Celebrations/EventSpacePreviews/Teepee/menu_data/3.jpg",
+        model_image: "/lascalas_assets/Website/MainPages_Content/Celebrations/EventSpacePreviews/Teepee/menu_data/3.webp",
     },
     {
         id: 4,
         name: "Sunset Views",
-        model_image: "/lascalas_assets/Website/MainPages_Content/Celebrations/EventSpacePreviews/Teepee/menu_data/4.jpg",
+        model_image: "/lascalas_assets/Website/MainPages_Content/Celebrations/EventSpacePreviews/Teepee/menu_data/4.webp",
     },
    
     ]
     
     const preview_images = [...Array(5)].map((_, i) => 
-        `/lascalas_assets/Website/MainPages_Content/Celebrations/EventSpacePreviews/Teepee/${i + 1}.jpg`
+        `/lascalas_assets/Website/MainPages_Content/Celebrations/EventSpacePreviews/Teepee/${i + 1}.webp`
     );
     
 

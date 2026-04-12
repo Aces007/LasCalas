@@ -12,49 +12,49 @@ const WaterAdv = () => {
         id: 1,
         name: "Jetski Seadoo Spark",
         price: "PHP 8,000.00 / hr",
-        model_image: "/lascalas_assets/Website/MainPages_Content/Explore/Activities/waterEqModels/waterEq1.jpg",
+        model_image: "/lascalas_assets/Website/MainPages_Content/Explore/Activities/waterEqModels/waterEq1.webp",
     },
     {
         id: 2,
         name: "Jetski Seadoo GTX Pro",
         price: "PHP 10,000.00 / hr",
-        model_image: "/lascalas_assets/Website/MainPages_Content/Explore/Activities/waterEqModels/waterEq2.jpg",
+        model_image: "/lascalas_assets/Website/MainPages_Content/Explore/Activities/waterEqModels/waterEq2.webp",
     },
     {
         id: 3,
         name: "Sportyak",
         price: "PHP 1,500.00 / hr",
-        model_image: "/lascalas_assets/Website/MainPages_Content/Explore/Activities/waterEqModels/waterEq3.jpg",
+        model_image: "/lascalas_assets/Website/MainPages_Content/Explore/Activities/waterEqModels/waterEq3.webp",
     },
     {
         id: 4,
         name: "Crystal Kayak",
         price: "PHP 1,500.00 / 30m",
-        model_image: "/lascalas_assets/Website/MainPages_Content/Explore/Activities/waterEqModels/waterEq4.jpg",
+        model_image: "/lascalas_assets/Website/MainPages_Content/Explore/Activities/waterEqModels/waterEq4.webp",
     },
     {
         id: 5,
         name: "Banana Boat",
         price: "PHP 4,000.00 / 30m",
-        model_image: "/lascalas_assets/Website/MainPages_Content/Explore/Activities/waterEqModels/waterEq5.jpg",
+        model_image: "/lascalas_assets/Website/MainPages_Content/Explore/Activities/waterEqModels/waterEq5.webp",
     },
     {
         id: 6,
         name: "Pedal Bike",
         price: "Free upon check-in",
-        model_image: "/lascalas_assets/Website/MainPages_Content/Explore/Activities/waterEqModels/waterEq6.jpg",
+        model_image: "/lascalas_assets/Website/MainPages_Content/Explore/Activities/waterEqModels/waterEq6.webp",
     },
     {
         id: 7,
         name: "Standard Kayak",
         price: "Free upon check-in",
-        model_image: "/lascalas_assets/Website/MainPages_Content/Explore/Activities/waterEqModels/waterEq7.jpg",
+        model_image: "/lascalas_assets/Website/MainPages_Content/Explore/Activities/waterEqModels/waterEq7.webp",
     },
     
     ]
 
     const preview_images = [...Array(10)].map((_, i) => 
-        `/lascalas_assets/Website/MainPages_Content/Explore/Activities/activities/water${i + 1}.jpeg`
+        `/lascalas_assets/Website/MainPages_Content/Explore/Activities/activities/water${i + 1}.webp`
     );
 
 

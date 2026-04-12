@@ -7,7 +7,7 @@ import NavHead from "../../../reusables/NavHead";
 
 const RopeCourse = () => {
     const preview_images = [...Array(8)].map((_, i) => 
-        `/lascalas_assets/Website/MainPages_Content/Explore/Activities/activities/Rope${i + 1}.jpg`
+        `/lascalas_assets/Website/MainPages_Content/Explore/Activities/activities/Rope${i + 1}.webp`
     );
 
 

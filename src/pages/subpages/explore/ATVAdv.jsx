@@ -11,31 +11,31 @@ const ATVAdv = () => {
         id: 1,
         name: "ATV Scorpion 150cc",
         price: "PHP 1,000 /hr",
-        model_image: "/lascalas_assets/Website/MainPages_Content/Explore/Activities/atvModels/1.png",
+        model_image: "/lascalas_assets/Website/MainPages_Content/Explore/Activities/atvModels/1.webp",
     },
     {
         id: 2,
         name: "ATV Mseries 210cc",
         price: "PHP 1,500 /hr",
-        model_image: "/lascalas_assets/Website/MainPages_Content/Explore/Activities/atvModels/2.png",
+        model_image: "/lascalas_assets/Website/MainPages_Content/Explore/Activities/atvModels/2.webp",
     },
     {
         id: 3,
         name: "ATV TGB Target/Blade 600cc",
         price: "PHP 2,000 /hr",
-        model_image: "/lascalas_assets/Website/MainPages_Content/Explore/Activities/atvModels/3.png",
+        model_image: "/lascalas_assets/Website/MainPages_Content/Explore/Activities/atvModels/3.webp",
     },
     {
         id: 4,
         name: "ATV TGB Target/Blade 1000cc",
         price: "PHP 4,000 /hr",
-        model_image: "/lascalas_assets/Website/MainPages_Content/Explore/Activities/atvModels/4.png",
+        model_image: "/lascalas_assets/Website/MainPages_Content/Explore/Activities/atvModels/4.webp",
     },
     
     ]
 
     const preview_images = [...Array(6)].map((_, i) => 
-        `/lascalas_assets/Website/MainPages_Content/Explore/Activities/activities/atv${i + 1}.jpg`
+        `/lascalas_assets/Website/MainPages_Content/Explore/Activities/activities/atv${i + 1}.webp`
     );
 
 

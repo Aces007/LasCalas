@@ -26,11 +26,11 @@ const About = () => {
     const between_element_row = "flex justify-between";
 
     const moments_assets = [
-        { id: 1, src: "/lascalas_assets/Website/About/Moments1.png", label: "Beach Pergola" },
-        { id: 2, src: "/lascalas_assets/Website/About/Moments2.png", label: "La Cueva" },
-        { id: 3, src: "/lascalas_assets/Website/About/Moments3.png", label: "La Batanes" },
-        { id: 4, src: "/lascalas_assets/Website/About/Moments4.png", label: "Event Pavilion" },
-        { id: 5, src: "/lascalas_assets/Website/About/Moments5.png", label: "Polaris" },
+        { id: 1, src: "/lascalas_assets/Website/About/Moments1.webp", label: "Beach Pergola" },
+        { id: 2, src: "/lascalas_assets/Website/About/Moments2.webp", label: "La Cueva" },
+        { id: 3, src: "/lascalas_assets/Website/About/Moments3.webp", label: "La Batanes" },
+        { id: 4, src: "/lascalas_assets/Website/About/Moments4.webp", label: "Event Pavilion" },
+        { id: 5, src: "/lascalas_assets/Website/About/Moments5.webp", label: "Polaris" },
     ];
 
     const pageVariants = {
@@ -53,7 +53,7 @@ const About = () => {
             <div className={about_cont}>
                 {/* Left Image */}
                 <div>
-                    <img src="/lascalas_assets/Website/About/About1.png" alt="About Image 1" className="w-full h-full object-cover" />
+                    <img src="/lascalas_assets/Website/About/About1.webp" alt="About Image 1" className="w-full h-full object-cover" />
                 </div>
 
                 {/* Center Content */}
@@ -88,7 +88,7 @@ const About = () => {
 
                 {/* Right Image */}
                 <div>
-                    <img src="/lascalas_assets/Website/About/About2.png" alt="About Image 2" className="w-full h-full object-cover" />
+                    <img src="/lascalas_assets/Website/About/About2.webp" alt="About Image 2" className="w-full h-full object-cover" />
                 </div>
             </div>
         </motion.div>

@@ -29,7 +29,7 @@ const Gallery = () => {
 
     const gallery_assets = [...Array(120)].map((_, i) => ({
         id: i + 1,
-        src: `/lascalas_assets/Website/Gallery/${i + 1}.png`
+        src: `/lascalas_assets/Website/Gallery/${i + 1}.webp`
     }));
 
     return (

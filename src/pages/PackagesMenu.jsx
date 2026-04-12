@@ -36,23 +36,23 @@ const PackagesMenu = () => {
     };
 
     const packages_slideshow = [
-        { id: 1, src: "/lascalas_assets/Website/Slideshows/Packages_Slideshow/Pack_Slider1.png" },
-        { id: 2, src: "/lascalas_assets/Website/Slideshows/Packages_Slideshow/Pack_Slider2.png" },
-        { id: 3, src: "/lascalas_assets/Website/Slideshows/Packages_Slideshow/Pack_Slider3.png" },
-        { id: 4, src: "/lascalas_assets/Website/Slideshows/Packages_Slideshow/Pack_Slider4.png" },
-        { id: 5, src: "/lascalas_assets/Website/Slideshows/Packages_Slideshow/Pack_Slider5.png" },
-        { id: 6, src: "/lascalas_assets/Website/Slideshows/Packages_Slideshow/Pack_Slider6.png" },
-        { id: 7, src: "/lascalas_assets/Website/Slideshows/Packages_Slideshow/Pack_Slider7.png" },
+        { id: 1, src: "/lascalas_assets/Website/Slideshows/Packages_Slideshow/Pack_Slider1.webp" },
+        { id: 2, src: "/lascalas_assets/Website/Slideshows/Packages_Slideshow/Pack_Slider2.webp" },
+        { id: 3, src: "/lascalas_assets/Website/Slideshows/Packages_Slideshow/Pack_Slider3.webp" },
+        { id: 4, src: "/lascalas_assets/Website/Slideshows/Packages_Slideshow/Pack_Slider4.webp" },
+        { id: 5, src: "/lascalas_assets/Website/Slideshows/Packages_Slideshow/Pack_Slider5.webp" },
+        { id: 6, src: "/lascalas_assets/Website/Slideshows/Packages_Slideshow/Pack_Slider6.webp" },
+        { id: 7, src: "/lascalas_assets/Website/Slideshows/Packages_Slideshow/Pack_Slider7.webp" },
     ]
 
     const packages_menu = [
-        { id: 1, package_name: "Executive Villa", src: "/lascalas_assets/Website/MainPages_Content/Packages/Package1.jpg", description: "Experience beachfront luxury in the King Villa Tents at Cove 1. Featuring a plush king bed just steps from the waves, wake up to breathtaking sunrise views in your own private, seaside sanctuary." },
-        { id: 2, package_name: "Cove 1 Villa Tent - King Bed", src: "/lascalas_assets/Website/MainPages_Content/Packages/Package2.png", description: "Experience beachfront luxury in the King Villa Tents at Cove 1. Featuring a plush king bed just steps from the waves, wake up to breathtaking sunrise views in your own private, seaside sanctuary." },
-        { id: 3, package_name: "Cove 1 Villa Tent - Bunk Bed", src: "/lascalas_assets/Website/MainPages_Content/Packages/Package3.png", description: "Elevate your group getaway in the Bunk Villa Tents at Cove 1. Steps from the shore with premium stylish bunks, enjoy the perfect blend of seaside adventure and refined comfort together." },
-        { id: 4, package_name: "Lascalas Villa Tents - King Bed", src: "/lascalas_assets/Website/MainPages_Content/Packages/Package4.png", description: "Relax in our King Villa Tents, where nature meets luxury. Featuring a plush king bed and modern amenities, it is your private, romantic sanctuary under the stars." },
-        { id: 5, package_name: "Lascalas Villa Tents - Double Size Bed Bunk", src: "/lascalas_assets/Website/MainPages_Content/Packages/Package6.png", description: "Share the experience in our Double Bunk Villa Tents. With spacious double-sized bunks and modern comforts, it is the ideal outdoor luxury escape for families and friends." },
-        { id: 6, package_name: "Lascalas Villa Tents - Bunk Bed", src: "/lascalas_assets/Website/MainPages_Content/Packages/Package6.png", description: "Enjoy a fun getaway in our Bunk Villa Tents. With cozy bunk beds and modern comforts, it is the perfect luxury basecamp for friends and families." },
-        { id: 7, package_name: "Teepee Tents - Camp Cot", src: "/lascalas_assets/Website/MainPages_Content/Packages/Package7.png", description: "Relax at LasCalas Camping Grounds, where you can book a cozy teepee tent, enjoy a campfire under the full moon, and take in stunning beachfront views. Perfect for couples and families looking to unwind." },
+        { id: 1, package_name: "Executive Villa", src: "/lascalas_assets/Website/MainPages_Content/Packages/Package1.webp", description: "Experience beachfront luxury in the King Villa Tents at Cove 1. Featuring a plush king bed just steps from the waves, wake up to breathtaking sunrise views in your own private, seaside sanctuary." },
+        { id: 2, package_name: "Cove 1 Villa Tent - King Bed", src: "/lascalas_assets/Website/MainPages_Content/Packages/Package2.webp", description: "Experience beachfront luxury in the King Villa Tents at Cove 1. Featuring a plush king bed just steps from the waves, wake up to breathtaking sunrise views in your own private, seaside sanctuary." },
+        { id: 3, package_name: "Cove 1 Villa Tent - Bunk Bed", src: "/lascalas_assets/Website/MainPages_Content/Packages/Package3.webp", description: "Elevate your group getaway in the Bunk Villa Tents at Cove 1. Steps from the shore with premium stylish bunks, enjoy the perfect blend of seaside adventure and refined comfort together." },
+        { id: 4, package_name: "Lascalas Villa Tents - King Bed", src: "/lascalas_assets/Website/MainPages_Content/Packages/Package4.webp", description: "Relax in our King Villa Tents, where nature meets luxury. Featuring a plush king bed and modern amenities, it is your private, romantic sanctuary under the stars." },
+        { id: 5, package_name: "Lascalas Villa Tents - Double Size Bed Bunk", src: "/lascalas_assets/Website/MainPages_Content/Packages/Package5.webp", description: "Share the experience in our Double Bunk Villa Tents. With spacious double-sized bunks and modern comforts, it is the ideal outdoor luxury escape for families and friends." },
+        { id: 6, package_name: "Lascalas Villa Tents - Bunk Bed", src: "/lascalas_assets/Website/MainPages_Content/Packages/Package6.webp", description: "Enjoy a fun getaway in our Bunk Villa Tents. With cozy bunk beds and modern comforts, it is the perfect luxury basecamp for friends and families." },
+        { id: 7, package_name: "Teepee Tents - Camp Cot", src: "/lascalas_assets/Website/MainPages_Content/Packages/Package7.webp", description: "Relax at LasCalas Camping Grounds, where you can book a cozy teepee tent, enjoy a campfire under the full moon, and take in stunning beachfront views. Perfect for couples and families looking to unwind." },
     ]
 
     return (

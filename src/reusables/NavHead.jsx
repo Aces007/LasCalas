@@ -23,7 +23,7 @@ const NavHead = ({ theme = "light" }) => {
         const variantBorder = variantIsDark ? "border-[3px] border-black hover:bg-highlight" : "border-[3px] border-background_lightTxt/50 hover:bg-highlight hover:border-highlight";
 
         //--TEXTS--//
-        const variantLogoCol = variantIsDark ? "/lascalas_assets/lascalasBlack.png" : "/lascalas_assets/lascalasWhite.png";
+        const variantLogoCol = variantIsDark ? "/lascalas_assets/lascalasBlack.webp" : "/lascalas_assets/lascalasWhite.webp";
         const variantNavlinks = variantIsDark ? "text-main_text hover:text-highlight hover:font-bold font-Montserrat uppercase resLg:text-[18px]" : "text-background_lightTxt font-Montserrat uppercase resLg:text-[18px] hover:text-highlight hover:font-bold";
         const variantText = variantIsDark ? "text-background_lightTxt text-center hover:text-background_lightTxt" : "text-background_lightTxt text-center hover:text-background_lightTxt";
         const variantSVGs = variantIsDark ? "text-main_text" : "text-background_lightTxt";
