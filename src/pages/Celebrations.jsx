@@ -33,19 +33,11 @@ const Celebrations = () => {
     };
 
     const celebrations_slideshow = [
-<<<<<<< Updated upstream
-        { id: 1, src: "/lascalas_assets/Website/Slideshows/Celebrations_Slideshow/Celebrations1.webp" },
-        { id: 2, src: "/lascalas_assets/Website/Slideshows/Celebrations_Slideshow/Celebrations2.webp" },
-        { id: 3, src: "/lascalas_assets/Website/Slideshows/Celebrations_Slideshow/Celebrations3.webp" },
-        { id: 4, src: "/lascalas_assets/Website/Slideshows/Celebrations_Slideshow/Celebrations4.webp" },
-        { id: 5, src: "/lascalas_assets/Website/Slideshows/Celebrations_Slideshow/Celebrations6.webp" },
-=======
         { id: 1, src: "/lascalas_assets/Website/Slideshows/Celebrations_Slideshow/Celebrations1.jpg" },
         { id: 2, src: "/lascalas_assets/Website/Slideshows/Celebrations_Slideshow/Celebrations2.jpg" },
         { id: 3, src: "/lascalas_assets/Website/Slideshows/Celebrations_Slideshow/Celebrations3.jpg" },
         { id: 4, src: "/lascalas_assets/Website/Slideshows/Celebrations_Slideshow/Celebrations4.jpg" },
         { id: 5, src: "/lascalas_assets/Website/Slideshows/Celebrations_Slideshow/Celebrations5.jpg" },
->>>>>>> Stashed changes
     ]
 
      const celebrations_menu = [
