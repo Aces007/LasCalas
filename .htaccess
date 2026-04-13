@@ -37,3 +37,19 @@
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteRule . /index.html [L]
 </IfModule>
+
+# ----------------------------------------------------------------------
+# 4. MIME TYPES (Fix for WebP/Gazebo Assets)
+# ----------------------------------------------------------------------
+<IfModule mod_mime.c>
+    AddType image/webp .webp
+    AddType image/vnd.microsoft.icon .ico
+</IfModule>
+
+# ----------------------------------------------------------------------
+# 5. HARD FORCE WEBP (For stubborn servers)
+# ----------------------------------------------------------------------
+<FilesMatch "\.webp$">
+    ForceType image/webp
+    Header set Content-Type image/webp
+</FilesMatch>

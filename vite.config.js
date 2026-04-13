@@ -1,35 +1,40 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
 export default defineConfig({
   base: '/',
   plugins: [react()],
   
-  // 1. DEVELOPMENT SERVER SETTINGS
   server: {
     watch: {
       usePolling: true,
     },
-    // Only use these headers during 'npm run dev'
     headers: {
       'Cache-Control': 'no-store, no-cache, must-revalidate, proxy-revalidate',
     },
   },
 
-  // 2. PRODUCTION BUILD SETTINGS (Add this part!)
   build: {
+    // 1. Force a more stable build target
+    target: 'es2020', 
+    
+    // 2. Optimization: Minify with Terser for better variable scoping (if needed)
+    // By default Vite uses Esbuild, which is fast, but Terser is sometimes safer
+    minify: 'esbuild', 
+
     rollupOptions: {
       output: {
-        // This splits your code so DreamHost can serve it faster
-        manualChunks(id) {
-          if (id.includes('node_modules')) {
-            return 'vendor'; 
-          }
-        },
+        // 3. Keep filenames simple to avoid caching issues on DreamHost
+        entryFileNames: `assets/[name]-[hash].js`,
+        chunkFileNames: `assets/[name]-[hash].js`,
+        assetFileNames: `assets/[name]-[hash].[ext]`,
+        
+        // 4. Manual Chunks: Only split if the file is massive
+        manualChunks: undefined, 
       },
     },
-    // Increases the limit to 1000kB so the warning disappears
-    chunkSizeWarningLimit: 1000,
+    
+    // 5. Increase limit for your Framer Motion and React Icons iceberg
+    chunkSizeWarningLimit: 2000, 
   },
 })
