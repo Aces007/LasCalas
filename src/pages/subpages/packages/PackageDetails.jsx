@@ -296,7 +296,7 @@ const PackageDetails = () => {
     };
 
     // -- STYLING -- //
-    const package_details_cont = "grid grid-cols-2 gap-8 justify-center w-full px-6 mt-[40px] resSm:flex resSm:flex-col";
+    const package_details_cont = "grid grid-cols-2 gap-8 justify-between w-full px-[200px] mt-[40px] resSm:flex resSm:flex-col";
     const package_name = "font-Raleway font-semibold text-[48px] resSm:text-[24px] resMd:text-[42px]";
     const package_price = "font-Raleway font-semibold text-secondary/60 text-[24px] resSm:text-[26px] resMd:text-[22px]";
 

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Hero = () => {
     // Styling Variables (USE THIS FORMAT: Permanent Styling [like font fam] then responsive styles starting from smallest size)
         //--CONTAINERS--//
-        const hero_cont = "hero_cont bg-[url('/lascalas_assets/Hero.webp')] bg-cover bg-center bg-no-repeat pb-24 resSm:min-h-[100px]";
+        const hero_cont = "hero_cont bg-[url('/lascalas_assets/Hero.jpg')] bg-cover bg-center bg-no-repeat pb-24 resSm:min-h-[100px]";
         const hero_content = "flex flex-col items-center justify-center gap-[120px]";
         const hero_display_cont = "flex flex-col items-center resSm:gap-[16px] resSm:mt-[80px] resMd:gap-[32px] resMd:mt-[80px]";
 
