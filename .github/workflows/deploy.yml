@@ -20,6 +20,5 @@ jobs:
           password: ${{ secrets.DREAMHOST_PASSWORD }}
           port: 22
           local_path: ./*
-          remote_path: /path/to/your/lascalas/folder
+          remote_path: /home/dh_ukvmuf/lascalas.com
           sftp_only: true
-          delete_remote_files_with_local: true  # keeps remote in sync
