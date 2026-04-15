@@ -1,0 +1,29 @@
+name: LasCalas Deploy
+on:
+  push:
+    branches:
+      - main  # Trigger only when you push to main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Install and Build
+        run: |
+          npm install
+          npm run build
+
+      - name: Sync to DreamHost
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: sftp 
+          port: 22     
+          local-dir: ./dist/
+          server-dir: /lascalasresort.com/
+          state-name: .ftp-deploy-sync-state.json
