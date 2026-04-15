@@ -15,9 +15,9 @@ jobs:
       - name: Sync files via SFTP
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
-          username: dh_ukvmuf
-          server: ${{ secrets.DREAMHOST_HOST }}
-          password: ${{ secrets.DREAMHOST_PASSWORD }}
+          username: ${{ secrets.FTP_USERNAME }}
+          server: ${{ secrets.FTP_SERVER }}
+          password: ${{ secrets.FTP_PASSWORD }}
           port: 22
           local_path: ./*
           remote_path: /home/dh_ukvmuf/lascalas.com
