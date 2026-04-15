@@ -1,28 +1,25 @@
-name: LasCalas Deploy
+name: Deploy LasCalas to DreamHost
+
 on:
   push:
     branches:
-      - main  # Trigger only when you push to main
+      - main
 
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Code
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Install and Build
-        run: |
-          npm install
-          npm run build
-
-      - name: Sync to DreamHost
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      - name: Sync files via SFTP
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }} 
-          port: 22     
-          local-dir: ./dist/
-          server-dir: /lascalasresort.com/
-          state-name: .ftp-deploy-sync-state.json
+          username: dh_ukvmuf
+          server: ${{ secrets.DREAMHOST_HOST }}
+          password: ${{ secrets.DREAMHOST_PASSWORD }}
+          port: 22
+          local_path: ./*
+          remote_path: /path/to/your/lascalas/folder
+          sftp_only: true
+          delete_remote_files_with_local: true  # keeps remote in sync
