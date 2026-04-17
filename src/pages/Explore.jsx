@@ -115,7 +115,7 @@ const Explore = () => {
                                 transition={{ duration: 0.4 }}
                                 className={`${main_page_content_cont}`}
                             >
-                                <img src={item.src} alt={item.name} className={`${main_page_cards_img}`} />
+                                <img src={item.src} alt={item.name} className={`${main_page_cards_img}`} loading="lazy" />
                                 
                                 <div className={`${main_page_content_name_cont}`}>
                                     <h3 className={`${main_page_content_name}`}>

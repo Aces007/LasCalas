@@ -89,7 +89,7 @@ const Gazebo = () => {
                         >
                             {preview_images.map((src, index) => (
                                 <SwiperSlide key={index} className={`${center_element_col}`}>
-                                    <img src={src} className={`${carousel_preview}`}/>
+                                    <img src={src} className={`${carousel_preview}`} loading="lazy"/>
                                 </SwiperSlide>
                             ))}
                         </Swiper>
@@ -109,7 +109,7 @@ const GazeboCard = ({ gazeBo }) => {
     return (
         <div className="h-full">
             <div className={`${gazeBoCard_cont}`}>
-                <img src={gazeBo.model_image} alt={gazeBo.name} className="w-[160px] h-[160px] aspect-square object-cover rounded-md" />
+                <img src={gazeBo.model_image} alt={gazeBo.name} className="w-[160px] h-[160px] aspect-square object-cover rounded-md" loading="lazy" />
                 <h3 className={`${gazeBoCard_name}`}>{gazeBo.name}</h3>
                 <p className={`${gazeBoCard_desc}`}>{gazeBo.description}</p>
             </div>

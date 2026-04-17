@@ -109,7 +109,7 @@ const BuggyAdv = () => {
                         >
                             {preview_images.map((src, index) => (
                                 <SwiperSlide key={index} className={`${center_element_col}`}>
-                                    <img src={src} className={`${carousel_preview}`}/>
+                                    <img src={src} className={`${carousel_preview}`} loading="lazy"/>
                                 </SwiperSlide>
                             ))}
                         </Swiper>
@@ -128,7 +128,7 @@ const BuggyCard = ({ buggy }) => {
     return (
         <div>
             <div className={`${buggyCard_cont}`}>
-                <img src={buggy.model_image} alt={buggy.name} className="w-[160px]" />
+                <img src={buggy.model_image} alt={buggy.name} className="w-[160px]" loading="lazy" />
                 <h3 className={`${buggyCard_name}`}>{buggy.name}</h3>
                 <p className={`${buggyCard_price}`}>{buggy.price}</p>
             </div>

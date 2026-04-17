@@ -107,7 +107,7 @@ const CampingGround = () => {
                         >
                             {preview_images.map((src, index) => (
                                 <SwiperSlide key={index} className={`${center_element_col}`}>
-                                    <img src={src} className={`${carousel_preview}`}/>
+                                    <img src={src} className={`${carousel_preview}`} loading="lazy"/>
                                 </SwiperSlide>
                             ))}
                         </Swiper>
@@ -126,7 +126,7 @@ const CampingCard = ({ camp }) => {
     return (
         <div className="h-full">
             <div className={`${campCard_cont}`}>
-                <img src={camp.model_image} alt={camp.name} className="w-[160px]" />
+                <img src={camp.model_image} alt={camp.name} className="w-[160px]" loading="lazy" />
                 <h3 className={`${campCard_name}`}>{camp.name}</h3>
             </div>
         </div>

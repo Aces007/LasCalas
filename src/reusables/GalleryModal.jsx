@@ -89,7 +89,7 @@ const GalleryModal = ({ isOpen, onClose, galleryItems, currentImg }) => {
             >
                 {galleryItems.map((item) => (
                     <SwiperSlide key={item.id}  className={`${center_element_col}`}>
-                        <img src={item.src} className={`${sliderContent_galModal}`} />
+                        <img src={item.src} className={`${sliderContent_galModal}`} loading="lazy"/>
                     </SwiperSlide>
                 ))}
             </Swiper>

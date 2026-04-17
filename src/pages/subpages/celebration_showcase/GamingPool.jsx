@@ -107,7 +107,7 @@ const GamingPool = () => {
                         >
                             {preview_images.map((src, index) => (
                                 <SwiperSlide key={index} className={`${center_element_col}`}>
-                                    <img src={src} className={`${carousel_preview}`}/>
+                                    <img src={src} className={`${carousel_preview}`} loading="lazy"/>
                                 </SwiperSlide>
                             ))}
                         </Swiper>
@@ -126,7 +126,7 @@ const GamingPoolCard = ({ gamPool }) => {
     return (
         <div className="h-full">
             <div className={`${gamPoolCard_cont}`}>
-                <img src={gamPool.model_image} alt={gamPool.name} className="w-[160px]" />
+                <img src={gamPool.model_image} alt={gamPool.name} className="w-[160px]" loading="lazy" />
                 <h3 className={`${gamPoolCard_name}`}>{gamPool.name}</h3>
             </div>
         </div>

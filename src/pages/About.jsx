@@ -53,7 +53,7 @@ const About = () => {
             <div className={about_cont}>
                 {/* Left Image */}
                 <div>
-                    <img src="/lascalas_assets/Website/About/About1.webp" alt="About Image 1" className="w-full h-full object-cover" />
+                    <img src="/lascalas_assets/Website/About/About1.webp" alt="About Image 1" className="w-full h-full object-cover" loading="lazy" />
                 </div>
 
                 {/* Center Content */}
@@ -75,7 +75,7 @@ const About = () => {
                             {moments_assets.map((item) => (
                                 <div key={item.id} className={moment_item_stack}> 
                                     <div className={moment_img_frame}> 
-                                        <img src={item.src} alt={item.label} className="w-full h-full object-cover" />
+                                        <img src={item.src} alt={item.label} className="w-full h-full object-cover" loading="lazy" />
                                     </div> 
                                     <span className={moment_label}>
                                         {item.label}
@@ -88,7 +88,7 @@ const About = () => {
 
                 {/* Right Image */}
                 <div>
-                    <img src="/lascalas_assets/Website/About/About2.webp" alt="About Image 2" className="w-full h-full object-cover" />
+                    <img src="/lascalas_assets/Website/About/About2.webp" alt="About Image 2" className="w-full h-full object-cover" loading="lazy" />
                 </div>
             </div>
         </motion.div>

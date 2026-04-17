@@ -44,6 +44,7 @@ const MainSlides = ({
                             <img
                                 src={item.src}
                                 className={`${mainSlides_slide_contents}`}
+                                loading="lazy"
                                 onClick={() => {
                                     setActiveIndex(index);
                                     setIsOpen(true);
