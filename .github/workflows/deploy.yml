@@ -15,7 +15,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '20' # Bumping to 20 fixes the Vite requirement error
 
       - name: Install Dependencies
         run: npm install
@@ -30,6 +30,8 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           password: ${{ secrets.FTP_PASSWORD }}
           port: 22
-          local_path: ./dist/*
-          remote_path: /home/dh_ukvmuf/lascalasresort.com
+          local_path: './dist/*'
+          # Using the absolute path we saw in your File Manager screenshot
+          remote_path: '/home/dh_ukvmuf/lascalasresort.com/'
           sftp_only: true
+          delete_remote_files: false # Set to true if you want it to wipe old files automatically
