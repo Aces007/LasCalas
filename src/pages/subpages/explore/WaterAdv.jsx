@@ -135,7 +135,7 @@ const WaterAdv = () => {
                         >
                             {preview_images.map((src, index) => (
                                 <SwiperSlide key={index} className={`${center_element_col}`}>
-                                    <img src={src} className={`${carousel_preview}`}/>
+                                    <img src={src} className={`${carousel_preview}`} loading="lazy"/>
                                 </SwiperSlide>
                             ))}
                         </Swiper>
@@ -154,7 +154,7 @@ const WaterCard = ({ water }) => {
     return (
         <div>
             <div className={`${waterCard_cont}`}>
-                <img src={water.model_image} alt={water.name} className="w-[250px] h-[180px]" />
+                <img src={water.model_image} alt={water.name} className="w-[250px] h-[180px]" loading="lazy"/>
                 <h3 className={`${waterCard_name}`}>{water.name}</h3>
                 <p className={`${waterCard_price}`}>{water.price}</p>
             </div>

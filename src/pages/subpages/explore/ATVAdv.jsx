@@ -108,7 +108,7 @@ const ATVAdv = () => {
                         >
                             {preview_images.map((src, index) => (
                                 <SwiperSlide key={index} className={`${center_element_col}`}>
-                                    <img src={src} className={`${carousel_preview}`}/>
+                                    <img src={src} className={`${carousel_preview}`} loading="lazy"/>
                                 </SwiperSlide>
                             ))}
                         </Swiper>
@@ -127,7 +127,7 @@ const ATVCard = ({ atv }) => {
     return (
         <div>
             <div className={`${atvCard_cont}`}>
-                <img src={atv.model_image} alt={atv.name} className="w-[160px]" />
+                <img src={atv.model_image} alt={atv.name} className="w-[160px]" loading="lazy"/>
                 <h3 className={`${atvCard_name}`}>{atv.name}</h3>
                 <p className={`${atvCard_price}`}>{atv.price}</p>
             </div>

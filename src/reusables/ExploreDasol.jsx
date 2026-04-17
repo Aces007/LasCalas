@@ -59,7 +59,7 @@ const ExploreDasol = () => {
             {exploreDasol_assets.map((item) => (
                 <SwiperSlide className={`${center_element_col}`}>
                     <a href={item.link || "#"} className={`${center_element_col} group`} target="_blank">
-                        <img src={item.src} alt={item.label} className="h-[240px] overflow-hidden rounded-md" />
+                        <img src={item.src} alt={item.label} className="h-[240px] overflow-hidden rounded-md" loading="lazy"/>
                         <p className={`${exploreDasol_label}`}>{item.label}</p>
                     </a>
                 </SwiperSlide>

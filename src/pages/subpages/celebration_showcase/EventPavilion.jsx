@@ -106,7 +106,7 @@ const EventPavilion = () => {
                         >
                             {preview_images.map((src, index) => (
                                 <SwiperSlide key={index} className={`${center_element_col}`}>
-                                    <img src={src} className={`${carousel_preview}`}/>
+                                    <img src={src} className={`${carousel_preview}`} loading="lazy"/>
                                 </SwiperSlide>
                             ))}
                         </Swiper>
@@ -125,7 +125,7 @@ const PavilionCard = ({ pav }) => {
     return (
         <div className="h-full">
             <div className={`${pavilionCard_cont}`}>
-                <img src={pav.model_image} alt={pav.name} className="w-[160px]" />
+                <img src={pav.model_image} alt={pav.name} className="w-[160px]" loading="lazy" />
                 <h3 className={`${pavilionCard_name}`}>{pav.name}</h3>
             </div>
         </div>

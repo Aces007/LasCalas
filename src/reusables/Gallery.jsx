@@ -70,6 +70,7 @@ const Gallery = () => {
                                 setActiveIndex(index);
                                 setIsOpen(true);
                             }} 
+                            loading="lazy"
                         />
                     </SwiperSlide>
                 ))}

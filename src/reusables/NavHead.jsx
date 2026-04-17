@@ -60,7 +60,7 @@ const NavHead = ({ theme = "light" }) => {
 
                 {/* Logo (Center) */}
                 <div className={`${center_justify_row}`}>
-                    <Link to="/"><img src={variantLogoCol} alt="lasCalas logo" className="w-[104px]" /></Link>
+                    <Link to="/"><img src={variantLogoCol} alt="lasCalas logo" className="w-[104px]" loading="lazy"/></Link>
                 </div>
 
                 {/* CTA Btns (Right) */}
@@ -72,7 +72,7 @@ const NavHead = ({ theme = "light" }) => {
             {/* Mobile/Tablet Layout (below resLg: below 1280px) */}
             <div className={`resLg:hidden ${center_element_row} justify-between ${variantPaddingMobile}`}>
                 {/* Logo (Left) */}
-                <Link to="/"><img src={variantLogoCol} alt="lasCalas logo" className="resSm:w-[56px] resMd:w-[64px]" /></Link>
+                <Link to="/"><img src={variantLogoCol} alt="lasCalas logo" className="resSm:w-[56px] resMd:w-[64px]" loading="lazy"/></Link>
 
                 {/* Hamburger Menu (Right) */}
                 <RxHamburgerMenu 

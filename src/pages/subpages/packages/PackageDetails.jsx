@@ -422,7 +422,7 @@ const PackageDetails = () => {
                         >
                             {selectedPackage?.preview_images.map((src, index) => (
                                 <SwiperSlide key={index}  className={`${center_element_col}`}>
-                                    <img src={src} className={`${carousel_preview}`}/>
+                                    <img src={src} className={`${carousel_preview}`} loading="lazy"/>
                                 </SwiperSlide>
                             ))}
                         </Swiper>

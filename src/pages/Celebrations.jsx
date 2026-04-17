@@ -65,7 +65,7 @@ const Celebrations = () => {
                 <div className={`${main_page_grid_cont}`}>
                 {celebrations_menu.map((item) => (
                     <div key={item.id} className={`${main_page_content_cont}`}>
-                            <img src={item.src} alt={item.celebration_name} className={`${main_page_cards_img}`}/>
+                            <img src={item.src} alt={item.celebration_name} className={`${main_page_cards_img}`} loading="lazy" />
 
                             <div className={`${main_page_content_name_cont}`}>
                                 <h3 className={`${main_page_content_name}`}>
