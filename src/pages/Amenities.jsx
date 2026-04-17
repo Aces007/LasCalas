@@ -34,26 +34,26 @@ const Amenities = () => {
     };
 
     const amenities_slideshow = [
-        { id: 1, src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities1.jpg" },
-        { id: 2, src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities2.jpg" },
-        { id: 3, src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities3.jpg" },
-        { id: 4, src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities4.jpg" },
-        { id: 5, src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities5.jpg" },
-        { id: 6, src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities6.jpg" },
-        { id: 7, src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities7.jpg" },
-        { id: 8, src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities8.jpg" },
+        { id: 1, src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities1.webp" },
+        { id: 2, src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities2.webp" },
+        { id: 3, src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities3.webp" },
+        { id: 4, src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities4.webp" },
+        { id: 5, src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities5.webp" },
+        { id: 6, src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities6.webp" },
+        { id: 7, src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities7.webp" },
+        { id: 8, src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities8.webp" },
     ]
 
     const packages_menu = [
-        { id: 1, amenity_name: "Gaming Villa", src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities1.jpg", description: "Unwind in the Gaming Villa, a tranquil retreat designed for slow-paced leisure. From a quiet game of Billiards or Chess to nostalgic Arcade classics, this sanctuary offers a relaxing indoor escape to enjoy shared moments and gentle fun." },
-        { id: 2, amenity_name: "Pool Area", src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities2.jpg", description: "Unwind at our Pool Area, a serene oasis designed for quiet relaxation. Whether you're lounging by the water or enjoying a gentle evening swim under the stars, this tranquil space offers the perfect atmosphere to refresh your mind and body in total peace." },
-        { id: 3, amenity_name: "Steam Sauna", src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities3.jpg", description: "Rejuvenate your senses in our restorative Steam Sauna. A private, barrel-style sanctuary nestled in nature, it offers a gentle, purifying heat designed to detoxify your body and provide a deep sense of calm and well-being" },
-        { id: 4, amenity_name: "Cove 1 Beach Front", src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities4.jpg", description: "Embrace seaside serenity at Cove 1. Whether you're lounging with a fresh coconut or listening to the gentle rhythm of the waves, this premier beachfront sanctuary offers an exclusive space to bask in the sun and unwind in total comfort." },
-        { id: 5, amenity_name: "Obstacle Course", src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities5.jpg", description: "Find your balance on our nature-integrated Obstacle Course. A low-impact way to enjoy the outdoors, this space encourages mindful movement and playful coordination amidst the resort's greenery." },
-        { id: 6, amenity_name: "Rope Course", src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities6.jpg", description: "Experience a fresh perspective from our Rope Course. Nestled within the canopy, this guided adventure offers a calm way to reconnect with nature while enjoying a scenic view of the estate." },
-        { id: 7, amenity_name: "Cove 2", src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities7.jpg", description: "Discover the vibrant waters of Cove 2. Perfect for a peaceful paddle or a slow boat ride, this crystal-clear lagoon is your gateway to exploring the gentle rhythms of the sea." },
-        { id: 7, amenity_name: "Cove 3", src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities8.jpg", description: "Escape to the expansive beauty of Cove 3. This panoramic coastal stretch offers a quiet sanctuary for those looking to soak in the vast ocean horizon and the lush island landscape." },
-        { id: 7, amenity_name: "Cove 4", src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities9.jpg", description: "Discover the breathtaking heights of Cove 4, where our exclusive Cliff Dining area offers a front-row seat to the horizon. Enjoy a serene, open-air meal perched above the waves, the perfect setting for a tranquil sunset or a private, starlit dinner." },
+        { id: 1, amenity_name: "Gaming Villa", src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities1.webp", description: "Unwind in the Gaming Villa, a tranquil retreat designed for slow-paced leisure. From a quiet game of Billiards or Chess to nostalgic Arcade classics, this sanctuary offers a relaxing indoor escape to enjoy shared moments and gentle fun." },
+        { id: 2, amenity_name: "Pool Area", src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities2.webp", description: "Unwind at our Pool Area, a serene oasis designed for quiet relaxation. Whether you're lounging by the water or enjoying a gentle evening swim under the stars, this tranquil space offers the perfect atmosphere to refresh your mind and body in total peace." },
+        { id: 3, amenity_name: "Steam Sauna", src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities3.webp", description: "Rejuvenate your senses in our restorative Steam Sauna. A private, barrel-style sanctuary nestled in nature, it offers a gentle, purifying heat designed to detoxify your body and provide a deep sense of calm and well-being" },
+        { id: 4, amenity_name: "Cove 1 Beach Front", src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities4.webp", description: "Embrace seaside serenity at Cove 1. Whether you're lounging with a fresh coconut or listening to the gentle rhythm of the waves, this premier beachfront sanctuary offers an exclusive space to bask in the sun and unwind in total comfort." },
+        { id: 5, amenity_name: "Obstacle Course", src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities5.webp", description: "Find your balance on our nature-integrated Obstacle Course. A low-impact way to enjoy the outdoors, this space encourages mindful movement and playful coordination amidst the resort's greenery." },
+        { id: 6, amenity_name: "Rope Course", src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities6.webp", description: "Experience a fresh perspective from our Rope Course. Nestled within the canopy, this guided adventure offers a calm way to reconnect with nature while enjoying a scenic view of the estate." },
+        { id: 7, amenity_name: "Cove 2", src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities7.webp", description: "Discover the vibrant waters of Cove 2. Perfect for a peaceful paddle or a slow boat ride, this crystal-clear lagoon is your gateway to exploring the gentle rhythms of the sea." },
+        { id: 7, amenity_name: "Cove 3", src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities8.webp", description: "Escape to the expansive beauty of Cove 3. This panoramic coastal stretch offers a quiet sanctuary for those looking to soak in the vast ocean horizon and the lush island landscape." },
+        { id: 7, amenity_name: "Cove 4", src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities9.webp", description: "Discover the breathtaking heights of Cove 4, where our exclusive Cliff Dining area offers a front-row seat to the horizon. Enjoy a serene, open-air meal perched above the waves, the perfect setting for a tranquil sunset or a private, starlit dinner." },
     ]
 
     return (

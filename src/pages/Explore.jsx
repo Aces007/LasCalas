@@ -42,10 +42,10 @@ const Explore = () => {
     }
 
     const explore_slideshow = [
-        { id: 1, src: "/lascalas_assets/Website/Slideshows/Explore_Slideshow/Explore1.jpg" },
-        { id: 2, src: "/lascalas_assets/Website/Slideshows/Explore_Slideshow/Explore2.jpg" },
-        { id: 3, src: "/lascalas_assets/Website/Slideshows/Explore_Slideshow/Explore3.jpg" },
-        { id: 4, src: "/lascalas_assets/Website/Slideshows/Explore_Slideshow/Explore4.jpg" },
+        { id: 1, src: "/lascalas_assets/Website/Slideshows/Explore_Slideshow/Explore1.webp" },
+        { id: 2, src: "/lascalas_assets/Website/Slideshows/Explore_Slideshow/Explore2.webp" },
+        { id: 3, src: "/lascalas_assets/Website/Slideshows/Explore_Slideshow/Explore3.webp" },
+        { id: 4, src: "/lascalas_assets/Website/Slideshows/Explore_Slideshow/Explore4.webp" },
     ]
 
     const explore_menu = {
