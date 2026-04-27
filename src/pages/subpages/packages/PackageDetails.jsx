@@ -18,7 +18,7 @@ const PackageDetails = () => {
     {
         id: 1,
         name: "Executive Villa",
-        price: "PHP 31,000 /night",
+        price: "PHP 30,000 /night",
         details: {
             inclusions: [
                 "All Meals Included",
@@ -31,7 +31,7 @@ const PackageDetails = () => {
             ],
             bed: [
                 "1 Bedroom Studio Suite with Balcony",
-                "Maximum occupancy: 2",
+                "Maximum occupancy: 3",
                 "2 Bunk Bed",
                 "Pillowtop mattress and Duvet",
                 "Free WiFi Connection",
@@ -69,7 +69,7 @@ const PackageDetails = () => {
             ],
             bed: [
                 "1 Bedroom Studio Suite with Balcony",
-                "Maximum occupancy: 2",
+                "Maximum occupancy: 7",
                 "2 Bunk Bed",
                 "Pillowtop mattress and Duvet",
                 "Free WiFi Connection",
@@ -107,7 +107,7 @@ const PackageDetails = () => {
             ],
             bed: [
                 "1 Bedroom Studio Suite with Balcony",
-                "Maximum occupancy: 2",
+                "Maximum occupancy: 3",
                 "2 Bunk Bed",
                 "Pillowtop mattress and Duvet",
                 "Free WiFi Connection",
@@ -145,7 +145,7 @@ const PackageDetails = () => {
             ],
             bed: [
                 "1 Bedroom Studio Suite with Balcony",
-                "Maximum occupancy: 4",
+                "Maximum occupancy: 5",
                 "2 Bunk Bed",
                 "Pillowtop mattress and Duvet",
                 "Free WiFi Connection",
@@ -183,7 +183,7 @@ const PackageDetails = () => {
             ],
             bed: [
                 "1 Bedroom Studio Suite with Balcony",
-                "Maximum occupancy: 4",
+                "Maximum occupancy: 3",
                 "1 Bunk Bed",
                 "Free WiFi Connection",
                 "16\" Smart TV", // Escaped the inch symbol again
@@ -221,7 +221,7 @@ const PackageDetails = () => {
             ],
             bed: [
                 "1 Bedroom Studio Suite with Balcony",
-                "Maximum occupancy: 4",
+                "Maximum occupancy: 5",
                 "1 Bunk Bed",
                 "Free WiFi Connection",
                 "16\" Smart TV", // Escaped the inch symbol again
@@ -259,7 +259,7 @@ const PackageDetails = () => {
             ],
             bed: [
                 "1 Bedroom Studio Suite with Balcony",
-                "Maximum occupancy: 4",
+                "Maximum occupancy: 5",
                 "1 Bunk Bed",
                 "Free WiFi Connection",
                 "16\" Smart TV", // Escaped the inch symbol again
@@ -281,44 +281,44 @@ const PackageDetails = () => {
             `/lascalas_assets/Website/MainPages_Content/Packages/PackagePreview/LC_Villa_BB/BB${i + 1}.webp`
         ),
     },
-    {
-        id: 7,
-        name: "Teepee Tents - Camp Cot",
-        price: "PHP 7,500 /night",
-        details: {
-            inclusions: [
-                "All Meals Included",
-                "Unlimited Access to LasCalas Coves",
-                "Unlimited Access to the Gaming Villa",
-                "Unlimited Access to the Infinity Pool",
-                "Unlimited Use of Standard Kayaks and Other Beach Facilities",
-                "Guided Use of the LasCalas Rope Course",
-                "Guided Use of the LasCalas Obstacle Course"
-            ],
-            bed: [
-                "1 Bedroom Studio Suite with Balcony",
-                "Maximum occupancy: 4",
-                "1 Bunk Bed",
-                "Free WiFi Connection",
-                "16\" Smart TV", // Escaped the inch symbol again
-                "Fully Air-conditioned",
-                "Intercom Device",
-                "Mini Refrigerator",
-                "Coffee Maker",
-                "Heater",
-                "Microwave"
-            ],
-            bath: [
-                "Hot/Cold Shower",
-                "Marble bathroom",
-                "Hair Dryer",
-                "Complimentary Robe and Slippers"
-            ],
-        },
-        preview_images: Array.from({ length: 3 }, (_, i) => 
-            `/lascalas_assets/Website/MainPages_Content/Packages/PackagePreview/Teepee/TEE${i + 1}.webp`
-        ),
-    },
+    // {
+    //     id: 7,
+    //     name: "Teepee Tents - Camp Cot",
+    //     price: "PHP 7,500 /night",
+    //     details: {
+    //         inclusions: [
+    //             "All Meals Included",
+    //             "Unlimited Access to LasCalas Coves",
+    //             "Unlimited Access to the Gaming Villa",
+    //             "Unlimited Access to the Infinity Pool",
+    //             "Unlimited Use of Standard Kayaks and Other Beach Facilities",
+    //             "Guided Use of the LasCalas Rope Course",
+    //             "Guided Use of the LasCalas Obstacle Course"
+    //         ],
+    //         bed: [
+    //             "1 Bedroom Studio Suite with Balcony",
+    //             "Maximum occupancy: 4",
+    //             "1 Bunk Bed",
+    //             "Free WiFi Connection",
+    //             "16\" Smart TV", // Escaped the inch symbol again
+    //             "Fully Air-conditioned",
+    //             "Intercom Device",
+    //             "Mini Refrigerator",
+    //             "Coffee Maker",
+    //             "Heater",
+    //             "Microwave"
+    //         ],
+    //         bath: [
+    //             "Hot/Cold Shower",
+    //             "Marble bathroom",
+    //             "Hair Dryer",
+    //             "Complimentary Robe and Slippers"
+    //         ],
+    //     },
+    //     preview_images: Array.from({ length: 3 }, (_, i) => 
+    //         `/lascalas_assets/Website/MainPages_Content/Packages/PackagePreview/Teepee/TEE${i + 1}.webp`
+    //     ),
+    // },
     
     ];
 
