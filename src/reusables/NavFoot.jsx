@@ -214,7 +214,7 @@ const NavFoot = () => {
                         </div>
                     </div>
 
-                    <p className="text-main_text/80 resSm:text-center">© 2026 LasCalas Resort & LUXURY ESTATE. Crafted with ♥ in Dasol, Pangasinan.</p>
+                    <p className="text-main_text/80 resSm:text-center">© 2026 LasCalas Resort & LUXURY ESTATE</p>
                 </div>
             </div>
 
