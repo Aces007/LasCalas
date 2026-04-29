@@ -1,0 +1,73 @@
+# ----------------------------------------------------------------------
+# 1. MODERN COMPRESSION (Brotli + Gzip)
+# ----------------------------------------------------------------------
+<IfModule mod_brotli.c>
+    AddOutputFilterByType BROTLI_COMPRESS text/html text/plain text/xml text/css text/javascript application/javascript
+</IfModule>
+
+# Fallback to Gzip for older browsers
+<IfModule mod_deflate.c>
+    <IfModule !mod_brotli.c>
+        AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript
+    </IfModule>
+</IfModule>
+
+# ----------------------------------------------------------------------
+# 2. NEVER CACHE index.html (must come before mod_expires rules)
+# ----------------------------------------------------------------------
+<Files "index.html">
+    FileETag None
+    Header unset ETag
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires 0
+</Files>
+
+# ----------------------------------------------------------------------
+# 3. BROWSER CACHING (Resort Photos & Branding)
+# ----------------------------------------------------------------------
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 1 month"
+    # Specific for LasCalas Assets
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType font/woff2 "access plus 1 year"
+</IfModule>
+
+# ----------------------------------------------------------------------
+# 4. CACHE JAVASCRIPT & CSS CHUNKS
+# ----------------------------------------------------------------------
+<FilesMatch "\.(js|css)$">
+    Header set Cache-Control "public, max-age=2592000, immutable"
+</FilesMatch>
+
+# ----------------------------------------------------------------------
+# 5. REACT ROUTER FIX (Crucial for 5.0)
+# ----------------------------------------------------------------------
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    # Change this if your folder name changes!
+    RewriteBase /
+    RewriteRule ^index\.html$ - [L]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule . /index.html [L]
+</IfModule>
+
+# ----------------------------------------------------------------------
+# 6. MIME TYPES (Fix for WebP/Gazebo Assets)
+# ----------------------------------------------------------------------
+<IfModule mod_mime.c>
+    AddType image/webp .webp
+    AddType image/vnd.microsoft.icon .ico
+</IfModule>
+
+# ----------------------------------------------------------------------
+# 7. HARD FORCE WEBP (For stubborn servers)
+# ----------------------------------------------------------------------
+<FilesMatch "\.webp$">
+    ForceType image/webp
+    Header set Content-Type image/webp
+</FilesMatch>

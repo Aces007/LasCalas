@@ -1,0 +1,47 @@
+/* Composes of the Google Font Links for Antic Didone, Raleway, Montserrat, Nunito, & Libre Baskerville..*/
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*#region Default Settings */
+:root {
+
+    --ff-AnticDidone: "Antic Didone", serif; 
+    --ff-Raleway: "Montserrat", sans-serif; 
+    --ff-Montserrat: "Montserrat", sans-serif; 
+    --ff-Nunito: "Nunito", sans-serif; 
+    --ff-Libre: "Libre Baskerville", serif; 
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+/*#endregion Default Settings */
+
+
+/*#region Hero */
+.hero_cont {
+    background-image: url("../lascalas_assets/Hero.webp");
+    background-size: cover;
+}
+/*#endregion Hero */
+
+
+/*#region Swiper */
+.swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-family: var(--ff-Montserrat);
+  font-size: 8px;
+  font-weight: 700;
+  color: #fff;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.swiper-pagination-bullet-active {
+  color: #fff;
+  background: #007aff;
+}
+/*#endregion Swiper */
+
