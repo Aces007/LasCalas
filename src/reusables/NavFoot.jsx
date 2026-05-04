@@ -173,7 +173,7 @@ const NavFoot = () => {
                                 <div className={`${start_element_col} resSm:items-center resMd:${start_element_col} gap-[16px]`}>
                                     <Link to="/packagesmenu" className={`${navLinks_foot}`}>Packages</Link>
                                     <Link to="/explore" className={`${navLinks_foot}`}>Explore</Link>
-                                    <Link to="/celeb" className={`${navLinks_foot}`}>Celebrations</Link>
+                                    <Link to="/celebrations" className={`${navLinks_foot}`}>Celebrations</Link>
                                 </div>
                             </div>
 
