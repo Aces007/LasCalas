@@ -25,7 +25,7 @@ const NavHead = ({ theme = "light" }) => {
         //--TEXTS--//
         const variantLogoCol = variantIsDark ? "/lascalas_assets/lascalasBlack.webp" : "/lascalas_assets/lascalasWhite.webp";
         const variantNavlinks = variantIsDark ? "text-main_text hover:text-highlight hover:font-bold font-Montserrat uppercase resLg:text-[18px]" : "text-background_lightTxt font-Montserrat uppercase resLg:text-[18px] hover:text-highlight hover:font-bold";
-        const variantText = variantIsDark ? "text-background_lightTxt text-center hover:text-background_lightTxt" : "text-background_lightTxt text-center hover:text-background_lightTxt";
+        const variantText = variantIsDark ? "text-main_text text-center hover:text-background_lightTxt" : "text-background_lightTxt text-center hover:text-background_lightTxt";
         const variantSVGs = variantIsDark ? "text-main_text" : "text-background_lightTxt";
         const booking_btn_head = "font-Montserrat font-bold uppercase tracking-widest text-[16px] resLg:text-[20px] px-[28px] py-[12px] rounded-full transition-all duration-300 bg-transparent hover:text-background_lightTxt hover:font-extrabold";
     
