@@ -16,7 +16,7 @@ const MainSlides = ({
         //--CONTAINERS--//
         const mainSlides_cont = "grid grid-cols-1 grid-rows-1 w-full overflow-hidden relative group";
         const mainSlides_content = "col-start-1 row-start-1 w-full h-full z-0";
-        const mainSlides_slide_contents = "h-[80vh] resSm:h-[40vh] w-full overflow-hidden hover:cursor-pointer";
+        const mainSlides_slide_contents = "h-[75vh] resSm:h-[40vh] w-full cover overflow-hidden hover:cursor-pointer";
         const mainSlides_head_cont = "col-start-1 row-start-1 w-full h-full z-50 flex flex-col justify-between gap-8 resMd:gap-32";
         const mainSlides_title_cont = "flex-grow flex justify-center resMd:relative resMd:bottom-[80px]";
         
@@ -32,7 +32,7 @@ const MainSlides = ({
                     slidesPerView={1}
                     loop={true}
                     modules={[Autoplay]}
-                    className="w-full h-full resSm:w-[100vw] resSm:h-[40vh]"
+                    className="w-full h-[100%] resSm:w-[100vw] resSm:h-[40vh]"
                     autoplay={{
                         delay: autoplay_delay,
                         disableOnInteraction: false,
