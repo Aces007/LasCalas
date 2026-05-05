@@ -39,8 +39,6 @@ const Amenities = () => {
         { id: 3, src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities_Preview/Amenities3.webp" },
         { id: 4, src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities_Preview/Amenities4.webp" },
         { id: 5, src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities_Preview/Amenities5.webp" },
-        { id: 6, src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities_Preview/Amenities6.webp" },
-
     ]
 
     const packages_menu = [

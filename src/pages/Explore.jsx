@@ -46,6 +46,7 @@ const Explore = () => {
         { id: 2, src: "/lascalas_assets/Website/Slideshows/Explore_Slideshow/Explore2.webp" },
         { id: 3, src: "/lascalas_assets/Website/Slideshows/Explore_Slideshow/Explore3.webp" },
         { id: 4, src: "/lascalas_assets/Website/Slideshows/Explore_Slideshow/Explore4.webp" },
+        { id: 5, src: "/lascalas_assets/Website/Slideshows/Explore_Slideshow/Explore5.webp" },
     ]
 
     const explore_menu = {

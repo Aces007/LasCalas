@@ -41,6 +41,7 @@ const PackagesMenu = () => {
         { id: 3, src: "/lascalas_assets/Website/Slideshows/Packages_Slideshow/Pack_Slider3.webp" },
         { id: 4, src: "/lascalas_assets/Website/Slideshows/Packages_Slideshow/Pack_Slider4.webp" },
         { id: 5, src: "/lascalas_assets/Website/Slideshows/Packages_Slideshow/Pack_Slider5.webp" },
+        { id: 6, src: "/lascalas_assets/Website/Slideshows/Packages_Slideshow/Pack_Slider6.webp" },
     ]
 
     const packages_menu = [
