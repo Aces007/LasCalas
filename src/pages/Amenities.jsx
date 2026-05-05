@@ -34,14 +34,13 @@ const Amenities = () => {
     };
 
     const amenities_slideshow = [
-        { id: 1, src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities1.webp" },
-        { id: 2, src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities2.webp" },
-        { id: 3, src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities3.webp" },
-        { id: 4, src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities4.webp" },
-        { id: 5, src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities5.webp" },
-        { id: 6, src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities6.webp" },
-        { id: 7, src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities7.webp" },
-        { id: 8, src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities8.webp" },
+        { id: 1, src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities_Preview/Amenities1.webp" },
+        { id: 2, src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities_Preview/Amenities2.webp" },
+        { id: 3, src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities_Preview/Amenities3.webp" },
+        { id: 4, src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities_Preview/Amenities4.webp" },
+        { id: 5, src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities_Preview/Amenities5.webp" },
+        { id: 6, src: "/lascalas_assets/Website/Slideshows/Amenities_Slideshow/Amenities_Preview/Amenities6.webp" },
+
     ]
 
     const packages_menu = [
