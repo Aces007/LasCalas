@@ -104,7 +104,7 @@ const Gazebo = () => {
 const GazeboCard = ({ gazeBo }) => {
     const gazeBoCard_cont  = "flex flex-col items-center h-full gap-[8px] bg-main_text/60 p-6 rounded-[12px] hover:scale-105 hover:bg-highlight hover:transition-all"
     const gazeBoCard_name = "font-Nunito font-[600] text-background_lightTxt text-[18px] resSm:text-[15px] resSm:text-center";
-    const gazeBoCard_desc = "font-Nunito font-[400] text-background_lightTxt text-[16px] resSm:text-[14px] resSm:text-center";
+    const gazeBoCard_desc = "font-Nunito font-[400] text-background_lightTxt text-[16px] text-center resSm:text-[14px]";
     
     return (
         <div className="h-full">
