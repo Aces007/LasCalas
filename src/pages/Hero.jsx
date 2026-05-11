@@ -31,7 +31,7 @@ const Hero = () => {
         beingUnmounted: { opacity: 0, y: -20}
     };
 
-    const heroImages = Array.from({ length: 15 }, (_, i) => ({
+    const heroImages = Array.from({ length: 12 }, (_, i) => ({
         src: `/lascalas_assets/Website/Slideshows/Hero_Slideshow/${i + 1}.webp`
     }));
 
