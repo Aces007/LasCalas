@@ -1,3 +1,5 @@
+import { useEffect, useRef } from "react";
+
 import { MdOutlineLocalPhone, MdOutlineEmail, MdOutlineShareLocation   } from "react-icons/md";
 import { FaInstagram } from "react-icons/fa";
 import { FiFacebook } from "react-icons/fi";
@@ -24,7 +26,7 @@ const NavFoot = () => {
         const foot_explore_cont = "flex flex-col items-start gap-[8px] object-cover overflow-hidden relative";
         const foot_map_cont = "flex flex-col gap-[24px]";
         const mainFooter_cont = "flex flex-col items-center justify-center gap-[24px] px-[24px] resSm:gap-[56px] resSm:px-[24px] resMd:flex-row resMd:gap-[80px] resMd:px-[48px] resLg:flex-row resLg:gap-24 resLg:px-[48px]";
-        const newsletter_input_foot = "text-main_text border border-3 border-main_text/70 rounded-[8px] resSm:w-[310px] resSm:h-[60px] resMd:w-[320px] resMd:h-[60px] resLg:w-[310px] py-[20px] px-[24px]";
+
 
         // -- TEXTS -- //
         const foot_section_heads = "font-Raleway resSm:text-[20px] resMd:text-[26px] resLg:text-[32px]";
@@ -36,6 +38,8 @@ const NavFoot = () => {
         const navLinks_foot = "font-Montserrat text-main_text/80 resSm:text-[15px] hover:text-highlight";
         const contactLinks_foot = "font-Nunito text-main_text/80 resSm:text-[16px] hover:text-highlight";
         const reachOut_btn_foot = "bg-primary text-background_lightTxt font-Montserrat font-semibold uppercase w-full px-[56px] py-[20px] rounded-[8px] hover:bg-highlight hover:text-background_lightTxt hover:font-bold block text-center resMd:w-[320px] resMd:h-[60px]";
+        const foot_booking_btn = "font-Montserrat font-extrabold uppercase w-[316px] px-[56px] py-[20px] rounded-[8px] text-background_lightTxt bg-primary hover:bg-highlight transition-all duration-300 text-center";
+
 
         // -- FLEX STYLING -- //
         const center_element_col = "flex flex-col items-center";
@@ -189,18 +193,7 @@ const NavFoot = () => {
                                 </div>
                             </div>
 
-                            <div className={`${start_element_col} gap-[32px] resSm:items-center resSm:w-full resMd:w-full resLg:w-[360px]`}>
-                                <div className={`hidden ${start_element_col} resSm:items-center gap-[8px]`}>
-                                    <h3 className={`${foot_h3s}`}>Newsletter</h3>
-                    
-                                    {/* PLACEHOLDER 1 - Space for Newsletter field */}
-                                    <div className={`${center_element_row} justify-center`}> 
-                                        <input type="text" placeholder="Email for newsletter" className={`${newsletter_input_foot}`} />
-
-                                        {/* <FaArrowRight size={24} className="text-main_text/60" /> */}
-                                    </div>
-                                </div>
-                    
+                            <div className={`${start_element_col} gap-[32px] resSm:items-center resSm:w-full resMd:w-full resLg:w-[360px]`}>                 
                                 <div className={`${start_element_col} resSm:items-center gap-[24px]`}>
                                     <h3 className={`${foot_h3s}`}>Email Us</h3>
                     
@@ -208,6 +201,14 @@ const NavFoot = () => {
                                     <div className="w-full">
                                         <a href="mailto:info@lascalasresort.com" className={`${reachOut_btn_foot}`}>Reach Out To Us Here</a>
                                     </div>
+                                </div>
+                    
+                                <div className={`${start_element_col} resSm:items-center gap-[24px]`}>
+                                    <h3 className={`${foot_h3s}`}>Book With Us</h3>
+                                    
+                                    <a href="https://us2.cloudbeds.com/reservation/10IVXw" target="_blank" className={foot_booking_btn}>
+                                        Book Now
+                                    </a>
                                 </div>
                             </div>
 
