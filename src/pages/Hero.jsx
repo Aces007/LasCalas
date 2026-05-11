@@ -2,12 +2,18 @@ import NavHead from "../reusables/NavHead";
 import { motion } from "framer-motion";
 import { FaAngleDown } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, EffectFade } from "swiper/modules";
+
+import 'swiper/css';
+import 'swiper/css/effect-fade';
 
 const Hero = () => {
     // Styling Variables (USE THIS FORMAT: Permanent Styling [like font fam] then responsive styles starting from smallest size)
         //--CONTAINERS--//
-        const hero_cont = "hero_cont bg-[url('/lascalas_assets/Hero.jpg')] bg-cover bg-center bg-no-repeat pb-24 resSm:min-h-[100px]";
-        const hero_content = "flex flex-col items-center justify-center gap-[120px]";
+        const hero_cont = "relative w-full overflow-hidden pb-24";
+        const hero_bg = "absolute inset-0 z-0";
+        const hero_content = "relative z-10 flex flex-col items-center justify-between gap-12 min-screen";
         const hero_display_cont = "flex flex-col items-center resSm:gap-[16px] resSm:mt-[80px] resMd:gap-[32px] resMd:mt-[80px]";
 
         //--TEXTS--//    
@@ -25,6 +31,10 @@ const Hero = () => {
         beingUnmounted: { opacity: 0, y: -20}
     };
 
+    const heroImages = Array.from({ length: 15 }, (_, i) => ({
+        src: `/lascalas_assets/Website/Slideshows/Hero_Slideshow/${i + 1}.webp`
+    }));
+
     return (
         <motion.div 
             className={hero_cont}
@@ -34,15 +44,42 @@ const Hero = () => {
             exit="beingUnmounted"
             transition={{ duration: 1.2, ease: "easeInOut" }}
         >
-            <NavHead theme="light" />
+
+            <div className={hero_bg}>
+                <Swiper
+                    modules={[Autoplay, EffectFade]}
+                    effect="fade"
+                    speed={2000}
+                    autoplay={{delay:500, disableOnInteraction:false}}
+                    loop={true}
+                    className="h-[full] resSm:h-[100%] w-full"
+                >
+                    {heroImages.map((image, index) => (
+                        <SwiperSlide key={index}>
+                            {/* Overlay to ensure text stays readable */}
+                            <div className="absolute inset-0 bg-black/30 z-10" />
+                            <img 
+                                src={image.src} 
+                                className="w-full h-full object-cover" 
+                                alt="Resort Preview" 
+                            />
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+            </div>
+
+            <div className="relative z-45">
+                <NavHead theme="light" />
+            </div>
 
             <div className={hero_content}>
+
                 <div className={hero_display_cont}>
                     <h1 className={hero_display_h1}>Lascalas</h1>
                     <h2 className={hero_display_h2}>Resort And Luxury State</h2>
                     <div className={hero_display_h3_cont}>
-                        <h3 className={hero_display_h3}>Indulge in <span className="text-highlight">Serenity</span></h3>
-                        <h3 className={hero_display_h3}>Discover Your Sanctuary of <span className="text-highlight">Luxury</span></h3>
+                        <h3 className={hero_display_h3}>Indulge in <span className="text-highlight font-[700]">Serenity</span></h3>
+                        <h3 className={hero_display_h3}>Discover Your Sanctuary of <span className="text-highlight font-[700]">Luxury</span></h3>
                     </div>
                 </div>
 
