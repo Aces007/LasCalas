@@ -27,7 +27,7 @@ const Gallery = () => {
     const [activeIndex, setActiveIndex] = useState(0);
 
 
-    const gallery_assets = [...Array(120)].map((_, i) => ({
+    const gallery_assets = [...Array(173)].map((_, i) => ({
         id: i + 1,
         src: `/lascalas_assets/Website/Gallery/${i + 1}.webp`
     }));
