@@ -56,7 +56,7 @@ const PackageDetails = () => {
     {
         id: 2,
         name: "Executive Villa 2",
-        price: "PHP 45,000 /night",
+        price: "PHP 60,000 /night",
         details: {
             inclusions: [
                 "All Meals Included",
