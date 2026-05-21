@@ -76,7 +76,7 @@ const Hero = () => {
 
                 <div className={hero_display_cont}>
                     <h1 className={hero_display_h1}>Lascalas</h1>
-                    <h2 className={hero_display_h2}>Resort And Luxury State</h2>
+                    <h2 className={hero_display_h2}>Resort And Luxury Estate</h2>
                     <div className={hero_display_h3_cont}>
                         <h3 className={hero_display_h3}>Indulge in <span className="text-highlight font-[700]">Serenity</span></h3>
                         <h3 className={hero_display_h3}>Discover Your Sanctuary of <span className="text-highlight font-[700]">Luxury</span></h3>
