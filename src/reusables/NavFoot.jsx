@@ -30,7 +30,7 @@ const NavFoot = () => {
 
         // -- TEXTS -- //
         const foot_section_heads = "font-Raleway resSm:text-[20px] resMd:text-[26px] resLg:text-[32px]";
-        const foot_location_p = "w-[70%] text-main_text/60 resSm:text-[14px] resSm:w-[90%] resMd:text-[16px] resLg:text-[18px]";
+        const foot_location_p = "w-full text-main_text/60 resSm:text-[14px] resSm:w-[90%] resMd:text-[16px] resLg:text-[18px]";
         const foot_contacts_p = "text-main_text/60 resSm:text-[14px] resMd:text-[16px] resLg:text-[18px]";
         const foot_display = "font-Libre text-primary";
         const foot_h3s = "font-Raleway font-medium text-[20px] resSm:text-[18px] resMd:text-[20px]";
