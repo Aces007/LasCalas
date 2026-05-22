@@ -117,7 +117,7 @@ const NavFoot = () => {
                             <div className={foot_location_content}>
                                 <div className={locationContact}>
                                     <MdOutlineShareLocation size={24} className="text-main_text/60"/>
-                                    <p className={foot_location_p}><span className="text-accent">LasCalas Resort and Luxury Estate</span>, Barangay Osmena, Dasol, 2411 Pangasinan</p>
+                                    <p className={foot_location_p}>Barangay Osmena, Dasol, 2411 Pangasinan</p>
                                 </div>
                     
                                 {/* Contact Number - Information */}
@@ -142,12 +142,14 @@ const NavFoot = () => {
                             <h1 className={`${foot_section_heads}`}>Map</h1>
                             <a href="https://maps.app.goo.gl/1gqmxGKsbwLfq4bo9" className="font-Montserrat text-accent hover:text-highlight hover:underline" target="_blank">View On Google Maps</a>
                         </div>
-                        <img
-                            src={foot_map.src}
-                            title={foot_map.title}
-                            className={foot_map.class}
-                            loading="lazy"
-                        ></img>
+                        <a href="https://maps.app.goo.gl/1gqmxGKsbwLfq4bo9" target="_blank">
+                            <img
+                                src={foot_map.src}
+                                title={foot_map.title}
+                                className={foot_map.class}
+                                loading="lazy"
+                            ></img>
+                        </a>
                     </div>
                 </div>
 
