@@ -162,7 +162,7 @@ const NavFoot = () => {
                 {/* FOOTER CONTAINER */}
                 <div className={`${center_element_col} gap-24`}>
                     <div className={`${mainFooter_cont}`}>
-                        <div className={`${center_element_col} gap-[4px] resSm:w-full resMd:w-[30%] resLg:w-[50%]`}>
+                        <div className={`${center_element_col} gap-[4px] resSm:w-full resMd:w-[30%] resLg:w-[50%] hover:cursor-pointer`} onClick={() => window.scrollTo({ top:0, behavior: 'smooth'})}>
                             <img src="/lascalas_assets/lascalasBlue.webp" alt="LasCalas Logo Blue" className="resSm:w-[80px] resMd:w-[120px] resLg:w-[132px]" loading="lazy"/>
                             <div className={`${center_element_col}`}>
                                 <h1 className={`${foot_display} resSm:text-[24px] resMd:text-[28px] resLg:text-[28px]`}>LasCalas</h1>

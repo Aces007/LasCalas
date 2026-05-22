@@ -1,5 +1,6 @@
 import MainSlides from "../reusables/MainSlides";
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 import { MdOutlineChevronRight } from "react-icons/md";
 import { Link } from "react-router-dom";
 
