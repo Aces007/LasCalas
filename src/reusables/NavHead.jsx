@@ -8,12 +8,7 @@ const NavHead = ({ theme = "light" }) => {
     const variantIsDark = theme === "dark";
     const [sideBarOpen, setSideBarOpen] = useState(false);
     const [langOpen, setLangOpen] = useState(false);
-    const [currentLang, setCurrentLang] = useState("ENG");
 
-    const languages = [
-        { code: "ENG", label: "English" },
-        { code: "FIL", label: "Filipino"},
-    ];
 
     // Styling Variables
 

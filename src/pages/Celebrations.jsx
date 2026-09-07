@@ -15,7 +15,7 @@ const Celebrations = () => {
         //--TEXTS--//
         const packages_h2 = "font-Nunito font-bold w-[50%] text-center text-main_text/80 resSm:text-[14px] resSm:w-[90%]";
         const main_page_content_name = "font-Montserrat uppercase text-center text-background_lightTxt font-semibold tracking-[5%] resSm:text-[14px] resMd:text-[15px] resLg:text-[17px]";
-        const main_page_desc = "text-center w-[90%] font-Nunito font-medium text-background_lightTxt resSm:text-[14px] resMd:text-[20px] resLg:text-[22px]";
+        const main_page_desc = "text-center w-[90%] font-Nunito font-medium text-background_lightTxt resSm:text-[14px] resMd:text-[20px] resLg:text-[22px] select-none";
         const know_more_btn = "font-Montserrat font-medium uppercase text-background_lightTxt/60 absolute bottom-8 flex flex-row items-center justify-center hover:gap-[4px] text-packages_btn font-semibold resSm:text-[16px] resSm:mt-[40px] resMd:text-[20px] resLg:text-[22px] hover:text-highlight hover:scale-105";
         
         // -- FLEX STYLING -- //
