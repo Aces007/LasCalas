@@ -8,6 +8,7 @@ const About = lazy(() => import("./pages/About"));
 const PackagesMenu = lazy(() => import("./pages/PackagesMenu"));
 const Explore = lazy(() => import("./pages/Explore"));
 const Celebrations = lazy(() => import("./pages/Celebrations"));
+const Wellness = lazy(() => import("./pages/Wellness"));
 const Amenities = lazy(() => import("./pages/Amenities"));
 const FAQs = lazy(() => import("./pages/FAQs"));
 
@@ -45,6 +46,7 @@ export default function RouteFlow() {
           <Route path="/exploreWater" element={<WaterAdv />} />
           <Route path="/exploreBug" element={<BuggyAdv />} />
           <Route path="/exploreRope" element={<RopeCourse />} />
+          <Route path="/wellness" element={<Wellness />} />
           <Route path="/celebrations" element={<Celebrations />} />
           <Route path="/eventPavilion" element={<EventPavilion />} />
           <Route path="/pergola" element={<Pergola />} />

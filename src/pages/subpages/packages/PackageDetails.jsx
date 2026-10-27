@@ -30,23 +30,20 @@ const PackageDetails = () => {
                 "Guided Use of the LasCalas Obstacle Course",
             ],
             bed: [
-                "1 Bedroom Studio Suite with Balcony",
                 "Maximum occupancy: 3",
-                "2 Bunk Bed",
+                "King Bed",
                 "Pillowtop mattress and Duvet",
                 "Free WiFi Connection",
-                "16\" Smart TV", // Note: The backslash \ is needed to escape the inch symbol
                 "Fully Air-conditioned",
-                "Intercom Device",
                 "Mini Refrigerator",
                 "Coffee Maker",
                 "Heater",
                 "Microwave",
             ],
             bath: [
-                "Marble bathroom",
+                "Water Heater",
                 "Hairdryer",
-                "Complimentary Robe and Slippers",
+                "Complimentary Towel, Robe and Slippers",
             ],
         },
         preview_images: Array.from({ length: 6 }, (_, i) => 
@@ -68,23 +65,20 @@ const PackageDetails = () => {
                 "Guided Use of the LasCalas Obstacle Course",
             ],
             bed: [
-                "1 Bedroom Studio Suite with Balcony",
                 "Maximum occupancy: 7",
-                "2 Bunk Bed",
+                "1 Bunk Bed",
+                "1 Queen Bed",
                 "Pillowtop mattress and Duvet",
                 "Free WiFi Connection",
-                "16\" Smart TV", // Note: The backslash \ is needed to escape the inch symbol
                 "Fully Air-conditioned",
-                "Intercom Device",
                 "Mini Refrigerator",
                 "Coffee Maker",
                 "Heater",
-                "Microwave",
             ],
             bath: [
-                "Marble bathroom",
+                "Water Heater",
                 "Hairdryer",
-                "Complimentary Robe and Slippers",
+                "Complimentary Towel, Robe and Slippers",
             ],
         },
         preview_images: Array.from({ length: 6 }, (_, i) => 
@@ -106,23 +100,20 @@ const PackageDetails = () => {
                 "Guided Use of the LasCalas Obstacle Course",
             ],
             bed: [
-                "1 Bedroom Studio Suite with Balcony",
                 "Maximum occupancy: 3",
-                "2 Bunk Bed",
+                "King Bed",
                 "Pillowtop mattress and Duvet",
                 "Free WiFi Connection",
-                "16\" Smart TV", // Note: The backslash \ is needed to escape the inch symbol
                 "Fully Air-conditioned",
-                "Intercom Device",
                 "Mini Refrigerator",
                 "Coffee Maker",
                 "Heater",
                 "Microwave",
             ],
             bath: [
-                "Marble bathroom",
+                "Water Heater",
                 "Hairdryer",
-                "Complimentary Robe and Slippers",
+                "Complimentary Towel, Robe and Slippers",
             ],
         },
         preview_images: Array.from({ length: 11 }, (_, i) => 
@@ -144,23 +135,20 @@ const PackageDetails = () => {
                 "Guided Use of the LasCalas Obstacle Course"
             ],
             bed: [
-                "1 Bedroom Studio Suite with Balcony",
-                "Maximum occupancy: 5",
-                "2 Bunk Bed",
+                "Maximum occupancy: 6",
+                "2 Bunk Beds",
                 "Pillowtop mattress and Duvet",
                 "Free WiFi Connection",
-                "16\" Smart TV", // Note: The backslash \ is needed to escape the inch symbol
                 "Fully Air-conditioned",
-                "Intercom Device",
                 "Mini Refrigerator",
                 "Coffee Maker",
                 "Heater",
                 "Microwave"
             ],
             bath: [
-                "Marble bathroom",
+                "Water Heater",
                 "Hairdryer",
-                "Complimentary Robe and Slippers",
+                "Complimentary Towel, Robe and Slippers",
             ],
         },
         preview_images: Array.from({ length: 6 }, (_, i) => 
@@ -182,23 +170,19 @@ const PackageDetails = () => {
                 "Guided Use of the LasCalas Obstacle Course"
             ],
             bed: [
-                "1 Bedroom Studio Suite with Balcony",
                 "Maximum occupancy: 3",
                 "1 Bunk Bed",
                 "Free WiFi Connection",
-                "16\" Smart TV", // Escaped the inch symbol again
                 "Fully Air-conditioned",
-                "Intercom Device",
                 "Mini Refrigerator",
                 "Coffee Maker",
                 "Heater",
                 "Microwave"
             ],
             bath: [
-                "Hot/Cold Shower",
-                "Marble bathroom",
+                "Water Heater",
                 "Hair Dryer",
-                "Complimentary Robe and Slippers"
+                "Complimentary Towel, Robe and Slippers",
             ],
         },
         preview_images: Array.from({ length: 4 }, (_, i) => 
@@ -220,23 +204,19 @@ const PackageDetails = () => {
                 "Guided Use of the LasCalas Obstacle Course"
             ],
             bed: [
-                "1 Bedroom Studio Suite with Balcony",
-                "Maximum occupancy: 5",
+                "Maximum occupancy: 6",
                 "1 Bunk Bed",
                 "Free WiFi Connection",
-                "16\" Smart TV", // Escaped the inch symbol again
                 "Fully Air-conditioned",
-                "Intercom Device",
                 "Mini Refrigerator",
                 "Coffee Maker",
                 "Heater",
                 "Microwave"
             ],
             bath: [
-                "Hot/Cold Shower",
-                "Marble bathroom",
+                "Water Heater",
                 "Hair Dryer",
-                "Complimentary Robe and Slippers"
+                "Complimentary Towel, Robe and Slippers",
             ],
         },
         preview_images: Array.from({ length: 11 }, (_, i) => 
@@ -258,27 +238,40 @@ const PackageDetails = () => {
                 "Guided Use of the LasCalas Obstacle Course"
             ],
             bed: [
-                "1 Bedroom Studio Suite with Balcony",
-                "Maximum occupancy: 5",
+                "Maximum occupancy: 6",
                 "1 Bunk Bed",
                 "Free WiFi Connection",
-                "16\" Smart TV", // Escaped the inch symbol again
                 "Fully Air-conditioned",
-                "Intercom Device",
                 "Mini Refrigerator",
                 "Coffee Maker",
                 "Heater",
                 "Microwave"
             ],
             bath: [
-                "Hot/Cold Shower",
-                "Marble bathroom",
+                "Water Heater",
                 "Hair Dryer",
-                "Complimentary Robe and Slippers"
+                "Complimentary Towel, Robe and Slippers",
             ],
         },
         preview_images: Array.from({ length: 9 }, (_, i) => 
             `/lascalas_assets/Website/MainPages_Content/Packages/PackagePreview/LC_Villa_BB/BB${i + 1}.webp`
+        ),
+    },
+    {
+        id: 8,
+        name: "Day Tour",
+        price: "PHP 3,000",
+        details: {
+            inclusions: [
+                "Per 1 pax",
+                "3 Hours"
+            ],
+            bed: [],
+            bath: [],
+            
+        },
+        preview_images: Array.from({ length: 6 }, (_, i) => 
+            `/lascalas_assets/Website/MainPages_Content/Packages/PackagePreview/Day_Tour/Day${i + 1}.webp`
         ),
     },
     // {

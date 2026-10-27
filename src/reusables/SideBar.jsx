@@ -7,8 +7,9 @@ const SideBar = ({ isOpen, toggleSidebar }) => {
     const sideBarLinks = [
         { name: "Packages", path: "/packagesmenu" },
         { name: "Explore", path: "/explore" },
-        { name: "Celebrations", path: "/celebrations" },
         { name: "Amenities", path: "/amenities" },
+        { name: "Celebrations", path: "/celebrations" },
+        { name: "Wellness", path: "/wellness" },
     ]
 
     // -- STYLING -- //
