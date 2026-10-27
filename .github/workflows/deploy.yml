@@ -33,5 +33,5 @@ jobs:
           port: 22
           protocol: sftp
           local-dir: ./dist/
-          server-dir: '/home/dh_ukvmuf/lascalasresort.com/'
+          server-dir: /home/dh_ukvmuf/lascalasresort.com/
           dangerous-clean-slate: false
