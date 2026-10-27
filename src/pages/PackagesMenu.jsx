@@ -67,7 +67,7 @@ const PackagesMenu = () => {
             <MainSlides pageTitle="Packages" slideContent={packages_slideshow} />
 
             <div className={`${center_element_col} gap-[120px] py-32`}>
-                <h2 className={`${packages_h2}`}>LasCalas Resort & Luxury Estate blends premium accommodations with immersive nature, offering exclusive adventures in a luxurious setting.</h2>
+                <h2 className={`${packages_h2}`}>Experience complete revitalization at LasCalas Resort & Luxury Estate, where state-of-the-art BTL machines, clinical aesthetic rejuvenation, and therapeutic massage therapy merge in an exclusive estate setting.</h2>
 
 
                 <div className={`${main_page_grid_cont}`}>
