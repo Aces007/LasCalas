@@ -14,6 +14,7 @@ const FAQs = lazy(() => import("./pages/FAQs"));
 
 // Sub pages
 const PackageDetails = lazy(() => import("./pages/subpages/packages/PackageDetails"));
+const WellnessDetails = lazy(() => import("./pages/subpages/wellness/WellnessDetails"));
 const ATVAdv = lazy(() => import("./pages/subpages/explore/ATVAdv"));
 const WaterAdv = lazy(() => import("./pages/subpages/explore/WaterAdv"));
 const BuggyAdv = lazy(() => import("./pages/subpages/explore/BuggyAdv"));
@@ -47,6 +48,7 @@ export default function RouteFlow() {
           <Route path="/exploreBug" element={<BuggyAdv />} />
           <Route path="/exploreRope" element={<RopeCourse />} />
           <Route path="/wellness" element={<Wellness />} />
+          <Route path="/wellnessdetails/:id" element={<WellnessDetails />} />
           <Route path="/celebrations" element={<Celebrations />} />
           <Route path="/eventPavilion" element={<EventPavilion />} />
           <Route path="/pergola" element={<Pergola />} />
