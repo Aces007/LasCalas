@@ -5,7 +5,6 @@ on:
     branches:
       - main
 
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -25,13 +24,13 @@ jobs:
       - name: Build Project
         run: npm run build
 
-      - name: Deploy dist to DreamHost via SFTP
-        uses: sshdeploy/sftp-action@v1.1.2
+      - name: Deploy dist to DreamHost via SCP/SFTP
+        uses: appleboy/scp-action@v0.1.7
         with:
           host: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           port: 22
-          local_path: './dist/*'
-          remote_path: '/home/dh_ukvmuf/lascalasresort.com/'
-          sftp_args: '-o StrictHostKeyChecking=no'
+          source: 'dist/*'
+          target: '/home/dh_ukvmuf/lascalasresort.com/'
+          strip_components: 1
