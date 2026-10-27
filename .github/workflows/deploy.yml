@@ -24,14 +24,13 @@ jobs:
       - name: Build Project
         run: npm run build
 
-      - name: Deploy dist to DreamHost
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      - name: Deploy dist to DreamHost via SFTP
+        uses: sshdeploy/sftp-action@v1.1.2
         with:
+          host: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
-          server: ${{ secrets.FTP_SERVER }}
           password: ${{ secrets.FTP_PASSWORD }}
-          port: 21
-          protocol: ftp
-          local-dir: ./dist/
-          server-dir: ./lascalasresort.com/
-          dangerous-clean-slate: false
+          port: 22
+          local_path: './dist/*'
+          remote_path: '/home/dh_ukvmuf/lascalasresort.com/'
+          sftp_args: '-o StrictHostKeyChecking=no'
