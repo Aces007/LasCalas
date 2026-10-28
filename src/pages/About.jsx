@@ -58,7 +58,7 @@ const About = () => {
                         <p className={story_p}>Nestled along the serene shores of Dasol, <span className={brand_span}>LasCalas Resort & Luxury Estate</span> was born from a deeply personal mission: to create a safe, controlled, and restorative environment for families and children on the autism spectrum.</p>
                         
                         <div className={quote_box}>
-                            &ldquo;We’re designed to be a low-density resort... so when you come here, you get that feel that there’s not a lot of people around—that feel of exclusivity.&rdquo;
+                            &ldquo;We’re designed to be a low-density resort so when you come here, you get that feel that there’s not a lot of people around that feel of exclusivity.&rdquo;
                         </div>
 
                         <p className={story_p}>Spanning across 10.5 hectares of untouched coves, the estate is purposely engineered with low-density architecture, ensuring genuine tranquility and privacy. Here, peaceful family sanctuaries merge effortlessly with world-class sports facilities and clinical aesthetic wellness; providing an exclusive retreat where every guest can recharge and reconnect.</p>
