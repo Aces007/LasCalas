@@ -9,7 +9,7 @@ const SideBar = ({ isOpen, toggleSidebar }) => {
         { name: "Explore", path: "/explore" },
         { name: "Amenities", path: "/amenities" },
         { name: "Celebrations", path: "/celebrations" },
-        { name: "Wellness", path: "/wellness" },
+        { name: "Wellness in LasCalas", path: "/wellness" },
     ]
 
     // -- STYLING -- //

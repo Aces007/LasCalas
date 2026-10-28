@@ -22,14 +22,12 @@ const ExploreDasol = () => {
         const justcenter_element_row = "flex justify-center";
 
     const exploreDasol_assets = [
-        { id: 1, src: "/lascalas_assets/Website/Dasol/Dasol.jpg", label: "Tambobong Beach", link: "" },
-        { id: 2, src: "/lascalas_assets/Website/Dasol/Dasol-1.jpg", label: "Cabongaoan Beach", link: "" },
-        { id: 3, src: "/lascalas_assets/Website/Dasol/Dasol-2.jpg", label: "Depth Pool", link: "" },
-        { id: 4, src: "/lascalas_assets/Website/Dasol/Dasol-3.jpg", label: "Colibra Island", link: "" },
-        { id: 5, src: "/lascalas_assets/Website/Dasol/Dasol-4.jpg", label: "Sand Bar", link: "" },
-        { id: 5, src: "/lascalas_assets/Website/Dasol/Dasol-5.jpg", label: "Crocodile Island", link: "" },
-        { id: 5, src: "/lascalas_assets/Website/Dasol/Dasol-6.jpg", label: "Balaki Island", link: "" },
-        { id: 5, src: "/lascalas_assets/Website/Dasol/Dasol-7.jpg", label: "Osmeña Point", link: "" },
+        { id: 1, src: "/lascalas_assets/Website/Dasol/Dasol.jpg", label: "Home of Quality Salt", link: "" },
+        { id: 2, src: "/lascalas_assets/Website/Dasol/Dasol-2.jpg", label: "Colibra Island", link: "" },
+        { id: 3, src: "/lascalas_assets/Website/Dasol/Dasol-3.jpg", label: "Sand Bar", link: "" },
+        { id: 4, src: "/lascalas_assets/Website/Dasol/Dasol-4.jpg", label: "Crocodile Island", link: "" },
+        { id: 5, src: "/lascalas_assets/Website/Dasol/Dasol-5.jpg", label: "Balaki Island", link: "" },
+        { id: 6, src: "/lascalas_assets/Website/Dasol/Dasol-6.jpg", label: "Osmeña Point", link: "" },
     ]
 
     return (

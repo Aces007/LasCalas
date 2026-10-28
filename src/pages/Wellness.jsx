@@ -1,7 +1,5 @@
-import { div } from "framer-motion/client";
 import MainSlides from "../reusables/MainSlides";
 import { AnimatePresence, motion } from "framer-motion";
-import { useState } from "react";
 import { MdOutlineChevronRight } from "react-icons/md";
 import { Link } from "react-router-dom";
 
@@ -38,6 +36,7 @@ const Wellness = () => {
         { id: 1, src: "/lascalas_assets/Website/Slideshows/Wellness_Slideshow/Wellness1.webp" },
         { id: 2, src: "/lascalas_assets/Website/Slideshows/Wellness_Slideshow/Wellness2.webp" },
         { id: 3, src: "/lascalas_assets/Website/Slideshows/Wellness_Slideshow/Wellness3.webp" },
+        { id: 4, src: "/lascalas_assets/Website/Slideshows/Wellness_Slideshow/Wellness4.webp" },
     ]
 
     const wellness_menu = [
