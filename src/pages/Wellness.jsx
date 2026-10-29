@@ -36,7 +36,6 @@ const Wellness = () => {
         { id: 1, src: "/lascalas_assets/Website/Slideshows/Wellness_Slideshow/Wellness1.webp" },
         { id: 2, src: "/lascalas_assets/Website/Slideshows/Wellness_Slideshow/Wellness2.webp" },
         { id: 3, src: "/lascalas_assets/Website/Slideshows/Wellness_Slideshow/Wellness3.webp" },
-        { id: 4, src: "/lascalas_assets/Website/Slideshows/Wellness_Slideshow/Wellness4.webp" },
     ]
 
     const wellness_menu = [
@@ -58,7 +57,7 @@ const Wellness = () => {
             exit="beingUnmounted"
             transition={{ duration: 1.2, ease: "easeInOut" }}
         >
-            <MainSlides pageTitle="Wellness" slideContent={wellness_slideshow}/>
+            <MainSlides pageTitle="Wellness" slideContent={wellness_slideshow} partnerLogoSrc="/lascalas_assets/BTL.webp" />
 
             <div className={`${center_element_col} gap-[120px] py-32`}>
                 <h2 className={`${wellness_h2}`}>LasCalas Resort & Luxury Estate unites cutting-edge BTL aesthetic technologies, non-invasive body sculpting, and restorative massage therapy in a tranquil wellness sanctuary.</h2>

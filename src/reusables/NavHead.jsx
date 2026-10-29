@@ -4,7 +4,7 @@ import { FaAngleDown } from "react-icons/fa6";
 import SideBar from "./SideBar";
 import { useState } from "react";
 
-const NavHead = ({ theme = "light" }) => {
+const NavHead = ({ theme = "light", partnerLogoSrc = null }) => {
     const variantIsDark = theme === "dark";
     const [sideBarOpen, setSideBarOpen] = useState(false);
     const [langOpen, setLangOpen] = useState(false);
@@ -22,6 +22,7 @@ const NavHead = ({ theme = "light" }) => {
         const variantNavlinks = variantIsDark ? "text-main_text hover:text-highlight hover:font-bold font-Montserrat uppercase resLg:text-[18px]" : "text-background_lightTxt font-Montserrat uppercase resLg:text-[18px] hover:text-highlight hover:font-bold";
         const variantText = variantIsDark ? "text-main_text text-center hover:text-background_lightTxt" : "text-background_lightTxt text-center hover:text-background_lightTxt";
         const variantSVGs = variantIsDark ? "text-main_text" : "text-background_lightTxt";
+        const variantDivider = variantIsDark ? "text-main_text/60" : "text-background_lightTxt/60";
         const booking_btn_head = "font-Montserrat font-bold uppercase tracking-widest text-[16px] resLg:text-[20px] px-[28px] py-[12px] rounded-full transition-all duration-300 bg-transparent hover:text-background_lightTxt hover:font-extrabold";
     
 
@@ -55,7 +56,22 @@ const NavHead = ({ theme = "light" }) => {
 
                 {/* Logo (Center) */}
                 <div className={`${center_justify_row}`}>
-                    <Link to="/"><img src={variantLogoCol} alt="lasCalas logo" className="w-[104px]" loading="lazy"/></Link>
+                    {partnerLogoSrc ? (
+                        <Link className={`${center_element_row} gap-[16px]`} to="/">
+                            <Link to="/">
+                                <img src={variantLogoCol} alt="lasCalas logo" className="w-[88px] h-auto object-contain" loading="lazy"/>
+                            </Link>
+                            <span className={`font-Montserrat font-[500] text-white text-[18px] ${variantDivider} select-none`}>
+                                ✕
+                            </span>
+                            <Link to="/"><img src={partnerLogoSrc} alt="Partner logo" className="w-[140px] h-auto object-contain" loading="lazy"/></Link>
+                        </Link>
+                        
+                    ) : (
+                        <Link to="/">
+                            <img src={variantLogoCol} alt="lasCalas logo" className="w-[88px] h-auto object-contain" loading="lazy"/>
+                        </Link>
+                    )}
                 </div>
 
                 {/* CTA Btns (Right) */}
