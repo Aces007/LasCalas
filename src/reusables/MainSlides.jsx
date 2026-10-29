@@ -10,6 +10,7 @@ const MainSlides = ({
     slideContent,
     theme="light",
     autoplay_delay=3000,
+    partnerLogoSrc = null,
 }) => {
 
     // Styling Variables (USE THIS FORMAT: Permanent Styling [like font fam] then responsive styles starting from smallest size)
@@ -39,16 +40,14 @@ const MainSlides = ({
                     }}
                     speed={1000}
                 >
-                    {slideContent.map((item) => (
-                        <SwiperSlide>
+                    {slideContent.map((item, index) => (
+                        <SwiperSlide key={item.id || index}>
                             <img
                                 src={item.src}
+                                alt={item.alt || `Slide ${index + 1}`}
                                 className={`${mainSlides_slide_contents}`}
                                 loading="lazy"
-                                onClick={() => {
-                                    setActiveIndex(index);
-                                    setIsOpen(true);
-                                }} />
+                            />
                         </SwiperSlide>
                     ))}
                 </Swiper>
@@ -56,7 +55,7 @@ const MainSlides = ({
 
             <div className={`${mainSlides_head_cont}`}>
                 <div>
-                    <NavHead theme={`${theme}`} />
+                    <NavHead theme={`${theme}`} partnerLogoSrc={partnerLogoSrc} />
                 </div>
 
                 <div className={`${mainSlides_title_cont}`}>
