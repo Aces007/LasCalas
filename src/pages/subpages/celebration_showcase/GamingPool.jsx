@@ -47,7 +47,7 @@ const GamingPool = () => {
     const space_name = "font-Raleway font-semibold text-[48px] resSm:text-[28px] resMd:text-[42px]";
     const space_price = "font-Raleway font-semibold text-secondary/60 text-[24px] resSm:text-[18px] resMd:text-[22px]";
 
-    const gamPool_grid_cont = "grid grid-cols-2 gap-12 items-center w-full max-w-6xl px-6 my-[80px] resSm:flex resSm:flex-col";
+    const gamPool_grid_cont = "grid grid-cols-2 gap-12 items-center w-full max-w-6xl px-6 my-[80px] resSm:flex resSm:flex-col cursor-pointer";
     const gamPoolCard_grid_cont = "grid grid-cols-2 gap-[8px] items-stretch";
     const gamPool_tagline = "font-Raleway font-bold text-main_text/60 tracking-tight uppercase text-[32px] resSm:text-[20px] resMd:text-[26px]";
 
